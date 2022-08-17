@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pattern.Observer.AktieWithCallbackDelegate">
+    <Position X="0.5" Y="4" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="Pattern.Observer.AktieWithCallbackDelegate.KursChangedCallback">
+        <TypeIdentifier>
+          <NewMemberFileName>AktieWithCallbackDelegate.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>AktieWithCallbackDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pattern.Observer.KursChangedEventArg">
+    <Position X="8" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgA=</HashCode>
+      <FileName>KursChangedEventArg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pattern.Observer.Beobachter">
+    <Position X="5.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Beobachter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pattern.Observer.Börse">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAABAAAAAACAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Börse.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Aktien" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Pattern.Observer.Aktie">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAQAAAAQAAAAIAEAAAAAACA=</HashCode>
+      <FileName>Aktie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pattern.Observer.AktieWithEvent">
+    <Position X="6.25" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AktieWithEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pattern.Observer.AktieWithCallbackFunc">
+    <Position X="3.5" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>AktieWithCallbackFunc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
