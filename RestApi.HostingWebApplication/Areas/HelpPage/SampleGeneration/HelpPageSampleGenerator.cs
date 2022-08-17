@@ -1,9 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.IO;
+using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Formatting;
+using System.Net.Http.Headers;
+using System.Web.Http.Description;
+using System.Xml.Linq;
+using Newtonsoft.Json;
 
 namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
 {
@@ -95,9 +103,9 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
         public virtual IDictionary<MediaTypeHeaderValue, object> GetSample(ApiDescription api, SampleDirection sampleDirection)
         {
             if (api == null) throw new ArgumentNullException("api");
-            string controllerName = api.ActionDescriptor.ControllerDescriptor.ControllerName;
-            string actionName = api.ActionDescriptor.ActionName;
-            IEnumerable<string> parameterNames = api.ParameterDescriptions.Select(p => p.Name);
+            var controllerName = api.ActionDescriptor.ControllerDescriptor.ControllerName;
+            var actionName = api.ActionDescriptor.ActionName;
+            var parameterNames = api.ParameterDescriptions.Select(p => p.Name);
             Collection<MediaTypeFormatter> formatters;
             var type = ResolveType(api, controllerName, actionName, parameterNames, sampleDirection, out formatters);
             var samples = new Dictionary<MediaTypeHeaderValue, object>();
@@ -112,7 +120,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
             {
                 var sampleObject = GetSampleObject(type);
                 foreach (var formatter in formatters)
-                foreach (MediaTypeHeaderValue mediaType in formatter.SupportedMediaTypes)
+                foreach (var mediaType in formatter.SupportedMediaTypes)
                     if (!samples.ContainsKey(mediaType))
                     {
                         var sample = GetActionSample(controllerName, actionName, parameterNames, type, formatter, mediaType,
@@ -191,9 +199,9 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
         /// <returns>The type.</returns>
         public virtual Type ResolveHttpRequestMessageType(ApiDescription api)
         {
-            string controllerName = api.ActionDescriptor.ControllerDescriptor.ControllerName;
-            string actionName = api.ActionDescriptor.ActionName;
-            IEnumerable<string> parameterNames = api.ParameterDescriptions.Select(p => p.Name);
+            var controllerName = api.ActionDescriptor.ControllerDescriptor.ControllerName;
+            var actionName = api.ActionDescriptor.ActionName;
+            var parameterNames = api.ParameterDescriptions.Select(p => p.Name);
             Collection<MediaTypeFormatter> formatters;
             return ResolveType(api, controllerName, actionName, parameterNames, SampleDirection.Request, out formatters);
         }
@@ -222,7 +230,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
                     out type))
             {
                 // Re-compute the supported formatters based on type
-                Collection<MediaTypeFormatter> newFormatters = new Collection<MediaTypeFormatter>();
+                var newFormatters = new Collection<MediaTypeFormatter>();
                 foreach (var formatter in api.ActionDescriptor.Configuration.Formatters)
                     if (IsFormatSupported(sampleDirection, formatter, type))
                         newFormatters.Add(formatter);
@@ -233,7 +241,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
                 switch (sampleDirection)
                 {
                     case SampleDirection.Request:
-                        ApiParameterDescription requestBodyParameter =
+                        var requestBodyParameter =
                             api.ParameterDescriptions.FirstOrDefault(p => p.Source == ApiParameterSource.FromBody);
                         type = requestBodyParameter == null ? null : requestBodyParameter.ParameterDescriptor.ParameterType;
                         formatters = api.SupportedRequestBodyFormatters;
@@ -331,7 +339,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
         private IEnumerable<KeyValuePair<HelpPageSampleKey, object>> GetAllActionSamples(string controllerName, string actionName,
             IEnumerable<string> parameterNames, SampleDirection sampleDirection)
         {
-            HashSet<string> parameterNamesSet = new HashSet<string>(parameterNames, StringComparer.OrdinalIgnoreCase);
+            var parameterNamesSet = new HashSet<string>(parameterNames, StringComparer.OrdinalIgnoreCase);
             foreach (var sample in ActionSamples)
             {
                 var sampleKey = sample.Key;
@@ -362,7 +370,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
         {
             try
             {
-                object parsedJson = JsonConvert.DeserializeObject(str);
+                var parsedJson = JsonConvert.DeserializeObject(str);
                 return JsonConvert.SerializeObject(parsedJson, Formatting.Indented);
             }
             catch
@@ -378,7 +386,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
         {
             try
             {
-                XDocument xml = XDocument.Parse(str);
+                var xml = XDocument.Parse(str);
                 return xml.ToString();
             }
             catch

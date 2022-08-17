@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Jarai.Globalization.WinForms
@@ -11,6 +13,9 @@ namespace Jarai.Globalization.WinForms
         [STAThread]
         private static void Main()
         {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
+            //Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

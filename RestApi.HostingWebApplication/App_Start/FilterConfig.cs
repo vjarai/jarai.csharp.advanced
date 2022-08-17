@@ -1,4 +1,6 @@
-﻿namespace Jarai.RestApi.HostingWebApplication
+﻿using System.Web.Mvc;
+
+namespace Jarai.RestApi.HostingWebApplication
 {
     public class FilterConfig
     {

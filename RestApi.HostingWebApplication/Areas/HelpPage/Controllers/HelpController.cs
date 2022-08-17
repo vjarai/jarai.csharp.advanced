@@ -1,5 +1,6 @@
+using System.Web.Http;
+using System.Web.Mvc;
 using Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions;
-using Jarai.RestApi.HostingWebApplication.Areas.HelpPage.Models;
 
 namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.Controllers
 {
@@ -26,7 +27,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.Controllers
         {
             if (!string.IsNullOrEmpty(apiId))
             {
-                HelpPageApiModel apiModel = Configuration.GetHelpPageApiModel(apiId);
+                var apiModel = Configuration.GetHelpPageApiModel(apiId);
                 if (apiModel != null) return View(apiModel);
             }
 
@@ -43,7 +44,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.Controllers
         {
             if (!string.IsNullOrEmpty(modelName))
             {
-                ModelDescriptionGenerator modelDescriptionGenerator = Configuration.GetModelDescriptionGenerator();
+                var modelDescriptionGenerator = Configuration.GetModelDescriptionGenerator();
                 ModelDescription modelDescription;
                 if (modelDescriptionGenerator.GeneratedModels.TryGetValue(modelName, out modelDescription)) return View(modelDescription);
             }

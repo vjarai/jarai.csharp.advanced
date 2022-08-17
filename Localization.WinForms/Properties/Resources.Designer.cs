@@ -59,5 +59,14 @@ namespace Jarai.Globalization.WinForms.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hallo.
+        /// </summary>
+        internal static string Form1_button1_Click_Hallo {
+            get {
+                return ResourceManager.GetString("Form1_button1_Click_Hallo", resourceCulture);
+            }
+        }
     }
 }

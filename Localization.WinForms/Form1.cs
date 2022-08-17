@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace Jarai.Globalization.WinForms
 {
@@ -7,6 +8,11 @@ namespace Jarai.Globalization.WinForms
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hallo");
         }
     }
 }

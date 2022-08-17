@@ -1,3 +1,5 @@
+using System.Web.Http;
+using System.Web.Mvc;
 using Jarai.RestApi.HostingWebApplication.Areas.HelpPage.App_Start;
 
 namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage

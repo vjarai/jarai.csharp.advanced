@@ -1,4 +1,11 @@
-﻿namespace Jarai.RestApi.HostingWebApplication
+﻿using System.Web;
+using System.Web.Http;
+using System.Web.Mvc;
+using System.Web.Optimization;
+using System.Web.Routing;
+using Newtonsoft.Json;
+
+namespace Jarai.RestApi.HostingWebApplication
 {
     public class WebApiApplication : HttpApplication
     {

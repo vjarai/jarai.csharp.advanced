@@ -1,4 +1,10 @@
-﻿using Jarai.RestApi.EntityModel;
+﻿using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
+using System.Linq;
+using System.Net;
+using System.Web.Http;
+using System.Web.Http.Description;
+using Jarai.RestApi.EntityModel;
 
 namespace Jarai.RestApi.HostingWebApplication.Controllers
 {
@@ -10,7 +16,7 @@ namespace Jarai.RestApi.HostingWebApplication.Controllers
         [ResponseType(typeof(Supplier))]
         public IHttpActionResult DeleteSupplier(int id)
         {
-            Supplier supplier = db.Suppliers.Find(id);
+            var supplier = db.Suppliers.Find(id);
             if (supplier == null) return NotFound();
 
             db.Suppliers.Remove(supplier);
@@ -23,7 +29,7 @@ namespace Jarai.RestApi.HostingWebApplication.Controllers
         [ResponseType(typeof(Supplier))]
         public IHttpActionResult GetSupplier(int id)
         {
-            Supplier supplier = db.Suppliers.Find(id);
+            var supplier = db.Suppliers.Find(id);
             if (supplier == null) return NotFound();
 
             return Ok(supplier);

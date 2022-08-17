@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Net.Http.Headers;
 
 namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
 {
@@ -131,7 +133,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
             if (MediaType != null) hashCode ^= MediaType.GetHashCode();
             if (SampleDirection != null) hashCode ^= SampleDirection.GetHashCode();
             if (ParameterType != null) hashCode ^= ParameterType.GetHashCode();
-            foreach (string parameterName in ParameterNames) hashCode ^= parameterName.ToUpperInvariant().GetHashCode();
+            foreach (var parameterName in ParameterNames) hashCode ^= parameterName.ToUpperInvariant().GetHashCode();
 
             return hashCode;
         }

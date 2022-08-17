@@ -3,6 +3,8 @@
 ////#define Handle_PageResultOfT
 
 using System.Diagnostics.CodeAnalysis;
+using System.Net.Http.Headers;
+using System.Web.Http;
 using Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration;
 #if Handle_PageResultOfT
 using System.Web.Http.OData;

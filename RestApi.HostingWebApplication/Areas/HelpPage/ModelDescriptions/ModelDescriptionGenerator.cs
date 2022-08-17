@@ -1,8 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.Reflection;
+using System.Runtime.Serialization;
+using System.Web.Http;
+using System.Web.Http.Description;
+using System.Xml.Serialization;
+using Newtonsoft.Json;
 
 namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
 {
@@ -11,6 +18,8 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
     /// </summary>
     public class ModelDescriptionGenerator
     {
+        private readonly Lazy<IModelDocumentationProvider> _documentationProvider;
+
         // Modify this to support more data annotation attributes.
         private readonly IDictionary<Type, Func<object, string>> AnnotationTextGenerator = new Dictionary<Type, Func<object, string>>
         {
@@ -18,28 +27,28 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
             {
                 typeof(RangeAttribute), a =>
                 {
-                    RangeAttribute range = (RangeAttribute)a;
+                    var range = (RangeAttribute)a;
                     return string.Format(CultureInfo.CurrentCulture, "Range: inclusive between {0} and {1}", range.Minimum, range.Maximum);
                 }
             },
             {
                 typeof(MaxLengthAttribute), a =>
                 {
-                    MaxLengthAttribute maxLength = (MaxLengthAttribute)a;
+                    var maxLength = (MaxLengthAttribute)a;
                     return string.Format(CultureInfo.CurrentCulture, "Max length: {0}", maxLength.Length);
                 }
             },
             {
                 typeof(MinLengthAttribute), a =>
                 {
-                    MinLengthAttribute minLength = (MinLengthAttribute)a;
+                    var minLength = (MinLengthAttribute)a;
                     return string.Format(CultureInfo.CurrentCulture, "Min length: {0}", minLength.Length);
                 }
             },
             {
                 typeof(StringLengthAttribute), a =>
                 {
-                    StringLengthAttribute strLength = (StringLengthAttribute)a;
+                    var strLength = (StringLengthAttribute)a;
                     return string.Format(CultureInfo.CurrentCulture, "String length: inclusive between {0} and {1}",
                         strLength.MinimumLength, strLength.MaximumLength);
                 }
@@ -47,7 +56,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
             {
                 typeof(DataTypeAttribute), a =>
                 {
-                    DataTypeAttribute dataType = (DataTypeAttribute)a;
+                    var dataType = (DataTypeAttribute)a;
                     return string.Format(CultureInfo.CurrentCulture, "Data type: {0}",
                         dataType.CustomDataType ?? dataType.DataType.ToString());
                 }
@@ -55,7 +64,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
             {
                 typeof(RegularExpressionAttribute), a =>
                 {
-                    RegularExpressionAttribute regularExpression = (RegularExpressionAttribute)a;
+                    var regularExpression = (RegularExpressionAttribute)a;
                     return string.Format(CultureInfo.CurrentCulture, "Matching regular expression pattern: {0}", regularExpression.Pattern);
                 }
             }
@@ -84,8 +93,6 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
             { typeof(DateTimeOffset), "date" },
             { typeof(bool), "boolean" }
         };
-
-        private readonly Lazy<IModelDocumentationProvider> _documentationProvider;
 
         public ModelDescriptionGenerator(HttpConfiguration config)
         {
@@ -235,7 +242,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
             };
 
             GeneratedModels.Add(complexModelDescription.Name, complexModelDescription);
-            bool hasDataContractAttribute = modelType.GetCustomAttribute<DataContractAttribute>() != null;
+            var hasDataContractAttribute = modelType.GetCustomAttribute<DataContractAttribute>() != null;
             var properties = modelType.GetProperties(BindingFlags.Public | BindingFlags.Instance);
             foreach (var property in properties)
                 if (ShouldDisplayMember(property, hasDataContractAttribute))
@@ -292,7 +299,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
                 ModelType = modelType,
                 Documentation = CreateDefaultDocumentation(modelType)
             };
-            bool hasDataContractAttribute = modelType.GetCustomAttribute<DataContractAttribute>() != null;
+            var hasDataContractAttribute = modelType.GetCustomAttribute<DataContractAttribute>() != null;
             foreach (var field in modelType.GetFields(BindingFlags.Public | BindingFlags.Static))
                 if (ShouldDisplayMember(field, hasDataContractAttribute))
                 {
@@ -340,12 +347,12 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
         // Change this to provide different name for the member.
         private static string GetMemberName(MemberInfo member, bool hasDataContractAttribute)
         {
-            JsonPropertyAttribute jsonProperty = member.GetCustomAttribute<JsonPropertyAttribute>();
+            var jsonProperty = member.GetCustomAttribute<JsonPropertyAttribute>();
             if (jsonProperty != null && !string.IsNullOrEmpty(jsonProperty.PropertyName)) return jsonProperty.PropertyName;
 
             if (hasDataContractAttribute)
             {
-                DataMemberAttribute dataMember = member.GetCustomAttribute<DataMemberAttribute>();
+                var dataMember = member.GetCustomAttribute<DataMemberAttribute>();
                 if (dataMember != null && !string.IsNullOrEmpty(dataMember.Name)) return dataMember.Name;
             }
 
@@ -354,13 +361,13 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
 
         private static bool ShouldDisplayMember(MemberInfo member, bool hasDataContractAttribute)
         {
-            JsonIgnoreAttribute jsonIgnore = member.GetCustomAttribute<JsonIgnoreAttribute>();
-            XmlIgnoreAttribute xmlIgnore = member.GetCustomAttribute<XmlIgnoreAttribute>();
-            IgnoreDataMemberAttribute ignoreDataMember = member.GetCustomAttribute<IgnoreDataMemberAttribute>();
+            var jsonIgnore = member.GetCustomAttribute<JsonIgnoreAttribute>();
+            var xmlIgnore = member.GetCustomAttribute<XmlIgnoreAttribute>();
+            var ignoreDataMember = member.GetCustomAttribute<IgnoreDataMemberAttribute>();
             var nonSerialized = member.GetCustomAttribute<NonSerializedAttribute>();
-            ApiExplorerSettingsAttribute apiExplorerSetting = member.GetCustomAttribute<ApiExplorerSettingsAttribute>();
+            var apiExplorerSetting = member.GetCustomAttribute<ApiExplorerSettingsAttribute>();
 
-            bool hasMemberAttribute = member.DeclaringType.IsEnum
+            var hasMemberAttribute = member.DeclaringType.IsEnum
                 ? member.GetCustomAttribute<EnumMemberAttribute>() != null
                 : member.GetCustomAttribute<DataMemberAttribute>() != null;
 

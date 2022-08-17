@@ -1,4 +1,6 @@
-﻿namespace Jarai.RestApi.HostingWebApplication.Controllers
+﻿using System.Web.Mvc;
+
+namespace Jarai.RestApi.HostingWebApplication.Controllers
 {
     public class HomeController : Controller
     {

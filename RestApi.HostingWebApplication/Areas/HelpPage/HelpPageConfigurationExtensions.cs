@@ -1,8 +1,14 @@
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
+using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Web.Http;
+using System.Web.Http.Description;
 using Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions;
 using Jarai.RestApi.HostingWebApplication.Areas.HelpPage.Models;
 using Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration;
@@ -28,8 +34,8 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
             var modelId = ApiModelPrefix + apiDescriptionId;
             if (!config.Properties.TryGetValue(modelId, out model))
             {
-                Collection<ApiDescription> apiDescriptions = config.Services.GetApiExplorer().ApiDescriptions;
-                ApiDescription apiDescription = apiDescriptions.FirstOrDefault(api =>
+                var apiDescriptions = config.Services.GetApiExplorer().ApiDescriptions;
+                var apiDescription = apiDescriptions.FirstOrDefault(api =>
                     string.Equals(api.GetFriendlyId(), apiDescriptionId, StringComparison.OrdinalIgnoreCase));
                 if (apiDescription != null)
                 {
@@ -268,8 +274,8 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
                 ApiDescription = apiDescription
             };
 
-            ModelDescriptionGenerator modelGenerator = config.GetModelDescriptionGenerator();
-            HelpPageSampleGenerator sampleGenerator = config.GetHelpPageSampleGenerator();
+            var modelGenerator = config.GetModelDescriptionGenerator();
+            var sampleGenerator = config.GetHelpPageSampleGenerator();
             GenerateUriParameters(apiModel, modelGenerator);
             GenerateRequestModelDescription(apiModel, modelGenerator, sampleGenerator);
             GenerateResourceDescription(apiModel, modelGenerator);
@@ -281,11 +287,11 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
         private static void GenerateRequestModelDescription(HelpPageApiModel apiModel, ModelDescriptionGenerator modelGenerator,
             HelpPageSampleGenerator sampleGenerator)
         {
-            ApiDescription apiDescription = apiModel.ApiDescription;
-            foreach (ApiParameterDescription apiParameter in apiDescription.ParameterDescriptions)
+            var apiDescription = apiModel.ApiDescription;
+            foreach (var apiParameter in apiDescription.ParameterDescriptions)
                 if (apiParameter.Source == ApiParameterSource.FromBody)
                 {
-                    Type parameterType = apiParameter.ParameterDescriptor.ParameterType;
+                    var parameterType = apiParameter.ParameterDescriptor.ParameterType;
                     apiModel.RequestModelDescription = modelGenerator.GetOrCreateModelDescription(parameterType);
                     apiModel.RequestDocumentation = apiParameter.Documentation;
                 }
@@ -300,8 +306,8 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
 
         private static void GenerateResourceDescription(HelpPageApiModel apiModel, ModelDescriptionGenerator modelGenerator)
         {
-            ResponseDescription response = apiModel.ApiDescription.ResponseDescription;
-            Type responseType = response.ResponseType ?? response.DeclaredType;
+            var response = apiModel.ApiDescription.ResponseDescription;
+            var responseType = response.ResponseType ?? response.DeclaredType;
             if (responseType != null && responseType != typeof(void))
                 apiModel.ResourceDescription = modelGenerator.GetOrCreateModelDescription(responseType);
         }
@@ -334,11 +340,11 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
 
         private static void GenerateUriParameters(HelpPageApiModel apiModel, ModelDescriptionGenerator modelGenerator)
         {
-            ApiDescription apiDescription = apiModel.ApiDescription;
-            foreach (ApiParameterDescription apiParameter in apiDescription.ParameterDescriptions)
+            var apiDescription = apiModel.ApiDescription;
+            foreach (var apiParameter in apiDescription.ParameterDescriptions)
                 if (apiParameter.Source == ApiParameterSource.FromUri)
                 {
-                    HttpParameterDescriptor parameterDescriptor = apiParameter.ParameterDescriptor;
+                    var parameterDescriptor = apiParameter.ParameterDescriptor;
                     Type parameterType = null;
                     ModelDescription typeDescription = null;
                     ComplexTypeModelDescription complexTypeDescription = null;
@@ -382,7 +388,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
                         if (!parameterDescriptor.IsOptional)
                             uriParameter.Annotations.Add(new ParameterAnnotation { Documentation = "Required" });
 
-                        object defaultValue = parameterDescriptor.DefaultValue;
+                        var defaultValue = parameterDescriptor.DefaultValue;
                         if (defaultValue != null)
                             uriParameter.Annotations.Add(new ParameterAnnotation
                                 { Documentation = "Default value is " + Convert.ToString(defaultValue, CultureInfo.InvariantCulture) });
@@ -403,8 +409,8 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
         private static ModelDescriptionGenerator InitializeModelDescriptionGenerator(HttpConfiguration config)
         {
             var modelGenerator = new ModelDescriptionGenerator(config);
-            Collection<ApiDescription> apis = config.Services.GetApiExplorer().ApiDescriptions;
-            foreach (ApiDescription api in apis)
+            var apis = config.Services.GetApiExplorer().ApiDescriptions;
+            foreach (var api in apis)
             {
                 ApiParameterDescription parameterDescription;
                 Type parameterType;
@@ -445,7 +451,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
 
             if (resourceType == typeof(HttpRequestMessage))
             {
-                HelpPageSampleGenerator sampleGenerator = config.GetHelpPageSampleGenerator();
+                var sampleGenerator = config.GetHelpPageSampleGenerator();
                 resourceType = sampleGenerator.ResolveHttpRequestMessageType(apiDescription);
             }
 

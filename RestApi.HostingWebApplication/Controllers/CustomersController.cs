@@ -1,4 +1,10 @@
-﻿using Jarai.RestApi.EntityModel;
+﻿using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
+using System.Linq;
+using System.Net;
+using System.Web.Http;
+using System.Web.Http.Description;
+using Jarai.RestApi.EntityModel;
 
 namespace Jarai.RestApi.HostingWebApplication.Controllers
 {
@@ -10,7 +16,7 @@ namespace Jarai.RestApi.HostingWebApplication.Controllers
         [ResponseType(typeof(Customer))]
         public IHttpActionResult DeleteCustomer(string id)
         {
-            Customer customer = db.Customers.Find(id);
+            var customer = db.Customers.Find(id);
             if (customer == null) return NotFound();
 
             db.Customers.Remove(customer);
@@ -23,7 +29,7 @@ namespace Jarai.RestApi.HostingWebApplication.Controllers
         [ResponseType(typeof(Customer))]
         public IHttpActionResult GetCustomer(string id)
         {
-            Customer customer = db.Customers.Find(id);
+            var customer = db.Customers.Find(id);
             if (customer == null) return NotFound();
 
             return Ok(customer);

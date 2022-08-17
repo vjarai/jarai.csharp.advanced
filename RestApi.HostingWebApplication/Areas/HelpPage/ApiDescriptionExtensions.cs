@@ -1,4 +1,6 @@
 using System.Text;
+using System.Web;
+using System.Web.Http.Description;
 
 namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
 {
@@ -12,14 +14,14 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
         /// <returns>The ID as a string.</returns>
         public static string GetFriendlyId(this ApiDescription description)
         {
-            string path = description.RelativePath;
+            var path = description.RelativePath;
             var urlParts = path.Split('?');
             var localPath = urlParts[0];
             string queryKeyString = null;
             if (urlParts.Length > 1)
             {
                 var query = urlParts[1];
-                string[] queryKeys = HttpUtility.ParseQueryString(query).AllKeys;
+                var queryKeys = HttpUtility.ParseQueryString(query).AllKeys;
                 queryKeyString = string.Join("_", queryKeys);
             }
 

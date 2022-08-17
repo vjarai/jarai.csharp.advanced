@@ -1,4 +1,7 @@
-﻿using Jarai.RestApi.HostingWebApplication;
+﻿using System.Web;
+using System.Web.Http;
+using Jarai.RestApi.HostingWebApplication;
+using Swashbuckle.Application;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
