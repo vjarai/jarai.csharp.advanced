@@ -1,3 +1,0 @@
-TimeHeader=The current time is
-greeting=Hallo Welt!
-bye=Auf Wiedersehen!

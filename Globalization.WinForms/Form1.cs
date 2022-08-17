@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Jarai.Globalization.WinForms.Properties;
 
 namespace Jarai.Globalization.WinForms
 {
@@ -12,7 +13,7 @@ namespace Jarai.Globalization.WinForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hallo");
+            MessageBox.Show(Resources.Form1_button1_Click_Hallo);
         }
     }
 }
