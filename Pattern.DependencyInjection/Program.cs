@@ -16,6 +16,7 @@ namespace Pattern6.DependencyInjection.Core
                 .ConfigureServices((_, services) =>
                     services.AddHostedService<Worker>()
                         .AddScoped<ILogger, ConsoleLogger>());
+            //.AddScoped<ILogger, NullLogger>());
         }
 
         private static Task Main(string[] args)

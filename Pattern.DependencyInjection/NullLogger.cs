@@ -1,6 +1,6 @@
 ﻿namespace Pattern6.DependencyInjection.Core
 {
-    public class DummyLogger : ILogger
+    public class NullLogger : ILogger
     {
         public void Write(string message)
         {

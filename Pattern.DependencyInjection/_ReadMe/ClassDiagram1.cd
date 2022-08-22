@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Pattern.DependencyInjection.ConsoleLogger">
-    <Position X="4.75" Y="2.75" Width="2.25" />
+  <Class Name="Pattern6.DependencyInjection.Core.ConsoleLogger">
+    <Position X="3.5" Y="2.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>ConsoleLogger.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Pattern.DependencyInjection.Worker">
-    <Position X="0.5" Y="0.5" Width="3.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIEA=</HashCode>
-      <FileName>Worker.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_Logger" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="Pattern.DependencyInjection.DummyLogger">
-    <Position X="7.5" Y="2.75" Width="1.5" />
+  <Class Name="Pattern6.DependencyInjection.Core.NullLogger">
+    <Position X="6.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>DummyLogger.cs</FileName>
+      <FileName>NullLogger.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="Pattern.DependencyInjection.ILogger">
-    <Position X="5.5" Y="0.75" Width="2.25" />
+  <Class Name="Pattern6.DependencyInjection.Core.Worker">
+    <Position X="1" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Worker.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_logger" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="Pattern6.DependencyInjection.Core.ILogger">
+    <Position X="4.5" Y="0.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>ILogger.cs</FileName>

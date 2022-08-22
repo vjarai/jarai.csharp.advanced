@@ -7,5 +7,9 @@ namespace Jarai.Globalization.Wpf
     /// </summary>
     public partial class App : Application
     {
+        private App()
+        {
+            //Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+        }
     }
 }

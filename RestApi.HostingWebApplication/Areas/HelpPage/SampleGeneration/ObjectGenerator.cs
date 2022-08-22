@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
+using System.Linq;
 using System.Reflection;
 
 namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
@@ -271,7 +272,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
                 return asQueryableMethod.Invoke(null, new[] { list });
             }
 
-            return Queryable.AsQueryable((IEnumerable)list);
+            return ((IEnumerable)list).AsQueryable();
         }
 
         private static object GenerateTuple(Type type, Dictionary<Type, object> createdObjectReferences)

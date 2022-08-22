@@ -118,21 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Cancel" xml:space="preserve">
-    <value>Abbrechen</value>
+    <value>Cancel</value>
   </data>
   <data name="Log_In" xml:space="preserve">
-    <value>Anmelden</value>
+    <value>Log in</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Passwort</value>
+    <value>Password</value>
   </data>
   <data name="Registration" xml:space="preserve">
-    <value>Registrierung</value>
+    <value>Registration</value>
   </data>
   <data name="Submit" xml:space="preserve">
-    <value>Senden</value>
+    <value>Submit</value>
   </data>
   <data name="UserName" xml:space="preserve">
-    <value>Benutzername</value>
+    <value>User Name</value>
   </data>
 </root>
