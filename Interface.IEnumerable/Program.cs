@@ -13,7 +13,9 @@ namespace Jarai.Interface.IEnumerable
             };
 
             foreach (var entry in myPhoneBook)
+            {
                 Console.WriteLine(entry);
+            }
         }
     }
 }

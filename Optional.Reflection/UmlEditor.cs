@@ -13,12 +13,16 @@ namespace Jarai.Reflection
             Console.WriteLine("==========================");
 
             foreach (var methodInfo in type.GetMethods().Where(m => !m.IsSpecialName))
+            {
                 Console.WriteLine(methodInfo.Name + "() : " + methodInfo.ReturnType.Name);
+            }
 
             Console.WriteLine("==========================");
 
             foreach (var propertyInfo in type.GetProperties())
+            {
                 Console.WriteLine(propertyInfo.Name + " : " + propertyInfo.PropertyType.Name);
+            }
         }
     }
 }

@@ -40,7 +40,10 @@ namespace Jarai.Patterns.Observer
         {
             var rand = new Random();
 
-            foreach (var aktie in Aktien) aktie.AktuellerKurs = Math.Round(aktie.AktuellerKurs + 10 * (decimal)rand.NextDouble() - 5, 2);
+            foreach (var aktie in Aktien)
+            {
+                aktie.AktuellerKurs = Math.Round(aktie.AktuellerKurs + 10 * (decimal)rand.NextDouble() - 5, 2);
+            }
         }
     }
 }

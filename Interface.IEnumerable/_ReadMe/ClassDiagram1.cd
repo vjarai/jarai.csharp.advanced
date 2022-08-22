@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Interface.IEnumerable.Phonebook">
+  <Class Name="Jarai.Interface.IEnumerable.Phonebook">
     <Position X="2.25" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACIAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -11,10 +11,10 @@
     </ShowAsCollectionAssociation>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Interface.IEnumerable.PhonebookEntry">
-    <Position X="5" Y="1.25" Width="2.5" />
+  <Class Name="Jarai.Interface.IEnumerable.PhonebookEntry" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAACAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAQAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PhonebookEntry.cs</FileName>
     </TypeIdentifier>
   </Class>

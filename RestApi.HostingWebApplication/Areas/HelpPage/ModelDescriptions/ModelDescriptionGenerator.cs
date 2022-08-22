@@ -215,7 +215,10 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
                 return string.Compare(x.Documentation, y.Documentation, StringComparison.OrdinalIgnoreCase);
             });
 
-            foreach (var annotation in annotations) propertyModel.Annotations.Add(annotation);
+            foreach (var annotation in annotations)
+            {
+                propertyModel.Annotations.Add(annotation);
+            }
         }
 
         private CollectionModelDescription GenerateCollectionModelDescription(Type modelType, Type elementType)
@@ -245,6 +248,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
             var hasDataContractAttribute = modelType.GetCustomAttribute<DataContractAttribute>() != null;
             var properties = modelType.GetProperties(BindingFlags.Public | BindingFlags.Instance);
             foreach (var property in properties)
+            {
                 if (ShouldDisplayMember(property, hasDataContractAttribute))
                 {
                     var propertyModel = new ParameterDescription
@@ -258,9 +262,11 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
                     complexModelDescription.Properties.Add(propertyModel);
                     propertyModel.TypeDescription = GetOrCreateModelDescription(property.PropertyType);
                 }
+            }
 
             var fields = modelType.GetFields(BindingFlags.Public | BindingFlags.Instance);
             foreach (var field in fields)
+            {
                 if (ShouldDisplayMember(field, hasDataContractAttribute))
                 {
                     var propertyModel = new ParameterDescription
@@ -273,6 +279,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
                     complexModelDescription.Properties.Add(propertyModel);
                     propertyModel.TypeDescription = GetOrCreateModelDescription(field.FieldType);
                 }
+            }
 
             return complexModelDescription;
         }
@@ -301,6 +308,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
             };
             var hasDataContractAttribute = modelType.GetCustomAttribute<DataContractAttribute>() != null;
             foreach (var field in modelType.GetFields(BindingFlags.Public | BindingFlags.Static))
+            {
                 if (ShouldDisplayMember(field, hasDataContractAttribute))
                 {
                     var enumValue = new EnumValueDescription
@@ -311,6 +319,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
                     if (DocumentationProvider != null) enumValue.Documentation = DocumentationProvider.GetDocumentation(field);
                     enumDescription.Values.Add(enumValue);
                 }
+            }
 
             GeneratedModels.Add(enumDescription.Name, enumDescription);
 

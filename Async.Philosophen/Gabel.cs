@@ -1,4 +1,6 @@
-﻿namespace Jarai.Async.Lock
+﻿using System;
+
+namespace Jarai.Async.Lock
 {
     internal class Gabel
     {
@@ -9,14 +11,18 @@
 
         public string Name { get; }
 
-        public Philosoph Philosoph { get; set; }
+        public Philosoph User { get; set; }
 
-        public void Grab()
+        public void Grab(Philosoph philosoph)
         {
+            User = philosoph;
+            Console.WriteLine($"{philosoph.Name} nimmt {Name}.");
         }
 
         public void Put()
         {
+            Console.WriteLine($"{User.Name} legt {Name}.");
+            User = null;
         }
     }
 }

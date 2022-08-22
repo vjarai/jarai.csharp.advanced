@@ -11,8 +11,8 @@ namespace Jarai.Serialization
 
             var serializer = new JsonSerializer();
 
-            using (var streamWRiter = new StreamReader(filename))
-            using (var jsonWriter = new JsonTextReader(streamWRiter))
+            using (var streamReader = new StreamReader(filename))
+            using (var jsonWriter = new JsonTextReader(streamReader))
             {
                 return serializer.Deserialize<T>(jsonWriter);
             }
@@ -24,8 +24,8 @@ namespace Jarai.Serialization
 
             var serializer = new JsonSerializer();
 
-            using (var streamWRiter = new StreamWriter(filename))
-            using (var jsonWriter = new JsonTextWriter(streamWRiter))
+            using (var streamWriter = new StreamWriter(filename))
+            using (var jsonWriter = new JsonTextWriter(streamWriter))
             {
                 serializer.Serialize(jsonWriter, objectToSave);
             }

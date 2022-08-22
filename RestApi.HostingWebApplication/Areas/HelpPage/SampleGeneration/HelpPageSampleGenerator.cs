@@ -112,7 +112,10 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
 
             // Use the samples provided directly for actions
             var actionSamples = GetAllActionSamples(controllerName, actionName, parameterNames, sampleDirection);
-            foreach (var actionSample in actionSamples) samples.Add(actionSample.Key.MediaType, WrapSampleIfString(actionSample.Value));
+            foreach (var actionSample in actionSamples)
+            {
+                samples.Add(actionSample.Key.MediaType, WrapSampleIfString(actionSample.Value));
+            }
 
             // Do the sample generation based on formatters only if an action doesn't return an HttpResponseMessage.
             // Here we cannot rely on formatters because we don't know what's in the HttpResponseMessage, it might not even use formatters.
@@ -121,6 +124,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
                 var sampleObject = GetSampleObject(type);
                 foreach (var formatter in formatters)
                 foreach (var mediaType in formatter.SupportedMediaTypes)
+                {
                     if (!samples.ContainsKey(mediaType))
                     {
                         var sample = GetActionSample(controllerName, actionName, parameterNames, type, formatter, mediaType,
@@ -132,6 +136,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
 
                         samples.Add(mediaType, WrapSampleIfString(sample));
                     }
+                }
             }
 
             return samples;
@@ -232,8 +237,11 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
                 // Re-compute the supported formatters based on type
                 var newFormatters = new Collection<MediaTypeFormatter>();
                 foreach (var formatter in api.ActionDescriptor.Configuration.Formatters)
+                {
                     if (IsFormatSupported(sampleDirection, formatter, type))
                         newFormatters.Add(formatter);
+                }
+
                 formatters = newFormatters;
             }
             else

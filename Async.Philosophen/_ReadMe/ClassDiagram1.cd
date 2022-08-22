@@ -1,28 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Tasks.Philosophen.Philosoph">
-    <Position X="2.25" Y="0.5" Width="2" />
-    <Compartments>
-      <Compartment Name="Nested Types" Collapsed="false" />
-    </Compartments>
-    <NestedTypes>
-      <Enum Name="Tasks.Philosophen.Philosoph.State">
-        <TypeIdentifier>
-          <NewMemberFileName>Philosoph.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-    </NestedTypes>
+  <Class Name="Jarai.Async.Lock.Philosoph">
+    <Position X="2.25" Y="0.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAABAAAAAAAAACAQAAAAAAAAAAAAAAEBAAAA=</HashCode>
+      <HashCode>AAAAAABBAABAAAAEAEAACAQAAAAAAAAAIAAAAUBAAAE=</HashCode>
       <FileName>Philosoph.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_state" />
+      <Property Name="LinkeGabel" />
+      <Property Name="RechteGabel" />
+    </ShowAsAssociation>
   </Class>
-  <Class Name="Tasks.Philosophen.Gabel">
-    <Position X="5.5" Y="0.75" Width="1.5" />
+  <Class Name="Jarai.Async.Lock.Gabel">
+    <Position X="5.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAJAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Gabel.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
   </Class>
+  <Enum Name="Jarai.Async.Lock.State">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAIAAIAAAAA=</HashCode>
+      <FileName>State.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

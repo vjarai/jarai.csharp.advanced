@@ -30,7 +30,10 @@ namespace Jarai.Generic.WithRestriction
         /// <param name="data">Data collection to be shown</param>
         private static void ShowData<T>(IEnumerable<T> data)
         {
-            foreach (var item in data) Console.WriteLine(item);
+            foreach (var item in data)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }

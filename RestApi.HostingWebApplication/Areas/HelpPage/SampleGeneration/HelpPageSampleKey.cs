@@ -121,7 +121,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
 
             return string.Equals(ControllerName, otherKey.ControllerName, StringComparison.OrdinalIgnoreCase) &&
                    string.Equals(ActionName, otherKey.ActionName, StringComparison.OrdinalIgnoreCase) &&
-                   (MediaType == otherKey.MediaType || (MediaType != null && MediaType.Equals(otherKey.MediaType))) &&
+                   (MediaType == otherKey.MediaType || MediaType != null && MediaType.Equals(otherKey.MediaType)) &&
                    ParameterType == otherKey.ParameterType &&
                    SampleDirection == otherKey.SampleDirection &&
                    ParameterNames.SetEquals(otherKey.ParameterNames);
@@ -133,7 +133,10 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
             if (MediaType != null) hashCode ^= MediaType.GetHashCode();
             if (SampleDirection != null) hashCode ^= SampleDirection.GetHashCode();
             if (ParameterType != null) hashCode ^= ParameterType.GetHashCode();
-            foreach (var parameterName in ParameterNames) hashCode ^= parameterName.ToUpperInvariant().GetHashCode();
+            foreach (var parameterName in ParameterNames)
+            {
+                hashCode ^= parameterName.ToUpperInvariant().GetHashCode();
+            }
 
             return hashCode;
         }

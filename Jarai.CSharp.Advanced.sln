@@ -29,7 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface1.Simple", "Interf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic2.Class", "Generic.Simple\Generic2.Class.csproj", "{86051384-25EB-422F-A0D2-EC1E4551A922}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Globalization", "06 Globalization", "{6BDAEBB1-8C91-4023-99D3-28E16DE739CC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 UI Globalization", "06 UI Globalization", "{6BDAEBB1-8C91-4023-99D3-28E16DE739CC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern5.Observer", "Pattern.Observer\Pattern5.Observer.csproj", "{75D5DD25-23E6-45B1-9B1E-850D66038FDF}"
 EndProject

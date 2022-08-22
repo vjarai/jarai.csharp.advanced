@@ -27,7 +27,10 @@ namespace Jarai.Patterns.Strategy
         {
             Console.WriteLine("Firma '{0}' produziert:", _name);
 
-            foreach (var arbeiter in Mitarbeiter) arbeiter.Arbeiten();
+            foreach (var arbeiter in Mitarbeiter)
+            {
+                arbeiter.Arbeiten();
+            }
         }
     }
 }

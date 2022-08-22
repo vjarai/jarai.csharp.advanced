@@ -3,12 +3,12 @@
 namespace Jarai.Patterns.Observer
 {
     /// <summary>
-    /// Obsolete: Eventhandling using delegate
+    ///     Obsolete: Eventhandling using delegate
     /// </summary>
     public class AktieWithCallbackDelegate : Aktie
     {
         /// <summary>
-        /// Define Signatur of the Callback
+        ///     Define Signatur of the Callback
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="eventArgs"></param>
@@ -20,13 +20,16 @@ namespace Jarai.Patterns.Observer
         }
 
         /// <summary>
-        /// List with the callbacks from all subscribed observers
+        ///     List with the callbacks from all subscribed observers
         /// </summary>
         public List<KursChangedCallback> Callbacks { get; } = new List<KursChangedCallback>();
 
         protected override void OnKursChanged()
         {
-            foreach (var callback in Callbacks) callback.Invoke(this, new KursChangedEventArg(Wkn, _letzterKurs, AktuellerKurs));
+            foreach (var callback in Callbacks)
+            {
+                callback.Invoke(this, new KursChangedEventArg(Wkn, _letzterKurs, AktuellerKurs));
+            }
         }
     }
 }

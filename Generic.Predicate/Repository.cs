@@ -16,14 +16,19 @@ namespace Jarai.Generic.Predicate
         {
             var random = new Random();
 
-            for (var i = 0; i < 100; i++) _records.Add(new Record { Id = i, Value = random.Next(100) });
+            for (var i = 0; i < 100; i++)
+            {
+                _records.Add(new Record { Id = i, Value = random.Next(100) });
+            }
         }
 
         public IEnumerable<Record> GetRecordsWhere(Predicate<Record> filterPredicate)
         {
             foreach (var record in _records)
+            {
                 if (filterPredicate(record))
                     yield return record; // ermöglicht deferred Execution
+            }
         }
     }
 }

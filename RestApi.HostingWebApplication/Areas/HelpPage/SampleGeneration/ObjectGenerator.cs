@@ -320,11 +320,13 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
             var properties = type.GetProperties(BindingFlags.Public | BindingFlags.Instance);
             var objectGenerator = new ObjectGenerator();
             foreach (var property in properties)
+            {
                 if (property.CanWrite)
                 {
                     var propertyValue = objectGenerator.GenerateObject(property.PropertyType, createdObjectReferences);
                     property.SetValue(obj, propertyValue, null);
                 }
+            }
         }
 
         private class SimpleTypeObjectGenerator

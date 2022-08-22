@@ -289,6 +289,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
         {
             var apiDescription = apiModel.ApiDescription;
             foreach (var apiParameter in apiDescription.ParameterDescriptions)
+            {
                 if (apiParameter.Source == ApiParameterSource.FromBody)
                 {
                     var parameterType = apiParameter.ParameterDescriptor.ParameterType;
@@ -302,6 +303,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
 
                     if (parameterType != null) apiModel.RequestModelDescription = modelGenerator.GetOrCreateModelDescription(parameterType);
                 }
+            }
         }
 
         private static void GenerateResourceDescription(HelpPageApiModel apiModel, ModelDescriptionGenerator modelGenerator)
@@ -342,6 +344,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
         {
             var apiDescription = apiModel.ApiDescription;
             foreach (var apiParameter in apiDescription.ParameterDescriptions)
+            {
                 if (apiParameter.Source == ApiParameterSource.FromUri)
                 {
                     var parameterDescriptor = apiParameter.ParameterDescriptor;
@@ -378,7 +381,10 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
                     if (complexTypeDescription != null
                         && !IsBindableWithTypeConverter(parameterType))
                     {
-                        foreach (var uriParameter in complexTypeDescription.Properties) apiModel.UriParameters.Add(uriParameter);
+                        foreach (var uriParameter in complexTypeDescription.Properties)
+                        {
+                            apiModel.UriParameters.Add(uriParameter);
+                        }
                     }
                     else if (parameterDescriptor != null)
                     {
@@ -404,6 +410,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
                         AddParameterDescription(apiModel, apiParameter, modelDescription);
                     }
                 }
+            }
         }
 
         private static ModelDescriptionGenerator InitializeModelDescriptionGenerator(HttpConfiguration config)
@@ -439,7 +446,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
         {
             parameterDescription = apiDescription.ParameterDescriptions.FirstOrDefault(
                 p => p.Source == ApiParameterSource.FromBody ||
-                     (p.ParameterDescriptor != null && p.ParameterDescriptor.ParameterType == typeof(HttpRequestMessage)));
+                     p.ParameterDescriptor != null && p.ParameterDescriptor.ParameterType == typeof(HttpRequestMessage));
 
             if (parameterDescription == null)
             {

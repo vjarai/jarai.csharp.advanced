@@ -8,7 +8,7 @@ namespace Jarai.Refresher.Relations
 
         private readonly Rad[] _räder = new Rad[4];
 
-        private Motor _motor;
+        private readonly Motor _motor;
 
         public Kfz(string marke)
         {
@@ -16,7 +16,9 @@ namespace Jarai.Refresher.Relations
             _motor = new Motor(100);
 
             for (var i = 0; i < 4; i++)
+            {
                 _räder[i] = new Rad(60);
+            }
         }
 
         public virtual void Anzeigen()

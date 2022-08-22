@@ -10,14 +10,14 @@ namespace Jarai.Patterns.FactoryMethod
 
         protected string Name;
 
-        public double Preis { get; }
-
 
         protected Möbel(string name, double preis)
         {
             Name = name;
             Preis = preis;
         }
+
+        public double Preis { get; }
 
         public abstract void Benutzen(); // Abstracte Methoden MÜSSEN überschrieben werden
 

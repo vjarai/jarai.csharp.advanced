@@ -14,7 +14,10 @@ namespace Jarai.Patterns.Observer
 
         protected override void OnKursChanged()
         {
-            foreach (var callback in Callbacks) callback.Invoke(this, new KursChangedEventArg(Wkn, _letzterKurs, AktuellerKurs));
+            foreach (var callback in Callbacks)
+            {
+                callback.Invoke(this, new KursChangedEventArg(Wkn, _letzterKurs, AktuellerKurs));
+            }
         }
     }
 }

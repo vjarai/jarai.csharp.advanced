@@ -7,12 +7,12 @@ namespace Jarai.Patterns.FactoryMethod
 {
     public class Ikea
     {
-        private static double _konzernumsatz = 0;
-        private double _filialumsatz;
+        private static double _konzernumsatz;
         private readonly string _standort;
+        private double _filialumsatz;
 
         /// <summary>
-        /// Static Construcor / Class Initializer is called before first instance is constructed
+        ///     Static Construcor / Class Initializer is called before first instance is constructed
         /// </summary>
         static Ikea()
         {
@@ -34,7 +34,7 @@ namespace Jarai.Patterns.FactoryMethod
         }
 
         /// <summary>
-        /// Factory Method: Erstellt Möbel Instanzen unterschiedlichen Typs
+        ///     Factory Method: Erstellt Möbel Instanzen unterschiedlichen Typs
         /// </summary>
         /// <returns>Neues Möbel</returns>
         public Möbel Verkaufen()
