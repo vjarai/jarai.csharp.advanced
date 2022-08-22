@@ -27,19 +27,15 @@ namespace Jarai.Async.Lock
             }
         }
 
-        private static Philosoph[] ErstellePhilosophen(Gabel[] gabeln)
+        private static IEnumerable<Philosoph> ErstellePhilosophen(Gabel[] gabeln)
         {
-            var philosophen = new Philosoph[gabeln.Length];
-
-            for (var i = 0; i < philosophen.Length; i++)
+            for (var i = 0; i < gabeln.Length; i++)
             {
-                philosophen[i] = new Philosoph("Philosoph" + (i + 1), gabeln[i], gabeln[i == gabeln.Length - 1 ? 0 : i + 1])
+                yield return new Philosoph("Philosoph" + (i + 1), gabeln[i], gabeln[i == gabeln.Length - 1 ? 0 : i + 1])
                 {
-                    MaxAlter = 5
+                    MaxAlter = 85
                 };
             }
-
-            return philosophen;
         }
 
         private static void Main(string[] args)

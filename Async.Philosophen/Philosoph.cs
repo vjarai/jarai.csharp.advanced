@@ -33,12 +33,12 @@ namespace Jarai.Async.Lock
 
             while (++Alter < MaxAlter)
             {
-                Console.WriteLine(this);
-
                 Thread.Sleep(_random.Next(500));
 
                 if (_state == State.Denkend)
                     _state = State.Hungrig;
+
+                Console.WriteLine(this);
 
                 if (_state == State.Hungrig)
                     EssenMitDeadlock();
@@ -63,7 +63,7 @@ namespace Jarai.Async.Lock
             {
                 LinkeGabel.Grab(this);
 
-                Thread.Sleep(_random.Next(300));
+                Thread.Sleep(_random.Next(200));
 
                 lock (RechteGabel)
                 {
