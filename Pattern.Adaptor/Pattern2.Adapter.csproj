@@ -73,7 +73,7 @@
     <Compile Include="Letter.cs" />
     <Compile Include="Printer.cs" />
     <Compile Include="PdfCreator.cs" />
-    <Compile Include="PdfDruckerAdapter.cs" />
+    <Compile Include="PdfCreatorToPrinterAdapter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

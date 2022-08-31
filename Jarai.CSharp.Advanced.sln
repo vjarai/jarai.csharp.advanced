@@ -59,7 +59,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization", "Optional.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async2.Lock.Philosophen", "Async.Philosophen\Async2.Lock.Philosophen.csproj", "{A0600BCE-7430-44DF-8708-CC595601E700}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Callbacks", "04 Callbacks", "{7A31E21B-F0D8-43EB-9AE1-0DA6A164C8E8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Delegates+Events", "04 Delegates+Events", "{7A31E21B-F0D8-43EB-9AE1-0DA6A164C8E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RestApi", "RestApi", "{F33C413B-AC65-4C38-B69A-F41AB8717960}"
 EndProject
