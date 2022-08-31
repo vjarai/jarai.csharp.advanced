@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Northwind.RestApi.HostingWebApplication.WebApiApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Jarai.RestApi.HostingWebApplication.WebApiApplication" Language="C#" %>
