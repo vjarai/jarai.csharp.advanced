@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jarai.Generic.Method
+namespace Jarai.Generic.Parameters
 {
     internal class Program
     {

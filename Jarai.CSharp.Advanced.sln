@@ -21,13 +21,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Generics", "03 Generics"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Async", "06 Async", "{32201F16-65AA-4636-BF98-86A8CBBF5548}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic3.Restriction", "Generic.WithRestriction\Generic3.Restriction.csproj", "{6EB418A6-8D15-4A32-9315-A24182655C6F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic4.Restriction", "Generic.WithRestriction\Generic4.Restriction.csproj", "{6EB418A6-8D15-4A32-9315-A24182655C6F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface2.INotifyPropertyChanged", "Interface.INotifyPropertyChanged\Interface2.INotifyPropertyChanged.csproj", "{7BF68E0E-C2A3-4BA7-B7DC-7A273541D4CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface1.Simple", "Interface.Simple\Interface1.Simple.csproj", "{CB30B5F7-ECEF-454C-93F3-6773EEF9CF00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic2.Class", "Generic.Simple\Generic2.Class.csproj", "{86051384-25EB-422F-A0D2-EC1E4551A922}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic3.Class", "Generic.Simple\Generic3.Class.csproj", "{86051384-25EB-422F-A0D2-EC1E4551A922}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 UI Globalization", "06 UI Globalization", "{6BDAEBB1-8C91-4023-99D3-28E16DE739CC}"
 EndProject
@@ -41,15 +41,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Optional.Refl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface3.IEnumerable", "Interface.IEnumerable\Interface3.IEnumerable.csproj", "{364E0B31-ED74-4073-8554-2878482136F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic5.Func", "Generic.Func\Generic5.Func.csproj", "{1E7394CA-CFCA-4DFD-9B4C-FCFB8177EE14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic6.Func", "Generic.Func\Generic6.Func.csproj", "{1E7394CA-CFCA-4DFD-9B4C-FCFB8177EE14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic6.Predicate", "Generic.Predicate\Generic6.Predicate.csproj", "{FC34CA31-0FD9-45FB-9765-C6C6B2B2ED16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic7.Predicate", "Generic.Predicate\Generic7.Predicate.csproj", "{FC34CA31-0FD9-45FB-9765-C6C6B2B2ED16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic7.LazyLoad", "Generic.LazyLoad\Generic7.LazyLoad.csproj", "{7276709A-1287-43D6-94A8-7BA129886109}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic8.LazyLoad", "Generic.LazyLoad\Generic8.LazyLoad.csproj", "{7276709A-1287-43D6-94A8-7BA129886109}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic4.Collections", "Generic.Collections\Generic4.Collections.csproj", "{0711DBD7-6CA0-4203-B8BF-009C74B3831C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic5.Collections", "Generic.Collections\Generic5.Collections.csproj", "{0711DBD7-6CA0-4203-B8BF-009C74B3831C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic1.Method", "Generic.Method\Generic1.Method.csproj", "{94C97D99-5119-44D3-88EC-8E469B798A4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic1.Parameters", "Generic.Method\Generic1.Parameters.csproj", "{94C97D99-5119-44D3-88EC-8E469B798A4D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tupel", "Tupel\Tupel.csproj", "{3BA933EA-3F42-43C6-8D15-53CCC5F24F3C}"
 EndProject
@@ -82,6 +82,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.Example4", "Async.Example4\Async.Example4.csproj", "{226B64A3-31F5-4018-9A04-A525C1C15259}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.HostingWebApplication", "RestApi.HostingWebApplication\RestApi.HostingWebApplication.csproj", "{D762EA68-D59B-4EF2-96F0-6451F882F836}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic2.ReturnType", "Generic.ReturnType\Generic2.ReturnType.csproj", "{203C3BBD-66B6-4242-AC31-9C74B1563302}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -213,6 +215,10 @@ Global
 		{D762EA68-D59B-4EF2-96F0-6451F882F836}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D762EA68-D59B-4EF2-96F0-6451F882F836}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D762EA68-D59B-4EF2-96F0-6451F882F836}.Release|Any CPU.Build.0 = Release|Any CPU
+		{203C3BBD-66B6-4242-AC31-9C74B1563302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{203C3BBD-66B6-4242-AC31-9C74B1563302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{203C3BBD-66B6-4242-AC31-9C74B1563302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{203C3BBD-66B6-4242-AC31-9C74B1563302}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -250,6 +256,7 @@ Global
 		{9A98F0B4-8EC2-4E64-9052-07FC9A6EBB03} = {32201F16-65AA-4636-BF98-86A8CBBF5548}
 		{226B64A3-31F5-4018-9A04-A525C1C15259} = {32201F16-65AA-4636-BF98-86A8CBBF5548}
 		{D762EA68-D59B-4EF2-96F0-6451F882F836} = {F33C413B-AC65-4C38-B69A-F41AB8717960}
+		{203C3BBD-66B6-4242-AC31-9C74B1563302} = {B91FF15C-3676-4B0B-9171-8DEF7514CAC6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73EF6AE5-AE88-4482-B21E-DA5F869E622D}
