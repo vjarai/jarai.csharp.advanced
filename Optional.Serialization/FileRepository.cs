@@ -1,4 +1,4 @@
-﻿namespace Jarai.Serialization
+﻿namespace Jarai.CSharp.Serialization
 {
     internal abstract class FileRepository
     {

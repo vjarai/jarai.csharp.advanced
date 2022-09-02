@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using Newtonsoft.Json;
 
-namespace Jarai.Serialization
+namespace Jarai.CSharp.Serialization
 {
     internal class JsonFileRepository : FileRepository
     {

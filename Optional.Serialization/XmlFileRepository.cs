@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Xml.Serialization;
 
-namespace Jarai.Serialization
+namespace Jarai.CSharp.Serialization
 {
     internal class XmlFileRepository : FileRepository
     {

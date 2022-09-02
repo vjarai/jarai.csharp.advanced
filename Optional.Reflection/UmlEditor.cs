@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Jarai.Reflection
+namespace Jarai.CSharp.Reflection
 {
     internal class UmlEditor
     {
