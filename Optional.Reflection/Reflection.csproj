@@ -7,8 +7,8 @@
     <ProjectGuid>{5EAD1A82-7FD4-40C3-83A1-8D727DAFB33D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jarai.Reflection</RootNamespace>
-    <AssemblyName>Jarai.Reflection</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Reflection</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Reflection</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>

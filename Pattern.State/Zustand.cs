@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace Jarai.Patterns.State
+namespace Jarai.CSharp.Pattern.State
 {
     public abstract class Zustand
     {

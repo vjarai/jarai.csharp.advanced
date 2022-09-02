@@ -1,8 +1,8 @@
 using System;
 using System.Diagnostics;
-using Jarai.Patterns.FactoryMethod.Exceptions;
+using Jarai.CSharp.Pattern.FactoryMethod.Exceptions;
 
-namespace Jarai.Patterns.FactoryMethod
+namespace Jarai.CSharp.Pattern.FactoryMethod
 {
     internal class Program
     {

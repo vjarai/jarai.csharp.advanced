@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace Jarai.Interface.IEnumerable
+namespace Jarai.CSharp.Interface.IEnumerable
 {
     internal class Phonebook : IEnumerable<PhonebookEntry>
     {

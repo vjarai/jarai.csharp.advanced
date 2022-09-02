@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jarai.Generic.WithRestriction
+namespace Jarai.CSharp.Generic.WithRestriction
 {
     internal class Pkw : IComparable<Pkw>
     {

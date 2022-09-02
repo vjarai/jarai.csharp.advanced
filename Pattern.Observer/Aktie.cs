@@ -1,4 +1,4 @@
-﻿namespace Jarai.Patterns.Observer
+﻿namespace Jarai.CSharp.Patterns.Observer
 {
     public abstract class Aktie
     {

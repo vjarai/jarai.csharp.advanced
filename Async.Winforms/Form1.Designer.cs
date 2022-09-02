@@ -1,4 +1,4 @@
-﻿namespace Jarai.Async.Winforms
+﻿namespace Jarai.CSharp.Async.Winforms
 {
     partial class Form1
     {

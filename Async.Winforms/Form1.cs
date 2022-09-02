@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Jarai.Async.Winforms
+namespace Jarai.CSharp.Async.Winforms
 {
     public partial class Form1 : Form
     {

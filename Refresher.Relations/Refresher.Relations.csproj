@@ -8,8 +8,8 @@
     <ProjectGuid>{BE8CB63B-168F-414A-99EC-BE320CA5A85B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jarai.Refresher.Relations</RootNamespace>
-    <AssemblyName>Jarai.Refresher.Relations</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Refresher.Relations</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Refresher.Relations</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
@@ -70,13 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bus.cs" />
-    <Compile Include="Kfz.cs" />
     <Compile Include="Lkw.cs" />
+    <Compile Include="Kfz.cs" />
+    <Compile Include="Pkw.cs" />
     <Compile Include="Motor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rad.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

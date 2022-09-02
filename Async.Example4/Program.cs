@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Jarai.Async.Example4
+namespace Jarai.CSharp.Async.Example4
 {
     internal class Program
     {

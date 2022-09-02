@@ -1,5 +1,5 @@
 ﻿
-namespace Jarai.Globalization.WinForms
+namespace Jarai.CSharp.Globalization.WinForms
 {
     partial class Form1
     {

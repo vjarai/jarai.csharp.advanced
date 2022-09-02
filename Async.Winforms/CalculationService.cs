@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 // https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/
 
-namespace Jarai.Async.Winforms
+namespace Jarai.CSharp.Async.Winforms
 {
     internal class CalculationService
     {

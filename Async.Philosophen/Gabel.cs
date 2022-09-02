@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jarai.Async.Lock
+namespace Jarai.CSharp.Async.Lock
 {
     internal class Gabel
     {

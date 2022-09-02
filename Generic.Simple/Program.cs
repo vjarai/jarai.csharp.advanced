@@ -1,6 +1,6 @@
 using System;
 
-namespace Jarai.Generic.Class
+namespace Jarai.CSharp.Generic.Class
 {
     internal class Program
     {

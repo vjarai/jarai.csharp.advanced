@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jarai.Async.Winforms
+namespace Jarai.CSharp.Async.Winforms
 {
     internal class CalculationResult
     {

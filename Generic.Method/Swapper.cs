@@ -1,4 +1,4 @@
-﻿namespace Jarai.Generic.Parameters
+﻿namespace Jarai.CSharp.Generic.Parameters
 {
     internal class Swapper
     {

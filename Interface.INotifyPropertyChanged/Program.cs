@@ -1,4 +1,4 @@
-﻿namespace Jarai.Interface.INotifyPropertyChanged
+﻿namespace Jarai.CSharp.Interface.INotifyPropertyChanged
 {
     internal class Program
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Jarai.Generic.WithRestriction
+namespace Jarai.CSharp.Generic.WithRestriction
 {
     internal class SortAlgorithm
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jarai.Generic.ReturnType
+namespace Jarai.CSharp.Generic.ReturnType
 {
     internal class Engine
     {

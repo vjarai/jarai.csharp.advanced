@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{44DD3141-4107-442C-82BD-332EEAFC0E91}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Jarai.Serialization</RootNamespace>
-    <AssemblyName>Jarai.Serialization</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Serialization</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Serialization</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jarai.Patterns.Adapter
+namespace Jarai.CSharp.Pattern.Adapter
 {
     internal class Program
     {

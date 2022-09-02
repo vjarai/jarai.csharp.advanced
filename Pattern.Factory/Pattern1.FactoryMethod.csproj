@@ -7,8 +7,8 @@
     <ProjectGuid>{04B41FC9-23B7-4F57-A3AA-48E3F5F007AF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jarai.Patterns.FactoryMethod</RootNamespace>
-    <AssemblyName>Jarai.Patterns.FactoryMethod</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Pattern.FactoryMethod</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Pattern.FactoryMethod</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>

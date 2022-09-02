@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Jarai.Generic.Collections
+namespace Jarai.CSharp.Generic.Collections
 {
     internal class Program
     {

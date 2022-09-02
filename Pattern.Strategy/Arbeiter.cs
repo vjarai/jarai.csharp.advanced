@@ -1,4 +1,4 @@
-﻿namespace Jarai.Patterns.Strategy
+﻿namespace Jarai.CSharp.Pattern.Strategy
 {
     public abstract class Arbeiter
     {

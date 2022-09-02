@@ -1,4 +1,4 @@
-﻿namespace Jarai.Async.Lock
+﻿namespace Jarai.CSharp.Async.Lock
 {
     internal enum State
     {

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6EB418A6-8D15-4A32-9315-A24182655C6F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Jarai.Generic.WithRestriction</RootNamespace>
-    <AssemblyName>Jarai.Generic.WithRestriction</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Generic.WithRestriction</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Generic.WithRestriction</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

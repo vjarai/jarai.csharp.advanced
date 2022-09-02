@@ -1,6 +1,6 @@
 using System;
 
-namespace Jarai.Patterns.FactoryMethod.Exceptions
+namespace Jarai.CSharp.Pattern.FactoryMethod.Exceptions
 {
     public class NichtAufLagerException : Exception
     {

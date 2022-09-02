@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace Jarai.Patterns.FactoryMethod
+namespace Jarai.CSharp.Pattern.FactoryMethod
 {
     public class Stuhl : Möbel
     {

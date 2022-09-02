@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Jarai.Globalization.Wpf
+namespace Jarai.CSharp.Globalization.Wpf
 {
     /// <summary>
     ///     Interaction logic for MainWindow.xaml

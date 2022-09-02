@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{08868170-42D0-4092-9E02-B0F71BE18952}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Jarai.Globalization.WinForms</RootNamespace>
-    <AssemblyName>Jarai.Globalization.WinForms</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Globalization.WinForms</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Globalization.WinForms</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

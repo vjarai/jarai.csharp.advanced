@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jarai.Patterns.Observer
+namespace Jarai.CSharp.Patterns.Observer
 {
     public class KursChangedEventArg : EventArgs
     {

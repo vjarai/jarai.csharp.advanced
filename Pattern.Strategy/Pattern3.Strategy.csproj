@@ -8,8 +8,8 @@
     <ProjectGuid>{00018274-87AE-4A78-B452-E4FEDFDAAA10}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jarai.Patterns.Strategy</RootNamespace>
-    <AssemblyName>Jarai.Patterns.Strategy</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Pattern.Strategy</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Pattern.Strategy</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>

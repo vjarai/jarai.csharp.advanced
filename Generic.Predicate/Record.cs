@@ -1,4 +1,4 @@
-﻿namespace Jarai.Generic.Predicate
+﻿namespace Jarai.CSharp.Generic.Predicate
 {
     public class Record
     {

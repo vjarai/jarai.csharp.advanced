@@ -1,4 +1,4 @@
-namespace Jarai.Generic.Class
+namespace Jarai.CSharp.Generic.Class
 {
     public class Container<T /* ,U */>
         /* where T: new(), Class, Interface */

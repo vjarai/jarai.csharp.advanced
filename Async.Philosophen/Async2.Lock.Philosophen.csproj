@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A0600BCE-7430-44DF-8708-CC595601E700}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Jarai.Async.Lock</RootNamespace>
-    <AssemblyName>Jarai.Async.Lock</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Async.Lock</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Async.Lock</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

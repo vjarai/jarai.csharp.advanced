@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Jarai.Patterns.Strategy
+namespace Jarai.CSharp.Pattern.Strategy
 {
     public class Firma
     {

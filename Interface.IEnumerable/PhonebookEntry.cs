@@ -1,4 +1,4 @@
-﻿namespace Jarai.Interface.IEnumerable
+﻿namespace Jarai.CSharp.Interface.IEnumerable
 {
     internal class PhonebookEntry
     {

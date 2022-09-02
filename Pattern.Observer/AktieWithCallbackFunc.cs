@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Jarai.Patterns.Observer
+namespace Jarai.CSharp.Patterns.Observer
 {
     public class AktieWithCallbackFunc : Aktie
     {

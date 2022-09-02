@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{FC34CA31-0FD9-45FB-9765-C6C6B2B2ED16}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Jarai.Generic.Predicate</RootNamespace>
-    <AssemblyName>Jarai.Generic.Predicate</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Generic.Predicate</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Generic.Predicate</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

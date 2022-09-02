@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Jarai.Generic.Predicate
+namespace Jarai.CSharp.Generic.Predicate
 {
     internal class Repository
     {

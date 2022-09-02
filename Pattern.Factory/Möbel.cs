@@ -1,6 +1,6 @@
-using Jarai.Patterns.FactoryMethod.Exceptions;
+using Jarai.CSharp.Pattern.FactoryMethod.Exceptions;
 
-namespace Jarai.Patterns.FactoryMethod
+namespace Jarai.CSharp.Pattern.FactoryMethod
 {
     public abstract class Möbel // Sobald eine Klasse mindestens eine abstracte Methode enthält,
         // wird die Klasse zur abstracten Basisclasse (ABC)

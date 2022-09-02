@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Jarai.Async.Winforms
+namespace Jarai.CSharp.Async.Winforms
 {
     internal static class Program
     {

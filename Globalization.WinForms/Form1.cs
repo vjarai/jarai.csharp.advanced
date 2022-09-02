@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
-using Jarai.Globalization.WinForms.Properties;
 
-namespace Jarai.Globalization.WinForms
+namespace Jarai.CSharp.Globalization.WinForms
 {
     public partial class Form1 : Form
     {

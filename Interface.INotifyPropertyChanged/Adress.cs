@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Jarai.Interface.INotifyPropertyChanged
+namespace Jarai.CSharp.Interface.INotifyPropertyChanged
 {
     internal class Adress : System.ComponentModel.INotifyPropertyChanged
     {

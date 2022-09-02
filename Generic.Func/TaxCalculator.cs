@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jarai.Generic.Func
+namespace Jarai.CSharp.Generic.Func
 {
     internal class TaxCalculator
     {

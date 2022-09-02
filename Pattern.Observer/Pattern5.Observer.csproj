@@ -8,8 +8,8 @@
     <ProjectGuid>{75D5DD25-23E6-45B1-9B1E-850D66038FDF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jarai.Patterns.Observer</RootNamespace>
-    <AssemblyName>Jarai.Patterns.Observer</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Patterns.Observer</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Patterns.Observer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>

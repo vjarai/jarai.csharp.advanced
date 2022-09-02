@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{226B64A3-31F5-4018-9A04-A525C1C15259}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Jarai.Async.Example4</RootNamespace>
-    <AssemblyName>Jarai.Async.Example4</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Async.Example4</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Async.Example4</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -1,4 +1,4 @@
-namespace Jarai.Interface.Simple
+namespace Jarai.CSharp.Interface.Simple
 {
     internal interface IFahrbar
     {

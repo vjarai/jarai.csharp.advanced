@@ -1,6 +1,6 @@
 using System;
 
-namespace Jarai.Interface.Simple
+namespace Jarai.CSharp.Interface.Simple
 {
     internal class Maler
     {

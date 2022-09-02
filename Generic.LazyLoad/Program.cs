@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jarai.Generic.LazyLoad
+namespace Jarai.CSharp.Generic.LazyLoad
 {
     internal class Program
     {

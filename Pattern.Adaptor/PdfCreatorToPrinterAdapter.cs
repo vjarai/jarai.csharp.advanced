@@ -1,4 +1,4 @@
-﻿namespace Jarai.Patterns.Adapter
+﻿namespace Jarai.CSharp.Pattern.Adapter
 {
     public class PdfCreatorToPrinterAdapter : Printer
     {

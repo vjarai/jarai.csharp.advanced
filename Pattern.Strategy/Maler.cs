@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jarai.Patterns.Strategy
+namespace Jarai.CSharp.Pattern.Strategy
 {
     public class Maler : Arbeiter
     {
