@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Jarai.CSharp.Globalization.WinForms.Properties;
 
 namespace Jarai.CSharp.Globalization.WinForms
 {
