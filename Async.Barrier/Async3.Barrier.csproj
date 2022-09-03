@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{61FE3D3A-03D0-41B9-93BC-C131E8C683F5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Async.Barrier</RootNamespace>
-    <AssemblyName>Async.Barrier</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Async.Barrier</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Async.Barrier</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
