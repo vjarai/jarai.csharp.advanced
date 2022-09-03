@@ -9,19 +9,24 @@ namespace Jarai.CSharp.Async.Winforms
 {
     internal class CalculationService
     {
-        public CalculationResult Calculate(IEnumerable<int> input)
+        public CalculationResult Calculate(IEnumerable<int> input, CancellationToken cancellationToken)
         {
-            var result = new CalculationResult(input.Sum());
+            int result = 0;
 
-            Thread.Sleep(3000); // Simulate long running operation
+            foreach (var i in input)
+            {
+                result += i;
+                Thread.Sleep(3); // Simulate long running operation
 
-            return result;
+                cancellationToken.ThrowIfCancellationRequested();  // Abort, if canceled from UI
+            }
+            
+            return new CalculationResult(result);
         }
 
-        public Task<CalculationResult> CalculateAsync(IEnumerable<int> input)
+        public Task<CalculationResult> CalculateAsync(IEnumerable<int> input, CancellationToken cancellationToken)
         {
-            var task = Task.Run(() => Calculate(input));
-
+            var task = Task.Run(() => Calculate(input, cancellationToken), cancellationToken);
             return task;
         }
     }
