@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Refresher", "01 Refreshe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern4.State", "Pattern.State\Pattern4.State.csproj", "{E35B3213-A6F4-4DD0-AB77-379240D6E6C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern2.Adapter", "Pattern.Adaptor\Pattern2.Adapter.csproj", "{DD0BCF94-246C-4B41-909C-93D3A34C858A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern3.Adapter", "Pattern.Adaptor\Pattern3.Adapter.csproj", "{DD0BCF94-246C-4B41-909C-93D3A34C858A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern3.Strategy", "Pattern.Strategy\Pattern3.Strategy.csproj", "{00018274-87AE-4A78-B452-E4FEDFDAAA10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern2.Strategy", "Pattern.Strategy\Pattern2.Strategy.csproj", "{00018274-87AE-4A78-B452-E4FEDFDAAA10}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Interfaces", "05 Interfaces", "{A76503F5-B9DB-4ECF-B1FC-A8E27A0DC9EA}"
 EndProject

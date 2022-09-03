@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Jarai.CSharp.Interface.IEnumerable
@@ -10,6 +11,15 @@ namespace Jarai.CSharp.Interface.IEnumerable
         public void Add(PhonebookEntry entry)
         {
             _entries.Add(entry);
+        }
+
+        public IEnumerable<PhonebookEntry> FindAll(Predicate<PhonebookEntry> filterPredicate)
+        {
+            foreach (var phonebookEntry in _entries)
+            {
+                if (filterPredicate(phonebookEntry))
+                    yield return phonebookEntry;
+            }
         }
 
         public IEnumerator<PhonebookEntry> GetEnumerator()

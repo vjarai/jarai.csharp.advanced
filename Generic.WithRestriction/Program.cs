@@ -21,6 +21,11 @@ namespace Jarai.CSharp.Generic.WithRestriction
 
             sortAlgorithm.SortDescending(myList);
             ShowData(myList);
+
+            sortAlgorithm.Sort(myList, new PkwComparer());
+            ShowData(myList);
+
+            Console.ReadLine();
         }
 
         /// <summary>

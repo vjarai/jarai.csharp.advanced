@@ -1,4 +1,3 @@
-using System;
 using System.Diagnostics;
 
 namespace Jarai.CSharp.Pattern.State
@@ -8,61 +7,48 @@ namespace Jarai.CSharp.Pattern.State
         // Ein Telefon hat einen zustand
         // Beispiel für "Zustand Entwurfsmuster"
 
+        private Zustand _aktuellerZustand;
+
         public Telefon()
         {
             AktuellerZustand = new Aufgelegt();
         }
 
-        public Zustand AktuellerZustand { get; private set; }
+        public Zustand AktuellerZustand
+        {
+            get
+            {
+                Debug.WriteLine("\nAktueller Zustand: " + _aktuellerZustand);
+                return _aktuellerZustand;
+            }
+            private set { _aktuellerZustand = value; }
+        }
 
         public void Abheben()
         {
-            Debug.WriteLine("\nAktueller Zustand: " + AktuellerZustand);
-            // Die tatsächliche aktion ist abhängig vom aktuellen Zustand
-            // (spätes binden)
-            AktualisiereZustand(AktuellerZustand.Abheben());
+            // Die tatsächlich aufgerufene Methode ist abhängig vom aktuellen Zustand (spätes binden)
+            AktuellerZustand = AktuellerZustand.Abheben();
         }
 
         public void AnnehmenAnruf()
         {
-            Debug.WriteLine("\nAktueller Zustand: " + AktuellerZustand);
-
-            AktualisiereZustand(AktuellerZustand.AnnehmenAnruf());
+            AktuellerZustand = AktuellerZustand.AnnehmenAnruf();
         }
 
 
         public void Auflegen()
         {
-            Debug.WriteLine("\nAktueller Zustand: " + AktuellerZustand);
-            AktualisiereZustand(AktuellerZustand.Auflegen());
+            AktuellerZustand = AktuellerZustand.Auflegen();
         }
 
         public void Sprechen()
         {
-            Debug.WriteLine("\nAktueller Zustand: " + AktuellerZustand);
             AktuellerZustand = AktuellerZustand.Sprechen();
         }
 
         public void Wählen()
         {
-            Debug.WriteLine("\nAktueller Zustand: " + AktuellerZustand);
-            AktualisiereZustand(AktuellerZustand.Wählen());
-        }
-
-        public event EventHandler OnZustandGeändert;
-
-        private bool AktualisiereZustand(Zustand neuerZustand)
-        {
-            var istGeändert = false;
-
-            if (AktuellerZustand != neuerZustand)
-            {
-                istGeändert = true;
-                AktuellerZustand = neuerZustand;
-                if (OnZustandGeändert != null) OnZustandGeändert(this, null);
-            }
-
-            return istGeändert;
+            AktuellerZustand = AktuellerZustand.Wählen();
         }
     }
 }

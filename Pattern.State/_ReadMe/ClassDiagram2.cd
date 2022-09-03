@@ -3,39 +3,39 @@
   <Comment CommentText="Zustand Entwurfsmuster am Beispiel &quot;Telefon&quot;">
     <Position X="3.531" Y="0.635" Height="0.333" Width="2.94" />
   </Comment>
-  <Class Name="Patterns.State.Abgehoben">
-    <Position X="2.25" Y="4" Width="1.5" />
+  <Class Name="Jarai.CSharp.Pattern.State.Abgehoben">
+    <Position X="2.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>Abgehoben.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Patterns.State.Aufgelegt">
-    <Position X="6.75" Y="4" Width="1.5" />
+  <Class Name="Jarai.CSharp.Pattern.State.Aufgelegt">
+    <Position X="6.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Aufgelegt.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Patterns.State.Telefon">
+  <Class Name="Jarai.CSharp.Pattern.State.Telefon">
     <Position X="0.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>wAEAAAAAAAAAEAAQAAAAAgAAAAAAABAEgAAAAABABAA=</HashCode>
+      <HashCode>gAEAAAAAAAAAEAAAAAAAAAEAAAAAAAAAgAAAAABABAA=</HashCode>
       <FileName>Telefon.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="AktuellerZustand" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="Patterns.State.Verbunden">
-    <Position X="4.5" Y="4" Width="1.5" />
+  <Class Name="Jarai.CSharp.Pattern.State.Verbunden">
+    <Position X="4.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
       <FileName>Verbunden.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Patterns.State.Zustand">
-    <Position X="4.5" Y="1.25" Width="1.5" />
+  <Class Name="Jarai.CSharp.Pattern.State.Zustand">
+    <Position X="4.5" Y="1.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAEAAEAAAAAAAAAAAAAAAAgAAAAABABBA=</HashCode>
       <FileName>Zustand.cs</FileName>

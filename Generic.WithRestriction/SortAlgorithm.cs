@@ -19,5 +19,10 @@ namespace Jarai.CSharp.Generic.WithRestriction
         {
             dataToSort.Sort((x, y) => y.CompareTo(x));
         }
+
+        public void Sort<T>(List<T> dataToSort, IComparer<T> sortComparer)
+        {
+            dataToSort.Sort(sortComparer);
+        }
     }
 }
