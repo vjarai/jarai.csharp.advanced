@@ -15,8 +15,8 @@ namespace Jarai.CSharp.Pattern.Strategy
             firma2.Einstellen(new Schreiner("Gerd"));
             firma2.Einstellen(new Schreiner("Gregor"));
 
-            firma1.Produzieren();
-            firma2.Produzieren();
+            firma1.Produzieren();   // Wände werden gestrichen
+            firma2.Produzieren();   // Möbel werden produziert
 
             Console.Read();
         }
