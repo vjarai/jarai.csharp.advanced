@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Jarai.CSharp.Patterns.Observer
+namespace Jarai.CSharp.Pattern.Observer
 {
     public class Börse
     {

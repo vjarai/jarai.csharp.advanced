@@ -13,7 +13,12 @@ namespace Jarai.CSharp.Pattern.FactoryMethod
 
             try
             {
-                var meinMöbel = ikeaFrankfurt.Verkaufen();
+                Console.WriteLine("Was möchten Sie kaufen? (Tisch, Stuhl oder Leer).");
+                var möbelTyp = Console.ReadLine();
+
+                if (string.IsNullOrEmpty(möbelTyp)) return;
+
+                var meinMöbel = ikeaFrankfurt.Verkaufen(möbelTyp);
 
                 if (meinMöbel != null) // wurde etwas gekauft?
                 {

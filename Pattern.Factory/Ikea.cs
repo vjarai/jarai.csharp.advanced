@@ -37,23 +37,18 @@ namespace Jarai.CSharp.Pattern.FactoryMethod
         ///     Factory Method: Erstellt Möbel Instanzen unterschiedlichen Typs
         /// </summary>
         /// <returns>Neues Möbel</returns>
-        public Möbel Verkaufen()
+        public Möbel Verkaufen(string möbelTyp)
         {
             Console.WriteLine($"Willkommen bei Ikea {_standort}.");
-            Console.WriteLine("Was möchten Sie kaufen? (Tisch, Stuhl oder Leer).");
 
-            var eingabe = Console.ReadLine();
-
-            if (string.IsNullOrEmpty(eingabe))
-                return null;
-
-            var typeName = GetType().Namespace + "." + eingabe;
+           
+            var className = GetType().Namespace + "." + möbelTyp;
 
             // Instanz via Reflection über den Klassennamen erstellen
-            var möbel = (Möbel)Assembly.GetExecutingAssembly().CreateInstance(typeName, true);
+            var möbel = (Möbel)Assembly.GetExecutingAssembly().CreateInstance(className, true);
 
             if (möbel == null)
-                throw new NichtAufLagerException($"{eingabe} ist leider nicht auf Lager.");
+                throw new NichtAufLagerException($"{möbelTyp} ist leider nicht auf Lager.");
 
             _konzernumsatz += möbel.Preis;
             _filialumsatz += möbel.Preis;

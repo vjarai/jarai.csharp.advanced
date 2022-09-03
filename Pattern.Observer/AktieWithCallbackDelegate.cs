@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Jarai.CSharp.Patterns.Observer
+namespace Jarai.CSharp.Pattern.Observer
 {
     /// <summary>
     ///     Obsolete: Eventhandling using delegate
