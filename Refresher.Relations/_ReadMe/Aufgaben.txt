@@ -1,0 +1,20 @@
+﻿Übung: Relationen
+==================
+
+1. Erstellen Sie drei Klassen: Motor, Pkw, Kfz
+
+2. Welche Beziehungen existieren zwischen diesen drei Klassen?
+
+3. Erstellen Sie in Visual Studio ein Klassendiagramm (mit dem Klassen Designer).
+
+4. Erstellen Sie in Main() eine neue Pkw Instanz und rufen Sie dessen wichtigste Methoden auf.
+   Noch besser: Erstellen Sie ein TEST Projekt und testen Sie die wichtigsten Funktionen der Pkw Klasse.
+   Kommentieren Sie die drei "AAA" Bereiche (Arrange, Act, Assert) der Tests.
+
+6. Woran erkennt man die Beziehung Aggregation / Komposition?
+
+7. Woran erkennt man die Beziehung Vererbung?
+
+8. Wofür verwendet man Aggregation / Komposition?
+
+9. Wann verwendet man Vererbung?
