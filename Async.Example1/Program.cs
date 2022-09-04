@@ -5,7 +5,7 @@ namespace Jarai.CSharp.Async.Example1
 {
     internal class Program
     {
-        private static void LongProcess()
+        private static void LongProcess() 
         {
             Console.WriteLine("LongProcess Started");
 
