@@ -21,14 +21,14 @@ namespace Jarai.CSharp.Generic.Collections
             _myArray = _myList.ToArray();
             Console.WriteLine(_myArray[2]);
 
-            // Queues geben Elemente in gleicher Reihenfolge wieder aus
+            // Queues geben Elemente in gleicher Reihenfolge wieder aus (FIFO)
             _myQueue = new Queue<int>();
             _myQueue.Enqueue(10);
             _myQueue.Enqueue(50);
             Console.WriteLine(_myQueue.Dequeue());
             Console.WriteLine(_myQueue.Dequeue());
 
-            // Stacks geben Elemente in umgekehrter Reihenfolge wieder aus
+            // Stacks geben Elemente in umgekehrter Reihenfolge wieder aus (FILO)
             _myStack = new Stack<int>();
             _myStack.Push(10);
             _myStack.Push(50);

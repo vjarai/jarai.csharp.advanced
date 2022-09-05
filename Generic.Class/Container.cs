@@ -1,5 +1,9 @@
 namespace Jarai.CSharp.Generic.Class
 {
+    /// <summary>
+    /// Generische Containerklasse mit Nutzdaten (Value) vom Typ T
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class Container<T /* ,U */>
         /* where T: new(), Class, Interface */
         /* where U: new(), Class, Interface */

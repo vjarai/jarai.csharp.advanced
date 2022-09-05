@@ -23,7 +23,7 @@
         }
 
         /// <summary>
-        ///     BESSER: Generische Methode, tauscht die werte für beliebige Datentypen
+        ///     BESSER: Methode mit generischen Paramtern, tauscht die werte für beliebige Datentypen
         /// </summary>
         public static void Swap<T>(ref T x, ref T y)
         {
