@@ -6,8 +6,8 @@ namespace Jarai.CSharp.Pattern.Strategy
     {
         private static void Main(string[] args)
         {
-            var firma1 = new Firma("Mal mal was");
-            var firma2 = new Firma("Möbel maker");
+            var firma1 = new Firma("Malermeister Buntig");
+            var firma2 = new Firma("Schreinerei Maker");
 
             firma1.Einstellen(new Maler("Paul"));
             firma1.Einstellen(new Maler("Jens"));

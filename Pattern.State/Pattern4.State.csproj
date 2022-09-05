@@ -111,6 +111,7 @@
     <Compile Include="Verbunden.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Content Include="_ReadMe\Aufgabe.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
