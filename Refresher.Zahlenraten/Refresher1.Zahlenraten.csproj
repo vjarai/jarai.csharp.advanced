@@ -49,6 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="_ReadMe\ClassDiagram2.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_ReadMe\Aufgabe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Spiel Zahlenraten:&#xD;&#xA;============&#xD;&#xA;&#xD;&#xA;Der Computer denkt sich ein zufällige Zahl zwischen 1 und 100 aus, die der Spieler erraten muss.&#xD;&#xA;&#xD;&#xA;Hierzu muss der Spieler jeweils einen Tipp eingeben und der Computer antwortet, ob der Tipp zu klein, zu groß oder richtig war. Bei einem falschen Tipp &#xD;&#xA;&#xD;&#xA;Beim richtigen Tipp zeigt der Computer die Anzahl der benötigten Versuche an und fragt, ob das Spiel noch einmal von vorne beginnen soll.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Benötigte Kenntnisse:&#xD;&#xA;- Variablen, Datentypen, Typkonversionen&#xD;&#xA;- Kontrollstrukturen (Schleifen, Verzweigung)&#xD;&#xA;- Console (Ein-/Ausgabe)&#xD;&#xA;&#xD;&#xA;Optionale Erweiterungen:&#xD;&#xA;- Testprojekt anlegen&#xD;&#xA;- Code testbar machen (Refactoring)&#xD;&#xA;- Unit Test für die wichtigsten Funktionen erstellen">
+    <Position X="5.382" Y="2.257" Height="3.59" Width="4.519" />
+  </Comment>
+  <Class Name="Jarai.CSharp.Basics.Zahlenraten.Program">
+    <Position X="3.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
