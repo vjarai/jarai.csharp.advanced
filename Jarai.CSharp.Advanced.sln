@@ -75,9 +75,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.HostingWebApplicati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic2.ReturnType", "Generic.ReturnType\Generic2.ReturnType.csproj", "{203C3BBD-66B6-4242-AC31-9C74B1563302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refresher.Relations", "Refresher.Relations\Refresher.Relations.csproj", "{BE8CB63B-168F-414A-99EC-BE320CA5A85B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refresher2.Relations", "Refresher.Relations\Refresher2.Relations.csproj", "{BE8CB63B-168F-414A-99EC-BE320CA5A85B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refresher.Relations.Tests", "Refresher.Relations.Tests\Refresher.Relations.Tests.csproj", "{1D35024F-5BE8-4019-B3E3-6EAAD6AD47C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refresher2.Relations.Tests", "Refresher.Relations.Tests\Refresher2.Relations.Tests.csproj", "{1D35024F-5BE8-4019-B3E3-6EAAD6AD47C7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewFeatures", "NewFeatures\NewFeatures.csproj", "{E948423B-89CC-4CE4-B449-FC286A221CBA}"
 EndProject
@@ -90,6 +90,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic1.Parameters", "Generic.Parameters\Generic1.Parameters.csproj", "{94C97D99-5119-44D3-88EC-8E469B798A4D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern3.Adapter", "Pattern.Adapter\Pattern3.Adapter.csproj", "{DD0BCF94-246C-4B41-909C-93D3A34C858A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refresher1.Zahlenraten", "Refresher.Zahlenraten\Refresher1.Zahlenraten.csproj", "{E9502092-CD69-4684-BBCF-3059CA985A4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -237,6 +239,10 @@ Global
 		{DD0BCF94-246C-4B41-909C-93D3A34C858A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD0BCF94-246C-4B41-909C-93D3A34C858A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD0BCF94-246C-4B41-909C-93D3A34C858A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9502092-CD69-4684-BBCF-3059CA985A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9502092-CD69-4684-BBCF-3059CA985A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9502092-CD69-4684-BBCF-3059CA985A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9502092-CD69-4684-BBCF-3059CA985A4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -278,6 +284,7 @@ Global
 		{86051384-25EB-422F-A0D2-EC1E4551A922} = {B91FF15C-3676-4B0B-9171-8DEF7514CAC6}
 		{94C97D99-5119-44D3-88EC-8E469B798A4D} = {B91FF15C-3676-4B0B-9171-8DEF7514CAC6}
 		{DD0BCF94-246C-4B41-909C-93D3A34C858A} = {21D67637-14A8-4B8B-9A2C-966B7D044D2E}
+		{E9502092-CD69-4684-BBCF-3059CA985A4B} = {E88E8CAB-5A5E-407C-AACE-27184FB36584}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73EF6AE5-AE88-4482-B21E-DA5F869E622D}

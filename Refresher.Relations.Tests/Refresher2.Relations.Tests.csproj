@@ -74,9 +74,9 @@
     <Analyzer Include="..\packages\xunit.analyzers.0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Refresher.Relations\Refresher.Relations.csproj">
+    <ProjectReference Include="..\Refresher.Relations\Refresher2.Relations.csproj">
       <Project>{BE8CB63B-168F-414A-99EC-BE320CA5A85B}</Project>
-      <Name>Refresher.Relations</Name>
+      <Name>Refresher2.Relations</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
