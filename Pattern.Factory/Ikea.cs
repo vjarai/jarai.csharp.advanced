@@ -40,13 +40,12 @@ namespace Jarai.CSharp.Pattern.FactoryMethod
         public Möbel Verkaufen(string möbelTyp)
         {
             Console.WriteLine($"Willkommen bei Ikea {_standort}.");
-
-           
+            
             var className = GetType().Namespace + "." + möbelTyp;
 
-            // Instanz via Reflection über den Klassennamen erstellen
+            // Instanz via Reflection über den Klassennamen erstellen, statt new
             var möbel = (Möbel)Assembly.GetExecutingAssembly().CreateInstance(className, true);
-
+            
             if (möbel == null)
                 throw new NichtAufLagerException($"{möbelTyp} ist leider nicht auf Lager.");
 
