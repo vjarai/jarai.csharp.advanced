@@ -112,6 +112,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Content Include="_ReadMe\Aufgabe.txt" />
+    <Content Include="_ReadMe\TelefonZustandsdiagramm.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
