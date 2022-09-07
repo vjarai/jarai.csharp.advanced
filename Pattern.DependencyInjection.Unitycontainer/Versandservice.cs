@@ -2,11 +2,11 @@
 {
     public class Versandservice
     {
-        public Versandservice(Logger logger)
+        public Versandservice(ConsoleLogger logger)
         {
             Logger = logger;
         }
 
-        public Logger Logger { get; set; }
+        public ILogger Logger { get; set; }
     }
 }

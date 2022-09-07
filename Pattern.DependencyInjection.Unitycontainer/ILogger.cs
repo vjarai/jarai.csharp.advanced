@@ -1,6 +1,7 @@
 ﻿namespace Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer
 {
-    public class Logger
+    public interface ILogger
     {
+        void Write(string msg);
     }
 }

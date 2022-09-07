@@ -2,11 +2,11 @@
 {
     public class Bestellservice
     {
-        public Bestellservice(Logger logger)
+        public Bestellservice(ConsoleLogger logger)
         {
             Logger = logger;
         }
 
-        public Logger Logger { get; set; }
+        public ILogger Logger { get; set; }
     }
 }

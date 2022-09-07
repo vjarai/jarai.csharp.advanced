@@ -30,7 +30,7 @@ namespace Jarai.CSharp.Generic.LazyLoad
             {
                 if (!IsLoaded)
                 {
-                    _value = _loadingFunc.Invoke();
+                    _value = _loadingFunc();
                     IsLoaded = true;
                 }
 

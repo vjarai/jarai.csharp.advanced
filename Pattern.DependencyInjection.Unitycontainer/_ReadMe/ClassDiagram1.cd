@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="Beispiel für eine komplexe Applikation.">
+    <Position X="9.757" Y="0.931" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Composition Root Object">
+    <Position X="0.5" Y="1.504" Height="0.424" Width="1.7" />
+  </Comment>
   <Class Name="Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer.Applikation">
-    <Position X="3.25" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>Applikation.cs</FileName>
@@ -11,7 +17,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer.UserInterface">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Position X="2.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>UserInterface.cs</FileName>
@@ -21,18 +27,18 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer.ViewModel">
-    <Position X="0.5" Y="2" Width="1.5" />
+    <Position X="5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ViewModel.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Lagerverwaltung" />
       <Property Name="Buchhaltung" />
+      <Property Name="Lagerverwaltung" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer.Lagerverwaltung">
-    <Position X="3.25" Y="2" Width="1.5" />
+    <Position X="7.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Lagerverwaltung.cs</FileName>
@@ -43,7 +49,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer.Bestellservice">
-    <Position X="5.5" Y="3.5" Width="1.5" />
+    <Position X="10" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Bestellservice.cs</FileName>
@@ -53,7 +59,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer.Versandservice">
-    <Position X="3.25" Y="3.5" Width="1.5" />
+    <Position X="7.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Versandservice.cs</FileName>
@@ -63,21 +69,45 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer.Buchhaltung">
-    <Position X="0.5" Y="3.5" Width="1.5" />
+    <Position X="5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAIAIAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
       <FileName>Buchhaltung.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
+      <Field Name="_factory" />
       <Property Name="Logger" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer.Logger">
-    <Position X="3.25" Y="5" Width="1.5" />
+  <Class Name="Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer.FileLogger">
+    <Position X="6.5" Y="7.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Logger.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>FileLogger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer.ConsoleLogger">
+    <Position X="8.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ConsoleLogger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer.KontoFactory" Collapsed="true">
+    <Position X="2.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KontoFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Interface Name="Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer.ILogger" Collapsed="true">
+    <Position X="7.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ILogger.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

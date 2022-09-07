@@ -2,11 +2,18 @@
 {
     public class Buchhaltung
     {
-        public Buchhaltung(Logger logger)
+        private readonly KontoFactory _factory;
+
+        public Buchhaltung(ConsoleLogger logger, KontoFactory factory)
         {
+            _factory = factory;
             Logger = logger;
+
+            Konto = _factory.CreateKonto();
         }
 
-        public Logger Logger { get; set; }
+        public object Konto { get; set; }
+
+        public ILogger Logger { get; set; }
     }
 }

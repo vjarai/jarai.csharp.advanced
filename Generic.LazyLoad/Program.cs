@@ -17,7 +17,7 @@ namespace Jarai.CSharp.Generic.LazyLoad
 
         private static void Main(string[] args)
         {
-            var x = new LazyLoaded<int>(SlowCalculation);
+            var x = new Lazy<int>(SlowCalculation);
 
             var eingabe = Console.ReadLine();
 

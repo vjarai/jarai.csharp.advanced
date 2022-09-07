@@ -55,8 +55,11 @@
     <Compile Include="Applikation.cs" />
     <Compile Include="Bestellservice.cs" />
     <Compile Include="Buchhaltung.cs" />
+    <Compile Include="FileLogger.cs" />
+    <Compile Include="ILogger.cs" />
+    <Compile Include="KontoFactory.cs" />
     <Compile Include="Lagerverwaltung.cs" />
-    <Compile Include="Logger.cs" />
+    <Compile Include="ConsoleLogger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserInterface.cs" />
