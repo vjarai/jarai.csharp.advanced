@@ -19,6 +19,8 @@ namespace Jarai.CSharp.Pattern.Observer
 
             // Anleger abonnieren Kursänderungen
             tesla.KursChanged += anleger1.PrüfeKauf; // Events ist Best Practice
+            tesla.KursChanged -= anleger1.PrüfeKauf; // Events ist Best Practice
+
             msft.Callbacks.Add(anleger2.PrüfeKauf);  // Delegates sind im Prinzip "veraltet"
             dax.Callbacks.Add(anleger2.PrüfeVerkauf);// Action ist Nachfolger von Delegate 
 

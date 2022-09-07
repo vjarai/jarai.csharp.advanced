@@ -29,8 +29,10 @@ namespace Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer
             // inversionOfControlContainer.RegisterType<ILogger, FileLogger>();  // Jeder bekommt einen neue Logger Instanz
 
             // Variante: Als Logger als Singleton registrieren
-            inversionOfControlContainer.RegisterInstance<ILogger>(new  ConsoleLogger(), new SingletonLifetimeManager());  
+            inversionOfControlContainer.RegisterInstance<ILogger>(new  ConsoleLogger(), new SingletonLifetimeManager());
 
+
+            
             // Step3: Composition Root Object via IoC erstellen
             // => Alle Abhängigkeiten ("HAT EIN") werden automatisch aufgelöst
             var app2 = inversionOfControlContainer.Resolve<Applikation>();

@@ -1,10 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText=" private static void Main(string[] args)&#xD;&#xA;        {&#xD;&#xA;&#xD;&#xA;            var tesla = new AktieWithEvent(&quot;TESLA&quot;, &quot;TESLA&quot;, 100);&#xD;&#xA;            var msft = new AktieWithCallbackDelegate(&quot;MSFT&quot;, &quot;Microsoft&quot;, 50);&#xD;&#xA;            var dax = new AktieWithCallbackFunc(&quot;DAX&quot;, &quot;DAX&quot;, 200);&#xD;&#xA;&#xD;&#xA;            // Börse handelt mit diesen Aktien&#xD;&#xA;            var börse = new Börse(&quot;NYSE&quot;, new Aktie[] { tesla, msft, dax });&#xD;&#xA;&#xD;&#xA;            var anleger1 = new Beobachter(&quot;Aktienkäufer&quot;);&#xD;&#xA;            var anleger2 = new Beobachter(&quot;Aktienverkäufer&quot;);&#xD;&#xA;&#xD;&#xA;            // Anleger abonnieren Kursänderungen&#xD;&#xA;            tesla.KursChanged += anleger1.PrüfeKauf; // Events ist Best Practice&#xD;&#xA;            msft.Callbacks.Add(anleger2.PrüfeKauf);  // Delegates sind im Prinzip &quot;veraltet&quot;&#xD;&#xA;            dax.Callbacks.Add(anleger2.PrüfeVerkauf);// Action ist Nachfolger von Delegate &#xD;&#xA;&#xD;&#xA;            // Kurse ändern sich =&gt; Abonnenten werden benachrichtigt&#xD;&#xA;            börse.AktualisiereKurse();&#xD;&#xA;&#xD;&#xA;            Console.ReadLine();&#xD;&#xA;        }">
+    <Position X="13.285" Y="5.493" Height="4.292" Width="6.86" />
+  </Comment>
+  <Class Name="Jarai.CSharp.Pattern.Observer.KursChangedEventArg">
+    <Position X="12" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgA=</HashCode>
+      <FileName>KursChangedEventArg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.CSharp.Pattern.Observer.Beobachter">
+    <Position X="7.5" Y="0.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Beobachter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.CSharp.Pattern.Observer.Börse">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAABAAAAAACAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Börse.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Aktien" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Jarai.CSharp.Pattern.Observer.Aktie">
+    <Position X="4.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAQAAAAQAAAAIAEAAAAAACA=</HashCode>
+      <FileName>Aktie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.CSharp.Pattern.Observer.AktieWithEvent">
+    <Position X="4.25" Y="4.75" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AktieWithEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.CSharp.Pattern.Observer.AktieWithCallbackFunc">
+    <Position X="0.75" Y="4.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>AktieWithCallbackFunc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="Jarai.CSharp.Pattern.Observer.AktieWithCallbackDelegate">
-    <Position X="0.5" Y="4" Width="2.25" />
-    <Compartments>
-      <Compartment Name="Nested Types" Collapsed="false" />
-    </Compartments>
+    <Position X="9.75" Y="4.75" Width="2.5" />
     <NestedTypes>
       <Delegate Name="Jarai.CSharp.Pattern.Observer.AktieWithCallbackDelegate.KursChangedCallback" Collapsed="true">
         <TypeIdentifier>
@@ -15,51 +60,6 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAQAA=</HashCode>
       <FileName>AktieWithCallbackDelegate.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Jarai.CSharp.Pattern.Observer.KursChangedEventArg">
-    <Position X="8" Y="0.5" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgA=</HashCode>
-      <FileName>KursChangedEventArg.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Jarai.CSharp.Pattern.Observer.Beobachter">
-    <Position X="5.5" Y="0.5" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAIAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Beobachter.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Jarai.CSharp.Pattern.Observer.Börse">
-    <Position X="0.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAACAAAABAAAAAACAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Börse.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Aktien" />
-    </ShowAsCollectionAssociation>
-  </Class>
-  <Class Name="Jarai.CSharp.Pattern.Observer.Aktie">
-    <Position X="3" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAQAAAAAAAAAAAAAAQAAAAQAAAAIAEAAAAAACA=</HashCode>
-      <FileName>Aktie.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Jarai.CSharp.Pattern.Observer.AktieWithEvent">
-    <Position X="6.25" Y="4" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>AktieWithEvent.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Jarai.CSharp.Pattern.Observer.AktieWithCallbackFunc">
-    <Position X="3.5" Y="4" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAQAA=</HashCode>
-      <FileName>AktieWithCallbackFunc.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

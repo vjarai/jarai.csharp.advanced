@@ -4,7 +4,12 @@
     {
         public string Name { get; set; }
 
-        public void Show()
+        protected void ProtectedMethod()
+        {
+
+        }
+
+        public void Show(int x, string text)
         {
         }
     }
