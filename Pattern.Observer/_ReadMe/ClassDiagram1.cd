@@ -41,11 +41,11 @@
       <FileName>AktieWithEvent.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Jarai.CSharp.Pattern.Observer.AktieWithCallbackFunc">
-    <Position X="0.75" Y="4.75" Width="2.75" />
+  <Class Name="Jarai.CSharp.Pattern.Observer.AktieWithCallbackAction">
+    <Position X="0.75" Y="4.75" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAQAA=</HashCode>
-      <FileName>AktieWithCallbackFunc.cs</FileName>
+      <FileName>AktieWithCallbackAction.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Jarai.CSharp.Pattern.Observer.AktieWithCallbackDelegate">

@@ -9,7 +9,7 @@ namespace Jarai.CSharp.Pattern.Observer
 
             var tesla = new AktieWithEvent("TESLA", "TESLA", 100);
             var msft = new AktieWithCallbackDelegate("MSFT", "Microsoft", 50);
-            var dax = new AktieWithCallbackFunc("DAX", "DAX", 200);
+            var dax = new AktieWithCallbackAction("DAX", "DAX", 200);
 
             // Börse handelt mit diesen Aktien
             var börse = new Börse("NYSE", new Aktie[] { tesla, msft, dax });

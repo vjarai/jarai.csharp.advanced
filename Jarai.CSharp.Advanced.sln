@@ -31,7 +31,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern5.Observer", "Patter
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern6.DependencyInjection.Core", "Pattern.DependencyInjection\Pattern6.DependencyInjection.Core.csproj", "{310D5D66-DD1D-45DC-A5C1-C10DA0ABAA61}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 Misc", "99 Misc", "{B3694068-A3B4-4486-95DE-DAFBE8C4A8F5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 Optional", "99 Optional", "{B3694068-A3B4-4486-95DE-DAFBE8C4A8F5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Optional.Reflection\Reflection.csproj", "{5EAD1A82-7FD4-40C3-83A1-8D727DAFB33D}"
 EndProject
@@ -79,7 +79,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refresher2.Relations", "Ref
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refresher2.Relations.Tests", "Refresher.Relations.Tests\Refresher2.Relations.Tests.csproj", "{1D35024F-5BE8-4019-B3E3-6EAAD6AD47C7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewFeatures", "NewFeatures\NewFeatures.csproj", "{E948423B-89CC-4CE4-B449-FC286A221CBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewLanguageFeatures", "NewFeatures\NewLanguageFeatures.csproj", "{E948423B-89CC-4CE4-B449-FC286A221CBA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async3.Barrier", "Async.Barrier\Async3.Barrier.csproj", "{61FE3D3A-03D0-41B9-93BC-C131E8C683F5}"
 EndProject
@@ -94,6 +94,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refresher1.Zahlenraten", "Refresher.Zahlenraten\Refresher1.Zahlenraten.csproj", "{E9502092-CD69-4684-BBCF-3059CA985A4B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern7.DependencyInjection.Unitycontainer", "Pattern.DependencyInjection.Unitycontainer\Pattern7.DependencyInjection.Unitycontainer.csproj", "{15C993F6-30F3-4635-B49F-7D53BAD2A709}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF6.CodeFirst", "EF6.CodeFirst\EF6.CodeFirst.csproj", "{BF408373-5069-4EA8-B83B-F12629A587C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ef6.DatabaseFirst", "Ef6.DatabaseFirst\Ef6.DatabaseFirst.csproj", "{12B54648-4541-4084-B70D-77DA9E51D61B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -249,6 +253,14 @@ Global
 		{15C993F6-30F3-4635-B49F-7D53BAD2A709}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15C993F6-30F3-4635-B49F-7D53BAD2A709}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15C993F6-30F3-4635-B49F-7D53BAD2A709}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF408373-5069-4EA8-B83B-F12629A587C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF408373-5069-4EA8-B83B-F12629A587C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF408373-5069-4EA8-B83B-F12629A587C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF408373-5069-4EA8-B83B-F12629A587C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B54648-4541-4084-B70D-77DA9E51D61B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B54648-4541-4084-B70D-77DA9E51D61B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B54648-4541-4084-B70D-77DA9E51D61B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B54648-4541-4084-B70D-77DA9E51D61B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -292,6 +304,8 @@ Global
 		{DD0BCF94-246C-4B41-909C-93D3A34C858A} = {21D67637-14A8-4B8B-9A2C-966B7D044D2E}
 		{E9502092-CD69-4684-BBCF-3059CA985A4B} = {E88E8CAB-5A5E-407C-AACE-27184FB36584}
 		{15C993F6-30F3-4635-B49F-7D53BAD2A709} = {21D67637-14A8-4B8B-9A2C-966B7D044D2E}
+		{BF408373-5069-4EA8-B83B-F12629A587C9} = {B3694068-A3B4-4486-95DE-DAFBE8C4A8F5}
+		{12B54648-4541-4084-B70D-77DA9E51D61B} = {B3694068-A3B4-4486-95DE-DAFBE8C4A8F5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73EF6AE5-AE88-4482-B21E-DA5F869E622D}

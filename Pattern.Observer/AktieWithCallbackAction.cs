@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Jarai.CSharp.Pattern.Observer
 {
-    public class AktieWithCallbackFunc : Aktie
+    public class AktieWithCallbackAction : Aktie
     {
-        public AktieWithCallbackFunc(string wkn, string name, decimal aktuellerKurs)
+        public AktieWithCallbackAction(string wkn, string name, decimal aktuellerKurs)
             : base(wkn, name, aktuellerKurs)
         {
         }
