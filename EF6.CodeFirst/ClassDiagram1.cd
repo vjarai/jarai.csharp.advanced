@@ -3,7 +3,7 @@
   <Comment CommentText="Navigation Property">
     <Position X="7.222" Y="2.389" Height="0.75" Width="1.7" />
   </Comment>
-  <Class Name="EF6.CodeFirst.Person">
+  <Class Name="Jarai.CSharp.EF6.CodeFirst.Person">
     <Position X="5.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACQFAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -13,7 +13,7 @@
       <Property Name="Seminare" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="EF6.CodeFirst.Seminar">
+  <Class Name="Jarai.CSharp.EF6.CodeFirst.Seminar">
     <Position X="9.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAgAAAAAAQAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -22,13 +22,6 @@
     <ShowAsCollectionAssociation>
       <Property Name="Teilnehmer" />
     </ShowAsCollectionAssociation>
-  </Class>
-  <Class Name="EF6.CodeFirst.Student">
-    <Position X="5.25" Y="6.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Student.cs</FileName>
-    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

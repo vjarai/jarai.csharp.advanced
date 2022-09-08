@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
 
-namespace EF6.CodeFirst
+namespace Jarai.CSharp.EF6.CodeFirst
 {
     public class Person
     {

@@ -1,24 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Ef6.DatabaseFirst.Person">
+  <Class Name="Jarai.CSharp.Ef6.DatabaseFirst.Person">
     <Position X="7.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAEAIAAAAAAAAIAAAAAYAAAAAAAAABAAAAAAAAAA=</HashCode>
       <FileName>Person.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Seminars" />
-    </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="Ef6.DatabaseFirst.Seminar">
+  <Class Name="Jarai.CSharp.Ef6.DatabaseFirst.Seminar">
     <Position X="11.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAIAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Seminar.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="People" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 
-namespace Ef6.DatabaseFirst
+namespace Jarai.CSharp.Ef6.DatabaseFirst
 {
     internal class Program
     {
         static void Main(string[] args)
         {
 
-            using (var db = new Model1())
+            using (var db = new Database())
             {
-                var personen = db.People.ToList();
+                var personen = db.Person.ToList();
             }
         }
     }

@@ -2,7 +2,7 @@
 using System.Data.Entity;
 using System.Linq;
 
-namespace EF6.CodeFirst
+namespace Jarai.CSharp.EF6.CodeFirst
 {
     internal class Program
     {
@@ -13,7 +13,7 @@ namespace EF6.CodeFirst
             var seminar2 = new Seminar { Name = "C#", Description = "Basic" };
 
             var person1 = new Person { FirstName = "Fritz", Name = "Meier", Geburtstag = new DateTime(1980, 01, 1) };
-            var person2 = new Student { FirstName = "Susi", Name = "Müller", Geburtstag = new DateTime(1980, 01, 1), Semester = 4};
+            var person2 = new Person { FirstName = "Susi", Name = "Müller", Geburtstag = new DateTime(1980, 01, 1) };
 
             person1.AddSeminar(seminar1);
             person1.AddSeminar(seminar2);
@@ -21,7 +21,7 @@ namespace EF6.CodeFirst
 
             using (var datenbank = new Datenbank())  // Kurzlebige Datenbankverbindung, entspricht Transaction
             {
-                //datenbank.Database.Log = Log;
+                datenbank.Database.Log = Log;
 
                 datenbank.Personen.Add(person1);
                 datenbank.Personen.Add(person2);

@@ -1,4 +1,4 @@
-namespace Ef6.DatabaseFirst
+namespace Jarai.CSharp.Ef6.DatabaseFirst
 {
     using System;
     using System.Collections.Generic;
@@ -6,12 +6,13 @@ namespace Ef6.DatabaseFirst
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
+    [Table("Person")]
     public partial class Person
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Person()
         {
-            Seminars = new HashSet<Seminar>();
+            Seminar = new HashSet<Seminar>();
         }
 
         public int Id { get; set; }
@@ -23,13 +24,7 @@ namespace Ef6.DatabaseFirst
 
         public DateTime Geburtstag { get; set; }
 
-        public int? Semester { get; set; }
-
-        [Required]
-        [StringLength(128)]
-        public string Discriminator { get; set; }
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Seminar> Seminars { get; set; }
+        public virtual ICollection<Seminar> Seminar { get; set; }
     }
 }

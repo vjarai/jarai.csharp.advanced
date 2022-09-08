@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{12B54648-4541-4084-B70D-77DA9E51D61B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ef6.DatabaseFirst</RootNamespace>
-    <AssemblyName>Ef6.DatabaseFirst</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Ef6.DatabaseFirst</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Ef6.DatabaseFirst</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,7 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model1.cs" />
+    <Compile Include="Database.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
