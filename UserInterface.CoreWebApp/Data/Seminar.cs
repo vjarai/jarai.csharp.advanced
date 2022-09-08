@@ -1,4 +1,4 @@
-﻿namespace UserInterface.CoreWebApp.Model
+﻿namespace Jarai.CSharp.UserInterface.CoreWebApp.Data
 {
     public class Seminar
     {

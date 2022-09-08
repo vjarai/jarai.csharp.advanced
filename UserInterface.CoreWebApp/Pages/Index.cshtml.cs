@@ -1,14 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Jarai.CSharp.UserInterface.CoreWebApp.Data;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using UserInterface.CoreWebApp.Model;
 
-namespace UserInterface.CoreWebApp.Pages
+namespace Jarai.CSharp.UserInterface.CoreWebApp.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly UserInterface.CoreWebApp.Data.SeminarContext _context;
+        private readonly global::Jarai.CSharp.UserInterface.CoreWebApp.Data.SeminarContext _context;
 
-        public IndexModel(UserInterface.CoreWebApp.Data.SeminarContext context)
+        public IndexModel(global::Jarai.CSharp.UserInterface.CoreWebApp.Data.SeminarContext context)
         {
             _context = context;
         }

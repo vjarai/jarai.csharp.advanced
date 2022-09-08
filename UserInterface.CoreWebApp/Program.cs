@@ -1,6 +1,6 @@
+using Jarai.CSharp.UserInterface.CoreWebApp.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using UserInterface.CoreWebApp.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

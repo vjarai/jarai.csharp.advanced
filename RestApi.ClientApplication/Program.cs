@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System.Diagnostics;
+using System.Net.Http;
 using System.Threading.Tasks;
 using NorthwindApi;
 
@@ -13,6 +14,8 @@ namespace Jarai.RestApi.ClientApplication
                 var client = new NorthwindClient(httpClient);
 
                 var customer = await client.GetCustomerAsync("ALFKI");
+                
+                Debug.WriteLine(customer.CompanyName);
             }
         }
     }

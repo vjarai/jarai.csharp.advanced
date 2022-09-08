@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using UserInterface.CoreWebApp.Model;
+﻿using Microsoft.EntityFrameworkCore;
 
-namespace UserInterface.CoreWebApp.Data
+namespace Jarai.CSharp.UserInterface.CoreWebApp.Data
 {
     public class SeminarContext : DbContext
     {
@@ -14,6 +9,6 @@ namespace UserInterface.CoreWebApp.Data
         {
         }
 
-        public DbSet<UserInterface.CoreWebApp.Model.Seminar> Seminar { get; set; } = default!;
+        public DbSet<Seminar> Seminar { get; set; } = default!;
     }
 }

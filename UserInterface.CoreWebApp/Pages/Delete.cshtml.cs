@@ -1,15 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Jarai.CSharp.UserInterface.CoreWebApp.Data;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using UserInterface.CoreWebApp.Model;
 
-namespace UserInterface.CoreWebApp.Pages
+namespace Jarai.CSharp.UserInterface.CoreWebApp.Pages
 {
     public class DeleteModel : PageModel
     {
-        private readonly UserInterface.CoreWebApp.Data.SeminarContext _context;
+        private readonly global::Jarai.CSharp.UserInterface.CoreWebApp.Data.SeminarContext _context;
 
-        public DeleteModel(UserInterface.CoreWebApp.Data.SeminarContext context)
+        public DeleteModel(global::Jarai.CSharp.UserInterface.CoreWebApp.Data.SeminarContext context)
         {
             _context = context;
         }
