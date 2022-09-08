@@ -2,24 +2,8 @@ using System;
 
 namespace Jarai.CSharp.Interface.Simple
 {
-    internal class Auto : IFahrbar, ILackierbar
+    internal class Auto : IFahrbar
     {
-        private string _farbe;
-
-        #region ILackierbar Member
-
-        public string Farbe
-        {
-            get { return _farbe; }
-            set
-            {
-                _farbe = value;
-                Console.WriteLine("Das Auto ist jetzt " + _farbe);
-            }
-        }
-
-        #endregion
-
         public void Fahren()
         {
             Console.WriteLine("Das Auto fährt.");

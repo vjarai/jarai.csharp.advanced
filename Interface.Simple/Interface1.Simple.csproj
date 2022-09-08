@@ -43,13 +43,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Auto.cs" />
+    <Compile Include="FlugAuto.cs" />
+    <Compile Include="Flugzeug.cs" />
     <Compile Include="IFahrbar.cs" />
-    <Compile Include="ILackierbar.cs" />
-    <Compile Include="Maler.cs" />
+    <Compile Include="IFliegbar.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ski.cs" />
-    <Compile Include="Wand.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

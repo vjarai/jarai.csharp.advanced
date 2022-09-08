@@ -1,35 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Jarai.CSharp.Interface.Simple.Wand" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="3" Y="0.5" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAgAAA=</HashCode>
-      <FileName>Wand.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="Jarai.CSharp.Interface.Simple.Maler">
+  <Class Name="Jarai.CSharp.Interface.Simple.Person">
     <Position X="0.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAABAAA=</HashCode>
-      <FileName>Maler.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Person.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Jarai.CSharp.Interface.Simple.Ski" Collapsed="true">
-    <Position X="3" Y="2.5" Width="1.5" />
+  <Class Name="Jarai.CSharp.Interface.Simple.Auto">
+    <Position X="9.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
-      <FileName>Ski.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="Jarai.CSharp.Interface.Simple.Auto" Collapsed="true">
-    <Position X="3" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQABAAgAAA=</HashCode>
       <FileName>Auto.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.2" />
   </Class>
+  <Class Name="Jarai.CSharp.Interface.Simple.Flugzeug">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Flugzeug.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Jarai.CSharp.Interface.Simple.FlugAuto">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>FlugAuto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Jarai.CSharp.Interface.Simple.IFliegbar" Collapsed="true">
+    <Position X="4" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IFliegbar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Jarai.CSharp.Interface.Simple.IFahrbar" Collapsed="true">
+    <Position X="9.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>IFahrbar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Tahoma" Size="8.25" />
 </ClassDiagram>
