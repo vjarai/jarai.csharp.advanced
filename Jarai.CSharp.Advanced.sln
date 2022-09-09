@@ -101,6 +101,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface.WinForms", "U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface.Wpf", "UserInterface.Wpf\UserInterface.Wpf.csproj", "{BD8EA140-3E0D-4167-847B-1F0FE6BA8F57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.ParallelFor", "Async.ParallelFor\Async.ParallelFor.csproj", "{13884B84-40B1-4827-A4D7-BEA9D7E1FA7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +269,10 @@ Global
 		{BD8EA140-3E0D-4167-847B-1F0FE6BA8F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD8EA140-3E0D-4167-847B-1F0FE6BA8F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD8EA140-3E0D-4167-847B-1F0FE6BA8F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13884B84-40B1-4827-A4D7-BEA9D7E1FA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13884B84-40B1-4827-A4D7-BEA9D7E1FA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13884B84-40B1-4827-A4D7-BEA9D7E1FA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13884B84-40B1-4827-A4D7-BEA9D7E1FA7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -313,6 +319,7 @@ Global
 		{33AD81E6-DBE4-4EBA-9042-A9D2E5930473} = {6BDAEBB1-8C91-4023-99D3-28E16DE739CC}
 		{08868170-42D0-4092-9E02-B0F71BE18952} = {6BDAEBB1-8C91-4023-99D3-28E16DE739CC}
 		{BD8EA140-3E0D-4167-847B-1F0FE6BA8F57} = {6BDAEBB1-8C91-4023-99D3-28E16DE739CC}
+		{13884B84-40B1-4827-A4D7-BEA9D7E1FA7E} = {32201F16-65AA-4636-BF98-86A8CBBF5548}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73EF6AE5-AE88-4482-B21E-DA5F869E622D}
