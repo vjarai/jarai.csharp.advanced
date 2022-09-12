@@ -1,10 +1,11 @@
+using System;
 using System.Diagnostics;
 
 namespace Jarai.CSharp.Pattern.State
 {
     public abstract class Zustand
     {
-        public Zustand(string bezeichnung)
+        protected Zustand(string bezeichnung)
         {
             Bezeichnung = bezeichnung;
         }
@@ -13,26 +14,22 @@ namespace Jarai.CSharp.Pattern.State
 
         public virtual Zustand Abheben()
         {
-            Debug.WriteLine("Sie können derzeit den Hörer nicht abheben.");
-            return this;
+            throw new InvalidOperationException("Sie können derzeit den Hörer nicht abheben.");
         }
 
         public virtual Zustand AnnehmenAnruf()
         {
-            Debug.WriteLine("Sie können derzeit keinen Anruf annehmen.");
-            return this;
-        }
+            throw new InvalidOperationException("Sie können derzeit keinen Anruf annehmen.");
+            }
 
         public virtual Zustand Auflegen()
         {
-            Debug.WriteLine("Sie können derzeit den Hörer nicht auflegen.");
-            return this;
+            throw new InvalidOperationException("Sie können derzeit den Hörer nicht auflegen.");
         }
 
         public virtual Zustand Sprechen()
         {
-            Debug.WriteLine("Sie können derzeit nicht sprechen.");
-            return this;
+            throw new InvalidOperationException("Sie können derzeit nicht sprechen.");
         }
 
 
@@ -43,8 +40,7 @@ namespace Jarai.CSharp.Pattern.State
 
         public virtual Zustand Wählen()
         {
-            Debug.WriteLine("Sie können derzeit keine Nummer wählen.");
-            return this;
+            throw new InvalidOperationException("Sie können derzeit keine Nummer wählen.");
         }
     }
 }
