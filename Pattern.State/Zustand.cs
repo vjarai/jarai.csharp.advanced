@@ -20,7 +20,7 @@ namespace Jarai.CSharp.Pattern.State
         public virtual Zustand AnnehmenAnruf()
         {
             throw new InvalidOperationException("Sie können derzeit keinen Anruf annehmen.");
-            }
+        }
 
         public virtual Zustand Auflegen()
         {
