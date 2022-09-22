@@ -70,9 +70,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AktieWithCallbackAction.cs" />
-    <Compile Include="AktieWithEvent.cs" />
-    <Compile Include="AktieWithCallbackDelegate.cs" />
     <Compile Include="Beobachter.cs" />
     <Compile Include="Aktie.cs" />
     <Compile Include="Börse.cs" />

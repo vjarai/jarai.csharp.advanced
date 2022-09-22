@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface1.Simple", "Interf
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 User Interface", "06 User Interface", "{6BDAEBB1-8C91-4023-99D3-28E16DE739CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern5.Observer", "Pattern.Observer\Pattern5.Observer.csproj", "{75D5DD25-23E6-45B1-9B1E-850D66038FDF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event.Observer", "Pattern.Observer\Event.Observer.csproj", "{75D5DD25-23E6-45B1-9B1E-850D66038FDF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern6.DependencyInjection.Core", "Pattern.DependencyInjection\Pattern6.DependencyInjection.Core.csproj", "{310D5D66-DD1D-45DC-A5C1-C10DA0ABAA61}"
 EndProject
@@ -102,6 +102,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.ParallelFor", "Async.ParallelFor\Async.ParallelFor.csproj", "{13884B84-40B1-4827-A4D7-BEA9D7E1FA7E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outlook.Automation", "Outlook.Automation\Outlook.Automation.csproj", "{73706361-C9BD-4F3A-A693-3CA2E863492D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate.Simple", "Delegate.Simple\Delegate.Simple.csproj", "{EB97B4A6-E209-4E4E-B7A6-A44777BE5697}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -273,6 +275,10 @@ Global
 		{73706361-C9BD-4F3A-A693-3CA2E863492D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73706361-C9BD-4F3A-A693-3CA2E863492D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73706361-C9BD-4F3A-A693-3CA2E863492D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB97B4A6-E209-4E4E-B7A6-A44777BE5697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB97B4A6-E209-4E4E-B7A6-A44777BE5697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB97B4A6-E209-4E4E-B7A6-A44777BE5697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB97B4A6-E209-4E4E-B7A6-A44777BE5697}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -320,6 +326,7 @@ Global
 		{BD8EA140-3E0D-4167-847B-1F0FE6BA8F57} = {6BDAEBB1-8C91-4023-99D3-28E16DE739CC}
 		{13884B84-40B1-4827-A4D7-BEA9D7E1FA7E} = {32201F16-65AA-4636-BF98-86A8CBBF5548}
 		{73706361-C9BD-4F3A-A693-3CA2E863492D} = {B3694068-A3B4-4486-95DE-DAFBE8C4A8F5}
+		{EB97B4A6-E209-4E4E-B7A6-A44777BE5697} = {7A31E21B-F0D8-43EB-9AE1-0DA6A164C8E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73EF6AE5-AE88-4482-B21E-DA5F869E622D}
