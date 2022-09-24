@@ -91,7 +91,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern7.DependencyInjectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF6.CodeFirst", "EF6.CodeFirst\EF6.CodeFirst.csproj", "{BF408373-5069-4EA8-B83B-F12629A587C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ef6.DatabaseFirst", "Ef6.DatabaseFirst\Ef6.DatabaseFirst.csproj", "{12B54648-4541-4084-B70D-77DA9E51D61B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF6.DatabaseFirst", "Ef6.DatabaseFirst\EF6.DatabaseFirst.csproj", "{12B54648-4541-4084-B70D-77DA9E51D61B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserInterface.CoreWebApp", "UserInterface.CoreWebApp\UserInterface.CoreWebApp.csproj", "{33AD81E6-DBE4-4EBA-9042-A9D2E5930473}"
 EndProject

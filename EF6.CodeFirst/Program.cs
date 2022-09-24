@@ -37,7 +37,7 @@ namespace Jarai.CSharp.EF6.CodeFirst
 
         private static void Main(string[] args)
         {
-           CreateRecords();
+            CreateRecords();
 
             ShowRecords();
         }
@@ -46,17 +46,18 @@ namespace Jarai.CSharp.EF6.CodeFirst
         {
             using (var db = new Datenbank())
             {
-                //db.Configuration.ProxyCreationEnabled = true;     // Lazy Loading (erfordert virtual Navigation Properties)
+                // Lazy Loading (erfordert virtual Navigation Properties und public Entity Klasse)
+                //db.Configuration.ProxyCreationEnabled = true;     
                 //db.Configuration.LazyLoadingEnabled = true;
 
-                 var personen = db.Personen.Include(x => x.Seminare).ToList(); // Eager Loading mit Include
+                var personen = db.Personen.Include(x => x.Seminare).ToList(); // Eager Loading mit Include
 
                 db.Database.Log = Log;
 
-                foreach (var person in db.Personen)
+                foreach (var person in personen)
                 {
                     Console.WriteLine(person.Name);
-                    
+
                     foreach (var seminar in person.Seminare)
                     {
                         Console.WriteLine(seminar.Name);
