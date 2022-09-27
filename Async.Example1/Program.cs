@@ -20,6 +20,8 @@ namespace Jarai.CSharp.Async.Example1
             LongProcess();
 
             ShortProcess();
+
+            Console.ReadLine();
         }
 
         private static void ShortProcess()
