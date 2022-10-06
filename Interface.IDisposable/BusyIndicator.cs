@@ -7,13 +7,13 @@ namespace Jarai.CSharp.Interface.Disposable
         public BusyIndicator()
         {
             Console.WriteLine("Berechnung gestartet (Sanduhr an).");
-            
+
             // Todo: Sanduhr anzeigen...
         }
 
         /// <summary>
-        /// Die Dispose Methode wird IMMER automatisch beim verlassen des zugehörigen using Blocks aufgerufen.
-        /// (Auch bei einer Exception!)
+        ///     Die Dispose Methode wird IMMER automatisch beim verlassen des zugehörigen using Blocks aufgerufen.
+        ///     (Auch bei einer Exception!)
         /// </summary>
         public void Dispose()
         {

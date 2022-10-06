@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7BF68E0E-C2A3-4BA7-B7DC-7A273541D4CB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Jarai.CSharp.Interface.INotifyPropertyChanged</RootNamespace>
-    <AssemblyName>Jarai.CSharp.Interface.INotifyPropertyChanged</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Interface.NotifyPropertyChanged</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Interface.NotifyPropertyChanged</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

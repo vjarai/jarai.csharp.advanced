@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace Jarai.CSharp.Interface.INotifyPropertyChanged
+namespace Jarai.CSharp.Interface.NotifyPropertyChanged
 {
     internal class Program
     {

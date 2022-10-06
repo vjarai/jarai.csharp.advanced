@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Async", "06 Async", "{32
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic4.Restriction", "Generic.WithRestriction\Generic4.Restriction.csproj", "{6EB418A6-8D15-4A32-9315-A24182655C6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface2.INotifyPropertyChanged", "Interface.INotifyPropertyChanged\Interface2.INotifyPropertyChanged.csproj", "{7BF68E0E-C2A3-4BA7-B7DC-7A273541D4CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface2.NotifyPropertyChanged", "Interface.INotifyPropertyChanged\Interface2.NotifyPropertyChanged.csproj", "{7BF68E0E-C2A3-4BA7-B7DC-7A273541D4CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface1.Simple", "Interface.Simple\Interface1.Simple.csproj", "{CB30B5F7-ECEF-454C-93F3-6773EEF9CF00}"
 EndProject
@@ -35,7 +35,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 Optional", "99 Optional"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Optional.Reflection\Reflection.csproj", "{5EAD1A82-7FD4-40C3-83A1-8D727DAFB33D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface3.IEnumerable", "Interface.IEnumerable\Interface3.IEnumerable.csproj", "{364E0B31-ED74-4073-8554-2878482136F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface3.Enumerable", "Interface.IEnumerable\Interface3.Enumerable.csproj", "{364E0B31-ED74-4073-8554-2878482136F6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic6.Func", "Generic.Func\Generic6.Func.csproj", "{1E7394CA-CFCA-4DFD-9B4C-FCFB8177EE14}"
 EndProject

@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Jarai.CSharp.Interface.INotifyPropertyChanged
+namespace Jarai.CSharp.Interface.NotifyPropertyChanged
 {
-    internal class Adress : System.ComponentModel.INotifyPropertyChanged
+    internal class Adress : INotifyPropertyChanged
     {
         private string _description;
         private string _name;
