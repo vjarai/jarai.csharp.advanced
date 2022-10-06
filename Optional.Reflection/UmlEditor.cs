@@ -13,14 +13,16 @@ namespace Jarai.CSharp.Reflection
             Console.WriteLine(type.Name);
             Console.WriteLine("==========================");
 
-            // Methoden anzeigen
-            foreach (var methodInfo in type.GetMethods().Where(m => !m.IsSpecialName))
+            var methodInfos = type.GetMethods().Where(m => !m.IsSpecialName);
+
+            // Alle Methoden anzeigen
+            foreach (var methodInfo in methodInfos)
             {
                 Console.Write(methodInfo.Name + "(");
-                var parameters = methodInfo.GetParameters();
+                var parameterInfos = methodInfo.GetParameters();
 
-                // Methoden Parameter anzeigen
-                foreach (var parameterInfo in parameters)
+                // Alle Methoden Parameter anzeigen
+                foreach (var parameterInfo in parameterInfos)
                 {
                     Console.Write(parameterInfo.Name + " : " + parameterInfo.ParameterType + ", ");
                 }
