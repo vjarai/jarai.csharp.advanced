@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Jarai.CSharp.Interface.IEnumerable
+namespace Jarai.CSharp.Interface.Enumerable
 {
     internal class Phonebook : IEnumerable<PhonebookEntry>
     {
@@ -27,7 +27,7 @@ namespace Jarai.CSharp.Interface.IEnumerable
             return _entries.GetEnumerator();
         }
 
-        IEnumerator System.Collections.IEnumerable.GetEnumerator()
+        IEnumerator IEnumerable.GetEnumerator()
         {
             return _entries.GetEnumerator();
         }

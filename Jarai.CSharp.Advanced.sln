@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Async", "06 Async", "{32
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic4.Restriction", "Generic.WithRestriction\Generic4.Restriction.csproj", "{6EB418A6-8D15-4A32-9315-A24182655C6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface2.INotifyPropertyChanged", "Interface.INotifyPropertyChanged\Interface2.INotifyPropertyChanged.csproj", "{7BF68E0E-C2A3-4BA7-B7DC-7A273541D4CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface4.NotifyPropertyChanged", "Interface.INotifyPropertyChanged\Interface4.NotifyPropertyChanged.csproj", "{7BF68E0E-C2A3-4BA7-B7DC-7A273541D4CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface1.Simple", "Interface.Simple\Interface1.Simple.csproj", "{CB30B5F7-ECEF-454C-93F3-6773EEF9CF00}"
 EndProject
@@ -35,7 +35,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 Optional", "99 Optional"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Optional.Reflection\Reflection.csproj", "{5EAD1A82-7FD4-40C3-83A1-8D727DAFB33D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface3.IEnumerable", "Interface.IEnumerable\Interface3.IEnumerable.csproj", "{364E0B31-ED74-4073-8554-2878482136F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface3.Enumerable", "Interface.IEnumerable\Interface3.Enumerable.csproj", "{364E0B31-ED74-4073-8554-2878482136F6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic6.Func", "Generic.Func\Generic6.Func.csproj", "{1E7394CA-CFCA-4DFD-9B4C-FCFB8177EE14}"
 EndProject
@@ -104,6 +104,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outlook.Automation", "Outlook.Automation\Outlook.Automation.csproj", "{73706361-C9BD-4F3A-A693-3CA2E863492D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate.Simple", "Delegate.Simple\Delegate.Simple.csproj", "{EB97B4A6-E209-4E4E-B7A6-A44777BE5697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface2.Disposable", "Interface.IDisposable\Interface2.Disposable.csproj", "{F46BF578-0FAC-424D-86BF-52A53A3553E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -279,6 +281,10 @@ Global
 		{EB97B4A6-E209-4E4E-B7A6-A44777BE5697}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB97B4A6-E209-4E4E-B7A6-A44777BE5697}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB97B4A6-E209-4E4E-B7A6-A44777BE5697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F46BF578-0FAC-424D-86BF-52A53A3553E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F46BF578-0FAC-424D-86BF-52A53A3553E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F46BF578-0FAC-424D-86BF-52A53A3553E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F46BF578-0FAC-424D-86BF-52A53A3553E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -327,6 +333,7 @@ Global
 		{13884B84-40B1-4827-A4D7-BEA9D7E1FA7E} = {32201F16-65AA-4636-BF98-86A8CBBF5548}
 		{73706361-C9BD-4F3A-A693-3CA2E863492D} = {B3694068-A3B4-4486-95DE-DAFBE8C4A8F5}
 		{EB97B4A6-E209-4E4E-B7A6-A44777BE5697} = {7A31E21B-F0D8-43EB-9AE1-0DA6A164C8E8}
+		{F46BF578-0FAC-424D-86BF-52A53A3553E7} = {A76503F5-B9DB-4ECF-B1FC-A8E27A0DC9EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73EF6AE5-AE88-4482-B21E-DA5F869E622D}

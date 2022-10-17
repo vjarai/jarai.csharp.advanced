@@ -17,7 +17,7 @@ namespace Jarai.CSharp.Pattern.Observer
 
             // Anleger abonnieren Kursänderungen
             tesla.KursChanged += anleger1.PrüfeKauf; 
-            tesla.KursChanged += anleger2.PrüfeKauf; 
+            tesla.KursChanged += anleger2.PrüfeVerkauf; 
 
             // Kurse ändern sich => Abonnenten werden benachrichtigt
             börse.AktualisiereKurse();
