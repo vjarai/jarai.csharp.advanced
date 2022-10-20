@@ -27,6 +27,7 @@ namespace Jarai.CSharp.EF6.CodeFirst
                 datenbank.Personen.Add(person2);
 
                 datenbank.SaveChanges();    // SQL Commit
+
             }
         }
 

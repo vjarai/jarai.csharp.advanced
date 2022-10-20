@@ -14,7 +14,7 @@ namespace Jarai.CSharp.Async.Example2
             Console.WriteLine("LongProcess Completed");
         }
 
-        private static async Task Main(string[] args)
+        private static void Main(string[] args)
         {
             LongProcess();
 
