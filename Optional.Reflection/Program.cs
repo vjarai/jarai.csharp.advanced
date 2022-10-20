@@ -1,3 +1,5 @@
+using System;
+
 namespace Jarai.CSharp.Reflection
 {
     internal class TestTreiber
@@ -5,6 +7,8 @@ namespace Jarai.CSharp.Reflection
         private static void Main(string[] args)
         {
             UmlEditor.ShowClass<DummyClass>();
+
+            Console.ReadLine();
         }
     }
 }

@@ -47,11 +47,7 @@ namespace Jarai.CSharp.Async.Lock
             Console.WriteLine($"{Name} beendet leben...");
         }
 
-        public Task StartLivingTask()
-        {
-            return Task.Run(Leben);
-        }
-
+       
         public override string ToString()
         {
             return $"{Name} ist {_state}.";
