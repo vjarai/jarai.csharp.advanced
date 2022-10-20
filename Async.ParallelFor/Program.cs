@@ -38,26 +38,22 @@ namespace Jarai.CSharp.Async.ParallelFor
         /// <summary>
         /// GetPrimeList returns Prime numbers by using sequential ForEach
         /// </summary>
-        /// <returns></returns>
         private static IList<int> GetPrimeList(IList<int> numbers)
         {
             return numbers.Where(IsPrime).ToList();
         }
 
         /// <summary>
-        /// GetPrimeList returns Prime numbers by using sequential ForEach
+        /// GetPrimeListWithPlinq returns Prime numbers by using Parallel LINQ (PLINQ)
         /// </summary>
-        /// <returns></returns>
         private static IList<int> GetPrimeListWithPlinq(IList<int> numbers)
         {
-            return numbers.AsParallel().Where(IsPrime).ToList();  // PLINQ (Parallel Linq)
+            return numbers.AsParallel().Where(IsPrime).ToList();  // .AsParallel() => PLINQ (Parallel Linq)
         }
 
         /// <summary>
         /// GetPrimeListWithParallel returns Prime numbers by using Parallel.ForEach
         /// </summary>
-        /// <param name="numbers"></param>
-        /// <returns></returns>
         private static IList<int> GetPrimeListWithParallel(IList<int> numbers)
         {
             var primeNumbers = new ConcurrentBag<int>();
@@ -78,8 +74,6 @@ namespace Jarai.CSharp.Async.ParallelFor
         /// <summary>
         /// IsPrime returns true if number is Prime, else false.(https://en.wikipedia.org/wiki/Prime_number)
         /// </summary>
-        /// <param name="number"></param>
-        /// <returns></returns>
         private static bool IsPrime(int number)
         {
             if (number < 2)
