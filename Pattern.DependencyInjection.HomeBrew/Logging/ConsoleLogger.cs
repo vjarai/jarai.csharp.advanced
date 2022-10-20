@@ -1,7 +1,6 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
-namespace Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer
+namespace Jarai.CSharp.Pattern.DependencyInjection.HomeBrew.Logging
 {
     public class ConsoleLogger : ILogger
     {

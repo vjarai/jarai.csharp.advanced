@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Pattern6.DependencyInjection.Core
+namespace Jarai.CSharp.Patterns.DependencyInjection.Core
 {
     // Quelle:
     // https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection

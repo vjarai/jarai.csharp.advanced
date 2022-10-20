@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
 
-namespace Pattern6.DependencyInjection.Core
+namespace Jarai.CSharp.Patterns.DependencyInjection.Core
 {
     public class Worker : BackgroundService
     {

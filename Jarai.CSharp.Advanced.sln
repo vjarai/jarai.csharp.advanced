@@ -29,7 +29,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 User Interface", "06 Use
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event.Observer", "Pattern.Observer\Event.Observer.csproj", "{75D5DD25-23E6-45B1-9B1E-850D66038FDF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern6.DependencyInjection.Core", "Pattern.DependencyInjection\Pattern6.DependencyInjection.Core.csproj", "{310D5D66-DD1D-45DC-A5C1-C10DA0ABAA61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern7.DependencyInjection.Core", "Pattern.DependencyInjection\Pattern7.DependencyInjection.Core.csproj", "{310D5D66-DD1D-45DC-A5C1-C10DA0ABAA61}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 Optional", "99 Optional", "{B3694068-A3B4-4486-95DE-DAFBE8C4A8F5}"
 EndProject
@@ -87,8 +87,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern3.Adapter", "Pattern
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refresher1.Zahlenraten", "Refresher.Zahlenraten\Refresher1.Zahlenraten.csproj", "{E9502092-CD69-4684-BBCF-3059CA985A4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern7.DependencyInjection.Unitycontainer", "Pattern.DependencyInjection.Unitycontainer\Pattern7.DependencyInjection.Unitycontainer.csproj", "{15C993F6-30F3-4635-B49F-7D53BAD2A709}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF6.CodeFirst", "EF6.CodeFirst\EF6.CodeFirst.csproj", "{BF408373-5069-4EA8-B83B-F12629A587C9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF6.DatabaseFirst", "Ef6.DatabaseFirst\EF6.DatabaseFirst.csproj", "{12B54648-4541-4084-B70D-77DA9E51D61B}"
@@ -106,6 +104,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface2.Disposable", "Interface.IDisposable\Interface2.Disposable.csproj", "{F46BF578-0FAC-424D-86BF-52A53A3553E7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserInterface.RazorViews", "UserInterface.RazorViews\UserInterface.RazorViews.csproj", "{3E8C8B70-7267-4685-B921-17BE0AB9EFA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern6.DependencyInjection.HomeBrew", "Pattern.DependencyInjection.HomeBrew\Pattern6.DependencyInjection.HomeBrew.csproj", "{15C993F6-30F3-4635-B49F-7D53BAD2A709}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -245,10 +245,6 @@ Global
 		{E9502092-CD69-4684-BBCF-3059CA985A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9502092-CD69-4684-BBCF-3059CA985A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9502092-CD69-4684-BBCF-3059CA985A4B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{15C993F6-30F3-4635-B49F-7D53BAD2A709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15C993F6-30F3-4635-B49F-7D53BAD2A709}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15C993F6-30F3-4635-B49F-7D53BAD2A709}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15C993F6-30F3-4635-B49F-7D53BAD2A709}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BF408373-5069-4EA8-B83B-F12629A587C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BF408373-5069-4EA8-B83B-F12629A587C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF408373-5069-4EA8-B83B-F12629A587C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -285,6 +281,10 @@ Global
 		{3E8C8B70-7267-4685-B921-17BE0AB9EFA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E8C8B70-7267-4685-B921-17BE0AB9EFA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E8C8B70-7267-4685-B921-17BE0AB9EFA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15C993F6-30F3-4635-B49F-7D53BAD2A709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15C993F6-30F3-4635-B49F-7D53BAD2A709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15C993F6-30F3-4635-B49F-7D53BAD2A709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15C993F6-30F3-4635-B49F-7D53BAD2A709}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -324,7 +324,6 @@ Global
 		{94C97D99-5119-44D3-88EC-8E469B798A4D} = {B91FF15C-3676-4B0B-9171-8DEF7514CAC6}
 		{DD0BCF94-246C-4B41-909C-93D3A34C858A} = {21D67637-14A8-4B8B-9A2C-966B7D044D2E}
 		{E9502092-CD69-4684-BBCF-3059CA985A4B} = {E88E8CAB-5A5E-407C-AACE-27184FB36584}
-		{15C993F6-30F3-4635-B49F-7D53BAD2A709} = {21D67637-14A8-4B8B-9A2C-966B7D044D2E}
 		{BF408373-5069-4EA8-B83B-F12629A587C9} = {B3694068-A3B4-4486-95DE-DAFBE8C4A8F5}
 		{12B54648-4541-4084-B70D-77DA9E51D61B} = {B3694068-A3B4-4486-95DE-DAFBE8C4A8F5}
 		{08868170-42D0-4092-9E02-B0F71BE18952} = {6BDAEBB1-8C91-4023-99D3-28E16DE739CC}
@@ -334,6 +333,7 @@ Global
 		{EB97B4A6-E209-4E4E-B7A6-A44777BE5697} = {7A31E21B-F0D8-43EB-9AE1-0DA6A164C8E8}
 		{F46BF578-0FAC-424D-86BF-52A53A3553E7} = {A76503F5-B9DB-4ECF-B1FC-A8E27A0DC9EA}
 		{3E8C8B70-7267-4685-B921-17BE0AB9EFA2} = {6BDAEBB1-8C91-4023-99D3-28E16DE739CC}
+		{15C993F6-30F3-4635-B49F-7D53BAD2A709} = {21D67637-14A8-4B8B-9A2C-966B7D044D2E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73EF6AE5-AE88-4482-B21E-DA5F869E622D}

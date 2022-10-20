@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer
+namespace Jarai.CSharp.Pattern.DependencyInjection.HomeBrew.Logging
 {
     class FileLogger : ILogger
     {

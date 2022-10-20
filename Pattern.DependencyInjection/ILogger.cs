@@ -1,4 +1,4 @@
-﻿namespace Pattern6.DependencyInjection.Core
+﻿namespace Jarai.CSharp.Patterns.DependencyInjection.Core
 {
     public interface ILogger
     {

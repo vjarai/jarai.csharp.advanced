@@ -1,4 +1,4 @@
-﻿namespace Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer
+﻿namespace Jarai.CSharp.Pattern.DependencyInjection.HomeBrew.Application
 {
     public class KontoFactory
     {

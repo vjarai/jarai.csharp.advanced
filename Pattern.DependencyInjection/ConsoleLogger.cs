@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Pattern6.DependencyInjection.Core
+namespace Jarai.CSharp.Patterns.DependencyInjection.Core
 {
     public class ConsoleLogger : ILogger
     {

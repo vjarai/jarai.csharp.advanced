@@ -1,24 +1,25 @@
-﻿namespace Delegate.Simple
+﻿using System;
+
+namespace Delegate.Simple
 {
     internal delegate int RechenFunktion(int x, int y);
 
     internal class Program
     {
-
-
         private static void Main(string[] args)
         {
             var x = 100;
             var y = 200;
-            int z;
 
-            RechenFunktion aktuelleFunktion; // Variable aktuelleFunktion vom Typ RechenFunktion anlegen
-            aktuelleFunktion = Add; // Variable initialisieren
+            // Variable (vom Typ) RechenFunktion anlegen und initialisieren
+            RechenFunktion rechenFunktion = Add;
 
-            z = aktuelleFunktion(x, y); // ruft Add() auf
+            var ergebnis1 = rechenFunktion(x, y); // ruft Add() auf
+            Console.WriteLine($"Ergebnis1: {ergebnis1}");
 
-            aktuelleFunktion = Sub;
-            z = aktuelleFunktion(x, y); // ruft Sub() auf
+            rechenFunktion = Subtract;
+            var ergebnis2 = rechenFunktion(x, y); // ruft Subtract() auf
+            Console.WriteLine($"Ergebnis2: {ergebnis2}");
         }
 
 
@@ -27,7 +28,7 @@
             return x + y;
         }
 
-        private static int Sub(int x, int y)
+        private static int Subtract(int x, int y)
         {
             return x + y;
         }

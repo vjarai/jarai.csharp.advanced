@@ -1,4 +1,6 @@
-﻿namespace Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer
+﻿using Jarai.CSharp.Pattern.DependencyInjection.HomeBrew.Logging;
+
+namespace Jarai.CSharp.Pattern.DependencyInjection.HomeBrew.Application
 {
     public class Buchhaltung
     {

@@ -1,4 +1,4 @@
-﻿namespace Jarai.CSharp.Pattern.DependencyInjection.Unitycontainer
+﻿namespace Jarai.CSharp.Pattern.DependencyInjection.HomeBrew.Logging
 {
     public interface ILogger
     {
