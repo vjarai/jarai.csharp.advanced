@@ -4,7 +4,7 @@ namespace Jarai.CSharp.Pattern.DependencyInjection.HomeBrew.Application
 {
     public class Versandservice
     {
-        public Versandservice(ConsoleLogger logger)
+        public Versandservice(ILogger logger)
         {
             Logger = logger;
         }

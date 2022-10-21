@@ -6,7 +6,7 @@ namespace Jarai.CSharp.Pattern.DependencyInjection.HomeBrew.Application
     {
         private readonly KontoFactory _factory;
 
-        public Buchhaltung(ConsoleLogger logger, KontoFactory factory)
+        public Buchhaltung(ILogger logger, KontoFactory factory)
         {
             _factory = factory;
             Logger = logger;
