@@ -73,7 +73,7 @@
     <Compile Include="Beobachter.cs" />
     <Compile Include="Aktie.cs" />
     <Compile Include="Börse.cs" />
-    <Compile Include="KursChangedEventArg.cs" />
+    <Compile Include="KursChangedEventArgs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

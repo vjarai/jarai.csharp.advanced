@@ -6,20 +6,20 @@
     /// </summary>
     public class FlugAuto : IFliegbar, IFahrbar
     {
-        private readonly Flugzeug _flugzeug = new Flugzeug();
-        private readonly Auto _auto = new Auto();
+        private readonly Flugzeug _internesFlugzeug = new Flugzeug();
+        private readonly Auto _internesAuto = new Auto();
 
 
         public void Fahren()
         {
             // Workaraound: Statt Vererbung wird (intern) Aggregation benutzt
-            _auto.Fahren(); // FlugAuto BENUTZT Auto zum fahren => Delegieren
+            _internesAuto.Fahren(); // FlugAuto BENUTZT Auto zum fahren => Delegieren
         }
 
         public void Fliegen()
         {
             // Workaraound: Statt Vererbung wird (intern) Aggregation benutzt...
-            _flugzeug.Fliegen();
+            _internesFlugzeug.Fliegen();
         }
     }
 }

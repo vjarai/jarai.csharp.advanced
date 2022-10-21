@@ -11,12 +11,12 @@ namespace Jarai.CSharp.Pattern.Observer
             _name = name;
         }
 
-        public void PrüfeKauf(object sender, KursChangedEventArg e)
+        public void PrüfeKauf(object sender, KursChangedEventArgs e)
         {
             Console.WriteLine($"{_name} hat {e.Wkn} zum Kurs von ({e.AktuellerKurs}) gekauft.");
         }
 
-        public void PrüfeVerkauf(object sender, KursChangedEventArg e)
+        public void PrüfeVerkauf(object sender, KursChangedEventArgs e)
         {
             Console.WriteLine($"{_name} hat {e.Wkn} zum Kurs von ({e.AktuellerKurs}) verkauft.");
         }

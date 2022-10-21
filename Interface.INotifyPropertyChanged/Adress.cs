@@ -5,6 +5,7 @@ namespace Jarai.CSharp.Interface.NotifyPropertyChanged
 {
     internal class Adress : INotifyPropertyChanged
     {
+        // Backing Fields für die Properties
         private string _description;
         private string _name;
         private string _zipCode;

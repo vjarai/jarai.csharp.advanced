@@ -14,7 +14,9 @@ namespace Jarai.CSharp.Reflection
 
             // Informationen über den Typ via Reflection ermitteln
             var constructorInfos = type.GetConstructors();
+
             var methodInfos = type.GetMethods().Where(m => !m.IsSpecialName);
+
             var propertyInfos = type.GetProperties();
             
             Console.WriteLine(type.Name);
@@ -28,7 +30,7 @@ namespace Jarai.CSharp.Reflection
 
 
 
-        private static void ShowConstructors(ConstructorInfo[] constructorInfos)
+        private static void ShowConstructors(IEnumerable<ConstructorInfo> constructorInfos)
         {
             Console.WriteLine("==========================");
 
@@ -38,7 +40,7 @@ namespace Jarai.CSharp.Reflection
                 Console.Write(methodInfo.Name + "(");
                 var parameterInfos = methodInfo.GetParameters();
 
-                // Alle Methoden Parameter anzeigen
+                // Alle Konstruktor Parameter anzeigen
                 foreach (var parameterInfo in parameterInfos)
                 {
                     Console.Write(parameterInfo.Name + " : " + parameterInfo.ParameterType + ", ");

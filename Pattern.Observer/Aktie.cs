@@ -34,11 +34,11 @@ namespace Jarai.CSharp.Pattern.Observer
 
         public string Wkn { get; }
 
-        public virtual event EventHandler<KursChangedEventArg> KursChanged;
+        public virtual event EventHandler<KursChangedEventArgs> KursChanged;
 
         protected virtual void OnKursChanged()
         {
-            KursChanged?.Invoke(this, new KursChangedEventArg(Wkn, _letzterKurs, AktuellerKurs));
+            KursChanged?.Invoke(this, new KursChangedEventArgs(Wkn, _letzterKurs, AktuellerKurs));
         }
     }
 }
