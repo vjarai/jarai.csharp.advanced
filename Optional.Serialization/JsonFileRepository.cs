@@ -3,6 +3,9 @@ using Newtonsoft.Json;
 
 namespace Jarai.CSharp.Serialization
 {
+    /// <summary>
+    /// Persistiert Objekte beliebigen Typs in einer Json Datei
+    /// </summary>
     internal class JsonFileRepository : FileRepository
     {
         public override T Load<T>(string filename = null)

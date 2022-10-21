@@ -1,5 +1,8 @@
 ﻿namespace Jarai.CSharp.Serialization
 {
+    /// <summary>
+    /// Persistiert Objekte beliebigen Typs in einer Datei
+    /// </summary>
     internal abstract class FileRepository
     {
         public T Clone<T>(T objectToClone)

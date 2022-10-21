@@ -3,6 +3,9 @@ using System.Xml.Serialization;
 
 namespace Jarai.CSharp.Serialization
 {
+    /// <summary>
+    /// Persistiert Objekte beliebigen Typs in einer Xml Datei
+    /// </summary>
     internal class XmlFileRepository : FileRepository
     {
         public override T Load<T>(string filename = null)

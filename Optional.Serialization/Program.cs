@@ -4,10 +4,10 @@
     {
         private static void Main(string[] args)
         {
-            //var repository = new XmlFileRepository();
-            var repository = new JsonFileRepository();
+            var repository = new XmlFileRepository();
+            //var repository = new JsonFileRepository();
 
-            var newContact = Contact.Create("Meier", 12345);
+            var newContact = new Contact { Name = "Meier", Plz = 12345 };
 
             repository.Save(newContact);
 
