@@ -1,8 +1,9 @@
-﻿namespace Jarai.CSharp.Async.Lock;
-
-internal enum State
+﻿namespace Jarai.CSharp.Async.Lock
 {
-    Essend,
-    Denkend,
-    Hungrig
+    internal enum State
+    {
+        Essend,
+        Denkend,
+        Hungrig
+    }
 }

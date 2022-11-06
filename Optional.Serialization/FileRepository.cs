@@ -1,4 +1,4 @@
-﻿namespace Jarai.CSharp.Serialization
+﻿namespace Jarai.CSharp.Optional.Serialization
 {
     /// <summary>
     /// Persistiert Objekte beliebigen Typs in einer Datei

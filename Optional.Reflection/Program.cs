@@ -1,6 +1,4 @@
-using System;
-
-namespace Jarai.CSharp.Reflection
+namespace Jarai.CSharp.Optional.Reflection
 {
     internal class TestTreiber
     {

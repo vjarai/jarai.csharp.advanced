@@ -1,31 +1,32 @@
-﻿namespace Jarai.CSharp.Async.Example2;
-
-internal class Program
+﻿namespace Jarai.CSharp.Async.Example2
 {
-    private static async void LongProcess()
+    internal class Program
     {
-        Console.WriteLine("LongProcess Started");
+        private static async void LongProcess()
+        {
+            Console.WriteLine("LongProcess Started");
 
-        await Task.Delay(4000); // hold execution for 4 seconds
+            await Task.Delay(4000); // hold execution for 4 seconds
 
-        Console.WriteLine("LongProcess Completed");
-    }
+            Console.WriteLine("LongProcess Completed");
+        }
 
-    private static void Main(string[] args)
-    {
-        LongProcess();
+        private static void Main(string[] args)
+        {
+            LongProcess();
 
-        ShortProcess();
+            ShortProcess();
 
-        Console.ReadLine();
-    }
+            Console.ReadLine();
+        }
 
-    private static void ShortProcess()
-    {
-        Console.WriteLine("ShortProcess Started");
+        private static void ShortProcess()
+        {
+            Console.WriteLine("ShortProcess Started");
 
-        //do something here
+            //do something here
 
-        Console.WriteLine("ShortProcess Completed");
+            Console.WriteLine("ShortProcess Completed");
+        }
     }
 }

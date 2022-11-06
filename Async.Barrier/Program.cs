@@ -4,38 +4,39 @@
 
 // https://devblogs.microsoft.com/pfxteam/tag/coordination-data-structures/
 
-namespace Jarai.CSharp.Async.Barrier;
-
-internal class Program
+namespace Jarai.CSharp.Async.Barrier
 {
-    private const int TaskCount = 5;
-    private static readonly System.Threading.Barrier _barrier = new(TaskCount);
-
-    private static void GetDataAndStoreData(int index)
+    internal class Program
     {
-        Console.WriteLine("Getting data from server: " + index);
-        Thread.Sleep(TimeSpan.FromSeconds(2));
+        private const int TaskCount = 5;
+        private static readonly System.Threading.Barrier _barrier = new(TaskCount);
 
-        _barrier.SignalAndWait();
-
-        Console.WriteLine("Sending data to Backup server: " + index);
-
-        _barrier.SignalAndWait();
-    }
-
-    private static void Main(string[] args)
-    {
-        var tasks = new Task[TaskCount];
-
-        for (var i = 0; i < tasks.Length; ++i)
+        private static void GetDataAndStoreData(int index)
         {
-            var j = i;
-            tasks[j] = Task.Run(() => { GetDataAndStoreData(j); });
+            Console.WriteLine("Getting data from server: " + index);
+            Thread.Sleep(TimeSpan.FromSeconds(2));
+
+            _barrier.SignalAndWait();
+
+            Console.WriteLine("Sending data to Backup server: " + index);
+
+            _barrier.SignalAndWait();
         }
 
-        Task.WaitAll(tasks);
+        private static void Main(string[] args)
+        {
+            var tasks = new Task[TaskCount];
 
-        Console.WriteLine("Backup completed");
-        Console.ReadLine();
+            for (var i = 0; i < tasks.Length; ++i)
+            {
+                var j = i;
+                tasks[j] = Task.Run(() => { GetDataAndStoreData(j); });
+            }
+
+            Task.WaitAll(tasks);
+
+            Console.WriteLine("Backup completed");
+            Console.ReadLine();
+        }
     }
 }

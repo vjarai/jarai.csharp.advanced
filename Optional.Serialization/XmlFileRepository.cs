@@ -1,7 +1,6 @@
-﻿using System.IO;
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 
-namespace Jarai.CSharp.Serialization
+namespace Jarai.CSharp.Optional.Serialization
 {
     /// <summary>
     /// Persistiert Objekte beliebigen Typs in einer Xml Datei

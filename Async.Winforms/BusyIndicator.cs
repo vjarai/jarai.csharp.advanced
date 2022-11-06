@@ -1,23 +1,24 @@
-﻿namespace Jarai.CSharp.Async.Winforms;
-
-internal class BusyIndicator : IDisposable
+﻿namespace Jarai.CSharp.Async.Winforms
 {
-    private readonly Form _form;
-    private readonly Cursor _oldCursor;
-
-    public BusyIndicator(Form form)
+    internal class BusyIndicator : IDisposable
     {
-        _form = form;
-        _oldCursor = Cursor.Current;
+        private readonly Form _form;
+        private readonly Cursor _oldCursor;
 
-        Cursor.Current = Cursors.WaitCursor;
-        _form.UseWaitCursor = true;
-    }
+        public BusyIndicator(Form form)
+        {
+            _form = form;
+            _oldCursor = Cursor.Current;
+
+            Cursor.Current = Cursors.WaitCursor;
+            _form.UseWaitCursor = true;
+        }
 
 
-    public void Dispose()
-    {
-        _form.UseWaitCursor = false;
-        Cursor.Current = _oldCursor;
+        public void Dispose()
+        {
+            _form.UseWaitCursor = false;
+            Cursor.Current = _oldCursor;
+        }
     }
 }

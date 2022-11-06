@@ -1,15 +1,16 @@
-﻿namespace Jarai.CSharp.Async.Winforms;
-
-internal static class Program
+﻿namespace Jarai.CSharp.Async.Winforms
 {
-    /// <summary>
-    ///     The main entry point for the application.
-    /// </summary>
-    [STAThread]
-    private static void Main()
+    internal static class Program
     {
-        ApplicationConfiguration.Initialize();
-        Application.Run(new Form1());
+        /// <summary>
+        ///     The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        private static void Main()
+        {
+            ApplicationConfiguration.Initialize();
+            Application.Run(new Form1());
+        }
     }
 }
 

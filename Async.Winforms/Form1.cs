@@ -1,51 +1,52 @@
-﻿namespace Jarai.CSharp.Async.Winforms;
-
-public partial class Form1 : Form
+﻿namespace Jarai.CSharp.Async.Winforms
 {
-    private readonly CalculationService _calculationService = new();
-
-    private CancellationTokenSource _cancellationTokenSource = new();
-
-    public Form1()
+    public partial class Form1 : Form
     {
-        InitializeComponent();
-    }
+        private readonly CalculationService _calculationService = new();
 
-    private void button1_Click(object sender, EventArgs e)
-    {
-        using (new BusyIndicator(this))
+        private CancellationTokenSource _cancellationTokenSource = new();
+
+        public Form1()
         {
-            label1.Text = "Calculating...";
-            _cancellationTokenSource = new CancellationTokenSource();
-
-            var result = _calculationService.Calculate(Enumerable.Range(1, 1000), _cancellationTokenSource.Token);
-
-            label1.Text = result.Value.ToString();
+            InitializeComponent();
         }
-    }
 
-    private async void button2_Click(object sender, EventArgs e)
-    {
-        using (new BusyIndicator(this))
+        private void button1_Click(object sender, EventArgs e)
         {
-            label1.Text = "Calculating...";
-            _cancellationTokenSource = new CancellationTokenSource();
-
-            try
+            using (new BusyIndicator(this))
             {
-                var result =
-                    await _calculationService.CalculateAsync(Enumerable.Range(1, 1000), _cancellationTokenSource.Token);
+                label1.Text = "Calculating...";
+                _cancellationTokenSource = new CancellationTokenSource();
+
+                var result = _calculationService.Calculate(Enumerable.Range(1, 1000), _cancellationTokenSource.Token);
+
                 label1.Text = result.Value.ToString();
             }
-            catch (Exception ex)
+        }
+
+        private async void button2_Click(object sender, EventArgs e)
+        {
+            using (new BusyIndicator(this))
             {
-                label1.Text = ex.Message;
+                label1.Text = "Calculating...";
+                _cancellationTokenSource = new CancellationTokenSource();
+
+                try
+                {
+                    var result =
+                        await _calculationService.CalculateAsync(Enumerable.Range(1, 1000), _cancellationTokenSource.Token);
+                    label1.Text = result.Value.ToString();
+                }
+                catch (Exception ex)
+                {
+                    label1.Text = ex.Message;
+                }
             }
         }
-    }
 
-    private void button3_Click(object sender, EventArgs e)
-    {
-        _cancellationTokenSource.Cancel();
+        private void button3_Click(object sender, EventArgs e)
+        {
+            _cancellationTokenSource.Cancel();
+        }
     }
 }

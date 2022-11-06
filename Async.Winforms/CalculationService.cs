@@ -2,28 +2,29 @@
 
 // https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/
 
-namespace Jarai.CSharp.Async.Winforms;
-
-internal class CalculationService
+namespace Jarai.CSharp.Async.Winforms
 {
-    public CalculationResult Calculate(IEnumerable<int> input, CancellationToken cancellationToken)
+    internal class CalculationService
     {
-        var result = 0;
-
-        foreach (var i in input)
+        public CalculationResult Calculate(IEnumerable<int> input, CancellationToken cancellationToken)
         {
-            result += i;
-            Thread.Sleep(3); // Simulate long running operation
+            var result = 0;
 
-            cancellationToken.ThrowIfCancellationRequested(); // Abort, if canceled from UI
+            foreach (var i in input)
+            {
+                result += i;
+                Thread.Sleep(3); // Simulate long running operation
+
+                cancellationToken.ThrowIfCancellationRequested(); // Abort, if canceled from UI
+            }
+
+            return new CalculationResult(result);
         }
 
-        return new CalculationResult(result);
-    }
-
-    public Task<CalculationResult> CalculateAsync(IEnumerable<int> input, CancellationToken cancellationToken)
-    {
-        var task = Task.Run(() => Calculate(input, cancellationToken), cancellationToken);
-        return task;
+        public Task<CalculationResult> CalculateAsync(IEnumerable<int> input, CancellationToken cancellationToken)
+        {
+            var task = Task.Run(() => Calculate(input, cancellationToken), cancellationToken);
+            return task;
+        }
     }
 }

@@ -31,7 +31,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern7.DependencyInjectio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 Optional", "99 Optional", "{B3694068-A3B4-4486-95DE-DAFBE8C4A8F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Optional.Reflection\Reflection.csproj", "{5EAD1A82-7FD4-40C3-83A1-8D727DAFB33D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optional.Reflection", "Optional.Reflection\Optional.Reflection.csproj", "{5EAD1A82-7FD4-40C3-83A1-8D727DAFB33D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface3.Enumerable", "Interface.IEnumerable\Interface3.Enumerable.csproj", "{364E0B31-ED74-4073-8554-2878482136F6}"
 EndProject
@@ -45,7 +45,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generic5.Collections", "Gen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async2.Winforms", "Async.Winforms\Async2.Winforms.csproj", "{9338B61D-DC3D-481A-857E-17027E8EB328}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization", "Optional.Serialization\Serialization.csproj", "{44DD3141-4107-442C-82BD-332EEAFC0E91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optional.Serialization", "Optional.Serialization\Optional.Serialization.csproj", "{44DD3141-4107-442C-82BD-332EEAFC0E91}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async4.Lock.Philosophen", "Async.Philosophen\Async4.Lock.Philosophen.csproj", "{A0600BCE-7430-44DF-8708-CC595601E700}"
 EndProject
@@ -69,7 +69,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.HostingWebApplicati
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generic2.ReturnType", "Generic.ReturnType\Generic2.ReturnType.csproj", "{203C3BBD-66B6-4242-AC31-9C74B1563302}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewLanguageFeatures", "NewFeatures\NewLanguageFeatures.csproj", "{E948423B-89CC-4CE4-B449-FC286A221CBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optional.NewLanguageFeatures", "NewFeatures\Optional.NewLanguageFeatures.csproj", "{E948423B-89CC-4CE4-B449-FC286A221CBA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async3.Barrier", "Async.Barrier\Async3.Barrier.csproj", "{61FE3D3A-03D0-41B9-93BC-C131E8C683F5}"
 EndProject
@@ -83,7 +83,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF6.CodeFirst", "EF6.CodeFi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF6.DatabaseFirst", "Ef6.DatabaseFirst\EF6.DatabaseFirst.csproj", "{12B54648-4541-4084-B70D-77DA9E51D61B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface.WinForms", "UserInterface.WinForms\UserInterface.WinForms.csproj", "{08868170-42D0-4092-9E02-B0F71BE18952}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserInterface.WinForms", "UserInterface.WinForms\UserInterface.WinForms.csproj", "{08868170-42D0-4092-9E02-B0F71BE18952}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface.Wpf", "UserInterface.Wpf\UserInterface.Wpf.csproj", "{BD8EA140-3E0D-4167-847B-1F0FE6BA8F57}"
 EndProject
@@ -106,8 +106,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Refresher1.Zahlenraten", "Refresher.Zahlenraten\Refresher1.Zahlenraten.csproj", "{BC6C0AFE-3120-4621-A99D-63765B37161E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern1.FactoryMethod", "Pattern.FactoryMethod\Pattern1.FactoryMethod.csproj", "{69400005-8092-4E1C-AA35-0C2398625303}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{20B3270F-34A3-49D8-B53B-4F436493A8C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -287,10 +285,6 @@ Global
 		{69400005-8092-4E1C-AA35-0C2398625303}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69400005-8092-4E1C-AA35-0C2398625303}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69400005-8092-4E1C-AA35-0C2398625303}.Release|Any CPU.Build.0 = Release|Any CPU
-		{20B3270F-34A3-49D8-B53B-4F436493A8C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20B3270F-34A3-49D8-B53B-4F436493A8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20B3270F-34A3-49D8-B53B-4F436493A8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20B3270F-34A3-49D8-B53B-4F436493A8C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

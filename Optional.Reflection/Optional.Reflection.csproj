@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <RootNamespace>Jarai.CSharp.Optional.Reflection</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Optional.Reflection</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="_ReadMe\Aufgaben.txt" />
+  </ItemGroup>
+
+</Project>

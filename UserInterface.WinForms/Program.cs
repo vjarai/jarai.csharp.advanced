@@ -13,8 +13,8 @@ namespace Jarai.CSharp.UserInterface.WinForms
         [STAThread]
         private static void Main()
         {
-            //Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
+            //Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

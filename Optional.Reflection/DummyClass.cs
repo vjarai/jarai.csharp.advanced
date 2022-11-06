@@ -1,4 +1,4 @@
-﻿namespace Jarai.CSharp.Reflection
+﻿namespace Jarai.CSharp.Optional.Reflection
 {
     public class DummyClass
     {
