@@ -1,14 +1,11 @@
-﻿using System;
+﻿namespace Jarai.CSharp.Async.Winforms;
 
-namespace Jarai.CSharp.Async.Winforms
+internal class CalculationResult
 {
-    internal class CalculationResult
+    public CalculationResult(int value)
     {
-        public CalculationResult(int value)
-        {
-            Value = new Random().Next(value);
-        }
-
-        public int Value { get; set; }
+        Value = new Random().Next(value);
     }
+
+    public int Value { get; set; }
 }

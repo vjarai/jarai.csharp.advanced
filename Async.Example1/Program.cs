@@ -1,36 +1,32 @@
-﻿using System;
-using System.Threading;
+﻿namespace Jarai.CSharp.Async.Example1;
 
-namespace Jarai.CSharp.Async.Example1
+internal class Program
 {
-    internal class Program
+    private static void LongProcess()
     {
-        private static void LongProcess() 
-        {
-            Console.WriteLine("LongProcess Started");
+        Console.WriteLine("LongProcess Started");
 
-            // simulate some code that takes long execution time 
-            Thread.Sleep(4000); // hold execution for 4 seconds
+        // simulate some code that takes long execution time 
+        Thread.Sleep(4000); // hold execution for 4 seconds
 
-            Console.WriteLine("LongProcess Completed");
-        }
+        Console.WriteLine("LongProcess Completed");
+    }
 
-        private static void Main(string[] args)
-        {
-            LongProcess();
+    private static void Main(string[] args)
+    {
+        LongProcess();
 
-            ShortProcess();
+        ShortProcess();
 
-            Console.ReadLine();
-        }
+        Console.ReadLine();
+    }
 
-        private static void ShortProcess()
-        {
-            Console.WriteLine("ShortProcess Started");
+    private static void ShortProcess()
+    {
+        Console.WriteLine("ShortProcess Started");
 
-            //do something here
+        //do something here
 
-            Console.WriteLine("ShortProcess Completed");
-        }
+        Console.WriteLine("ShortProcess Completed");
     }
 }

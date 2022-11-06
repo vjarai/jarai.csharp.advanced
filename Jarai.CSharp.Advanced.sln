@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Patterns", "02 Patterns"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Refresher", "01 Refresher", "{E88E8CAB-5A5E-407C-AACE-27184FB36584}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern4.State", "Pattern.State\Pattern4.State.csproj", "{E35B3213-A6F4-4DD0-AB77-379240D6E6C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern4.State", "Pattern.State\Pattern4.State.csproj", "{E35B3213-A6F4-4DD0-AB77-379240D6E6C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern2.Strategy", "Pattern.Strategy\Pattern2.Strategy.csproj", "{00018274-87AE-4A78-B452-E4FEDFDAAA10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern2.Strategy", "Pattern.Strategy\Pattern2.Strategy.csproj", "{00018274-87AE-4A78-B452-E4FEDFDAAA10}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Interfaces", "05 Interfaces", "{A76503F5-B9DB-4ECF-B1FC-A8E27A0DC9EA}"
 EndProject
@@ -17,15 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Generics", "03 Generics"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Async", "06 Async", "{32201F16-65AA-4636-BF98-86A8CBBF5548}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic4.Restriction", "Generic.WithRestriction\Generic4.Restriction.csproj", "{6EB418A6-8D15-4A32-9315-A24182655C6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generic4.Restriction", "Generic.WithRestriction\Generic4.Restriction.csproj", "{6EB418A6-8D15-4A32-9315-A24182655C6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface4.NotifyPropertyChanged", "Interface.INotifyPropertyChanged\Interface4.NotifyPropertyChanged.csproj", "{7BF68E0E-C2A3-4BA7-B7DC-7A273541D4CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface4.NotifyPropertyChanged", "Interface.INotifyPropertyChanged\Interface4.NotifyPropertyChanged.csproj", "{7BF68E0E-C2A3-4BA7-B7DC-7A273541D4CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface1.Simple", "Interface.Simple\Interface1.Simple.csproj", "{CB30B5F7-ECEF-454C-93F3-6773EEF9CF00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface1.Simple", "Interface.Simple\Interface1.Simple.csproj", "{CB30B5F7-ECEF-454C-93F3-6773EEF9CF00}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 User Interface", "06 User Interface", "{6BDAEBB1-8C91-4023-99D3-28E16DE739CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event.Observer", "Pattern.Observer\Event.Observer.csproj", "{75D5DD25-23E6-45B1-9B1E-850D66038FDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Event.Observer", "Pattern.Observer\Event.Observer.csproj", "{75D5DD25-23E6-45B1-9B1E-850D66038FDF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern7.DependencyInjection.Core", "Pattern.DependencyInjection\Pattern7.DependencyInjection.Core.csproj", "{310D5D66-DD1D-45DC-A5C1-C10DA0ABAA61}"
 EndProject
@@ -33,21 +33,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 Optional", "99 Optional"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Optional.Reflection\Reflection.csproj", "{5EAD1A82-7FD4-40C3-83A1-8D727DAFB33D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface3.Enumerable", "Interface.IEnumerable\Interface3.Enumerable.csproj", "{364E0B31-ED74-4073-8554-2878482136F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface3.Enumerable", "Interface.IEnumerable\Interface3.Enumerable.csproj", "{364E0B31-ED74-4073-8554-2878482136F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic6.Func", "Generic.Func\Generic6.Func.csproj", "{1E7394CA-CFCA-4DFD-9B4C-FCFB8177EE14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generic6.Func", "Generic.Func\Generic6.Func.csproj", "{1E7394CA-CFCA-4DFD-9B4C-FCFB8177EE14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic7.Predicate", "Generic.Predicate\Generic7.Predicate.csproj", "{FC34CA31-0FD9-45FB-9765-C6C6B2B2ED16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generic7.Predicate", "Generic.Predicate\Generic7.Predicate.csproj", "{FC34CA31-0FD9-45FB-9765-C6C6B2B2ED16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic8.LazyLoad", "Generic.LazyLoad\Generic8.LazyLoad.csproj", "{7276709A-1287-43D6-94A8-7BA129886109}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generic8.LazyLoad", "Generic.LazyLoad\Generic8.LazyLoad.csproj", "{7276709A-1287-43D6-94A8-7BA129886109}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic5.Collections", "Generic.Collections\Generic5.Collections.csproj", "{0711DBD7-6CA0-4203-B8BF-009C74B3831C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generic5.Collections", "Generic.Collections\Generic5.Collections.csproj", "{0711DBD7-6CA0-4203-B8BF-009C74B3831C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async2.Winforms", "Async.Winforms\Async2.Winforms.csproj", "{9338B61D-DC3D-481A-857E-17027E8EB328}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async2.Winforms", "Async.Winforms\Async2.Winforms.csproj", "{9338B61D-DC3D-481A-857E-17027E8EB328}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization", "Optional.Serialization\Serialization.csproj", "{44DD3141-4107-442C-82BD-332EEAFC0E91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async4.Lock.Philosophen", "Async.Philosophen\Async4.Lock.Philosophen.csproj", "{A0600BCE-7430-44DF-8708-CC595601E700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async4.Lock.Philosophen", "Async.Philosophen\Async4.Lock.Philosophen.csproj", "{A0600BCE-7430-44DF-8708-CC595601E700}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Delegates+Events", "04 Delegates+Events", "{7A31E21B-F0D8-43EB-9AE1-0DA6A164C8E8}"
 EndProject
@@ -57,27 +57,27 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.EntityModel", "Rest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.ClientApplication", "RestApi.ClientApplication\RestApi.ClientApplication.csproj", "{30C2F6C1-92EA-4DC8-B03B-B5BC146B179C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.Example1", "Async.Example1\Async.Example1.csproj", "{2DAD8E9A-F9B1-4881-AD16-EE366748439A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async.Example1", "Async.Example1\Async.Example1.csproj", "{2DAD8E9A-F9B1-4881-AD16-EE366748439A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.Example2", "Async.Example2\Async.Example2.csproj", "{47F4F4D6-A829-4CC7-B1AE-531D2C06F103}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async.Example2", "Async.Example2\Async.Example2.csproj", "{47F4F4D6-A829-4CC7-B1AE-531D2C06F103}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.Example3", "Async.Example3\Async.Example3.csproj", "{9A98F0B4-8EC2-4E64-9052-07FC9A6EBB03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async.Example3", "Async.Example3\Async.Example3.csproj", "{9A98F0B4-8EC2-4E64-9052-07FC9A6EBB03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.Example4", "Async.Example4\Async.Example4.csproj", "{226B64A3-31F5-4018-9A04-A525C1C15259}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async.Example4", "Async.Example4\Async.Example4.csproj", "{226B64A3-31F5-4018-9A04-A525C1C15259}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi.HostingWebApplication", "RestApi.HostingWebApplication\RestApi.HostingWebApplication.csproj", "{D762EA68-D59B-4EF2-96F0-6451F882F836}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic2.ReturnType", "Generic.ReturnType\Generic2.ReturnType.csproj", "{203C3BBD-66B6-4242-AC31-9C74B1563302}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generic2.ReturnType", "Generic.ReturnType\Generic2.ReturnType.csproj", "{203C3BBD-66B6-4242-AC31-9C74B1563302}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewLanguageFeatures", "NewFeatures\NewLanguageFeatures.csproj", "{E948423B-89CC-4CE4-B449-FC286A221CBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async3.Barrier", "Async.Barrier\Async3.Barrier.csproj", "{61FE3D3A-03D0-41B9-93BC-C131E8C683F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async3.Barrier", "Async.Barrier\Async3.Barrier.csproj", "{61FE3D3A-03D0-41B9-93BC-C131E8C683F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic3.Class", "Generic.Class\Generic3.Class.csproj", "{86051384-25EB-422F-A0D2-EC1E4551A922}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generic3.Class", "Generic.Class\Generic3.Class.csproj", "{86051384-25EB-422F-A0D2-EC1E4551A922}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic1.Parameters", "Generic.Parameters\Generic1.Parameters.csproj", "{94C97D99-5119-44D3-88EC-8E469B798A4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generic1.Parameters", "Generic.Parameters\Generic1.Parameters.csproj", "{94C97D99-5119-44D3-88EC-8E469B798A4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern3.Adapter", "Pattern.Adapter\Pattern3.Adapter.csproj", "{DD0BCF94-246C-4B41-909C-93D3A34C858A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern3.Adapter", "Pattern.Adapter\Pattern3.Adapter.csproj", "{DD0BCF94-246C-4B41-909C-93D3A34C858A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF6.CodeFirst", "EF6.CodeFirst\EF6.CodeFirst.csproj", "{BF408373-5069-4EA8-B83B-F12629A587C9}"
 EndProject
@@ -87,17 +87,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface.WinForms", "U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface.Wpf", "UserInterface.Wpf\UserInterface.Wpf.csproj", "{BD8EA140-3E0D-4167-847B-1F0FE6BA8F57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.Parallel_For_PLINQ", "Async.ParallelFor\Async.Parallel_For_PLINQ.csproj", "{13884B84-40B1-4827-A4D7-BEA9D7E1FA7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async.Parallel_For_PLINQ", "Async.ParallelFor\Async.Parallel_For_PLINQ.csproj", "{13884B84-40B1-4827-A4D7-BEA9D7E1FA7E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outlook.Automation", "Outlook.Automation\Outlook.Automation.csproj", "{73706361-C9BD-4F3A-A693-3CA2E863492D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate.Simple", "Delegate.Simple\Delegate.Simple.csproj", "{EB97B4A6-E209-4E4E-B7A6-A44777BE5697}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegate.Simple", "Delegate.Simple\Delegate.Simple.csproj", "{EB97B4A6-E209-4E4E-B7A6-A44777BE5697}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface2.Disposable", "Interface.IDisposable\Interface2.Disposable.csproj", "{F46BF578-0FAC-424D-86BF-52A53A3553E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface2.Disposable", "Interface.IDisposable\Interface2.Disposable.csproj", "{F46BF578-0FAC-424D-86BF-52A53A3553E7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserInterface.RazorViews", "UserInterface.RazorViews\UserInterface.RazorViews.csproj", "{3E8C8B70-7267-4685-B921-17BE0AB9EFA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern6.DependencyInjection.HomeBrew", "Pattern.DependencyInjection.HomeBrew\Pattern6.DependencyInjection.HomeBrew.csproj", "{15C993F6-30F3-4635-B49F-7D53BAD2A709}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern6.DependencyInjection.HomeBrew", "Pattern.DependencyInjection.HomeBrew\Pattern6.DependencyInjection.HomeBrew.csproj", "{15C993F6-30F3-4635-B49F-7D53BAD2A709}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Refresher2.Relations", "Refresher.Relations\Refresher2.Relations.csproj", "{C50999B9-3C7D-4448-9743-51D9AFA69620}"
 EndProject
@@ -106,6 +106,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Refresher1.Zahlenraten", "Refresher.Zahlenraten\Refresher1.Zahlenraten.csproj", "{BC6C0AFE-3120-4621-A99D-63765B37161E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern1.FactoryMethod", "Pattern.FactoryMethod\Pattern1.FactoryMethod.csproj", "{69400005-8092-4E1C-AA35-0C2398625303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{20B3270F-34A3-49D8-B53B-4F436493A8C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -285,6 +287,10 @@ Global
 		{69400005-8092-4E1C-AA35-0C2398625303}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69400005-8092-4E1C-AA35-0C2398625303}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69400005-8092-4E1C-AA35-0C2398625303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20B3270F-34A3-49D8-B53B-4F436493A8C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20B3270F-34A3-49D8-B53B-4F436493A8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20B3270F-34A3-49D8-B53B-4F436493A8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20B3270F-34A3-49D8-B53B-4F436493A8C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

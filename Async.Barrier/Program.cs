@@ -1,44 +1,41 @@
-﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
+﻿
 
 // https://dotnetpattern.com/threading-barrier
 
 // https://devblogs.microsoft.com/pfxteam/tag/coordination-data-structures/
 
-namespace Jarai.CSharp.Async.Barrier
+namespace Jarai.CSharp.Async.Barrier;
+
+internal class Program
 {
-    internal class Program
+    private const int TaskCount = 5;
+    private static readonly System.Threading.Barrier _barrier = new(TaskCount);
+
+    private static void GetDataAndStoreData(int index)
     {
-        const int TaskCount = 5;
-        private static readonly System.Threading.Barrier _barrier = new System.Threading.Barrier(TaskCount);
+        Console.WriteLine("Getting data from server: " + index);
+        Thread.Sleep(TimeSpan.FromSeconds(2));
 
-        private static void GetDataAndStoreData(int index)
+        _barrier.SignalAndWait();
+
+        Console.WriteLine("Sending data to Backup server: " + index);
+
+        _barrier.SignalAndWait();
+    }
+
+    private static void Main(string[] args)
+    {
+        var tasks = new Task[TaskCount];
+
+        for (var i = 0; i < tasks.Length; ++i)
         {
-            Console.WriteLine("Getting data from server: " + index);
-            Thread.Sleep(TimeSpan.FromSeconds(2));
-
-            _barrier.SignalAndWait();
-
-            Console.WriteLine("Sending data to Backup server: " + index);
-
-            _barrier.SignalAndWait();
+            var j = i;
+            tasks[j] = Task.Run(() => { GetDataAndStoreData(j); });
         }
 
-        private static void Main(string[] args)
-        {
-            var tasks = new Task[TaskCount];
+        Task.WaitAll(tasks);
 
-            for (var i = 0; i < tasks.Length; ++i)
-            {
-                var j = i;
-                tasks[j] = Task.Run(() => { GetDataAndStoreData(j); });
-            }
-
-            Task.WaitAll(tasks);
-
-            Console.WriteLine("Backup completed");
-            Console.ReadLine();
-        }
+        Console.WriteLine("Backup completed");
+        Console.ReadLine();
     }
 }
