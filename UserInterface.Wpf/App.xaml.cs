@@ -11,7 +11,8 @@ namespace Jarai.CSharp.UserInterface.Wpf
     {
         private App()
         {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
+            //Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
         }
     }
 }
