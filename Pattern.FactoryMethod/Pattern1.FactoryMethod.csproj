@@ -5,8 +5,8 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
-    <RootNamespace>Jarai.CSharp.Pattern.Observer</RootNamespace>
-    <AssemblyName>Jarai.CSharp.Pattern.Observer</AssemblyName>
+    <RootNamespace>Jarai.CSharp.Pattern.FactoryMethod</RootNamespace>
+    <AssemblyName>Jarai.CSharp.Pattern.FactoryMethod</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

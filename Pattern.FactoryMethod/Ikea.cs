@@ -27,10 +27,10 @@ namespace Jarai.CSharp.Pattern.FactoryMethod
 
         public void Show()
         {
-            Debug.WriteLine("=======================================");
-            Debug.WriteLine("Ikea in      : " + _standort);
-            Debug.WriteLine("Filialumsatz : " + _filialumsatz);
-            Debug.WriteLine("Konzernumsatz: " + _konzernumsatz);
+            Console.WriteLine("=======================================");
+            Console.WriteLine("Ikea in      : " + _standort);
+            Console.WriteLine("Filialumsatz : " + _filialumsatz);
+            Console.WriteLine("Konzernumsatz: " + _konzernumsatz);
         }
 
         /// <summary>

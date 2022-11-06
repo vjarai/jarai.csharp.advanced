@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Jarai.CSharp.Refresher.Relations
+﻿namespace Jarai.CSharp.Advanced.Refresher.Relations
 {
     public class Lkw : Kfz
     {

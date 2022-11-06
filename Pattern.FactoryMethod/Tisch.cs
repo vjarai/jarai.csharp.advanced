@@ -2,14 +2,15 @@ using System.Diagnostics;
 
 namespace Jarai.CSharp.Pattern.FactoryMethod
 {
-    public class Stuhl : Möbel
+    public class Tisch : Möbel
     {
-        public Stuhl() : base("Stuhl Sven", 25)
+        public Tisch(string name, double preis)
+            : base(name, preis)
         {
         }
 
-        public Stuhl(string name, double preis)
-            : base(name, preis)
+        public Tisch()
+            : this("Tisch Max", 100)
         {
         }
 
@@ -17,12 +18,12 @@ namespace Jarai.CSharp.Pattern.FactoryMethod
         {
             ThrowExceptionIfNotAssembled();
 
-            Debug.WriteLine("Ich setze mich auf den Stuhl.");
+            Console.WriteLine("Ich stelle den Teller auf den Tisch.");
         }
 
         public override void Montieren()
         {
-            Debug.WriteLine("Die Beine werden an den Stuhl geschraubt.");
+            Console.WriteLine("Die Tischplatte wird festgeschraubt.");
             IsAssembled = true;
         }
     }

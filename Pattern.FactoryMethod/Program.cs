@@ -30,17 +30,17 @@ namespace Jarai.CSharp.Pattern.FactoryMethod
             }
             catch (NichtAufLagerException e)
             {
-                Debug.WriteLine(e);
+                Console.WriteLine(e);
                 // Todo: Ersatzartikel anbieten?
             }
             catch (InvalidUserOperationException e)
             {
-                Debug.WriteLine(e);
+                Console.WriteLine(e);
                 // Todo: Anleitung zusenden?
             }
             catch (Exception e)
             {
-                Debug.WriteLine(e);
+                Console.WriteLine(e);
                 // Todo: Fehler loggen
             }
 

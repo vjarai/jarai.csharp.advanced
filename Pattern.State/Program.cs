@@ -6,13 +6,13 @@ namespace Jarai.CSharp.Pattern.State
         {
             var meinTelefon = new Telefon();
 
-            meinTelefon.Auflegen();
             meinTelefon.AnnehmenAnruf();
             meinTelefon.Sprechen();
             meinTelefon.Auflegen();
 
             meinTelefon.Abheben();
             meinTelefon.Wählen();
+            meinTelefon.Sprechen();
             meinTelefon.Sprechen();
             meinTelefon.Auflegen();
         }

@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Jarai.CSharp.Refresher.Relations.Tests
+namespace Jarai.CSharp.Advanced.Refresher.Relations.Tests
 {
     public class LkwTests
     {

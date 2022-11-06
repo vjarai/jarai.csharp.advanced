@@ -1,6 +1,4 @@
-using System;
-
-namespace Jarai.CSharp.Basics.Zahlenraten
+namespace Jarai.CSharp.Advanced.Refresher.Zahlenraten
 {
     internal class Program
     {
