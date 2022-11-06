@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Delegate.Simple
+﻿namespace Jarai.CSharp.Delegate.Simple
 {
     internal delegate int RechenFunktion(int x, int y);
 
@@ -12,13 +10,13 @@ namespace Delegate.Simple
             var y = 200;
 
             // Variable (vom Typ) RechenFunktion anlegen und initialisieren
-            RechenFunktion rechenFunktion = Add;
+            RechenFunktion aktuelleRechenFunktion = Add;
 
-            var ergebnis1 = rechenFunktion(x, y); // ruft Add() auf
+            var ergebnis1 = aktuelleRechenFunktion(x, y); // ruft Add() auf
             Console.WriteLine($"Ergebnis1: {ergebnis1}");
 
-            rechenFunktion = Subtract;
-            var ergebnis2 = rechenFunktion(x, y); // ruft Subtract() auf
+            aktuelleRechenFunktion = Subtract;
+            var ergebnis2 = aktuelleRechenFunktion(x, y); // ruft Subtract() auf
             Console.WriteLine($"Ergebnis2: {ergebnis2}");
         }
 
