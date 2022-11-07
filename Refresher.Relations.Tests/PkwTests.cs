@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using Moq;
+using Xunit;
 
 namespace Jarai.CSharp.Advanced.Refresher.Relations.Tests
 {
@@ -39,6 +40,24 @@ namespace Jarai.CSharp.Advanced.Refresher.Relations.Tests
 
             // Assert
             Assert.Throws<TankleerException>(() => pkw.Fahren(1000));
+        }
+
+
+        [Fact]
+        public void Fahren_startet_motor()
+        {
+            // Arrange
+            var motorMock = new Mock<Motor>(100);
+            var target = new Pkw("VW", motorMock.Object);
+
+            // Act
+            // Erwartung: Anlassen wird aufgerufen
+            motorMock.Setup(mock => mock.Start());
+            target.Fahren(100);
+
+            // Assert
+            // Erwartungen erfüllt?
+            motorMock.VerifyAll();
         }
     }
 }

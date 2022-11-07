@@ -11,14 +11,14 @@
 
         public int Leistung { get; }
 
-        public void Start()
+        public virtual void Start()
         {
             if (IstAngelassen) throw new InvalidOperationException("Motor is already running.");
             Console.WriteLine("Motor started.");
             IstAngelassen = true;
         }
 
-        public void Stop()
+        public virtual void Stop()
         {
             if (!IstAngelassen) throw new InvalidOperationException("Motor is not running.");
             Console.WriteLine("Motor stopped.");
