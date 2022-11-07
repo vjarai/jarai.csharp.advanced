@@ -1,5 +1,3 @@
-using System.Diagnostics;
-
 namespace Jarai.CSharp.Pattern.FactoryMethod
 {
     public class Stuhl : Möbel
@@ -23,7 +21,7 @@ namespace Jarai.CSharp.Pattern.FactoryMethod
         public override void Montieren()
         {
             Console.WriteLine("Die Beine werden an den Stuhl geschraubt.");
-            IsAssembled = true;
+            IstMontiert = true;
         }
     }
 }

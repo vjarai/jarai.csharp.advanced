@@ -1,5 +1,3 @@
-using System;
-using System.Diagnostics;
 using System.Reflection;
 using Jarai.CSharp.Pattern.FactoryMethod.Exceptions;
 
@@ -40,17 +38,33 @@ namespace Jarai.CSharp.Pattern.FactoryMethod
         public Möbel Verkaufen(string möbelTyp)
         {
             Console.WriteLine($"Willkommen bei Ikea {_standort}.");
-            
-            var className = GetType().Namespace + "." + möbelTyp;
 
-            // Instanz via Reflection über den Klassennamen erstellen, statt new
-            var möbel = (Möbel)Assembly.GetExecutingAssembly().CreateInstance(className, true);
-            
-            if (möbel == null)
+            Möbel neuesMöbel = null;
+
+            if (möbelTyp == "Tisch")
+                neuesMöbel = new Tisch();
+            else if (möbelTyp == "Stuhl")
+                neuesMöbel = new Stuhl();
+
+            // Oder Eleganter via Reflection:
+            // neuesMöbel = CreateMöbelViaReflection(möbelTyp);
+
+            if (neuesMöbel == null)
                 throw new NichtAufLagerException($"{möbelTyp} ist leider nicht auf Lager.");
 
-            _konzernumsatz += möbel.Preis;
-            _filialumsatz += möbel.Preis;
+            _konzernumsatz += neuesMöbel.Preis;
+            _filialumsatz += neuesMöbel.Preis;
+
+            return neuesMöbel;
+        }
+
+
+        private Möbel CreateMöbelViaReflection(string möbelTyp)
+        {
+            var className = GetType().Namespace + "." + möbelTyp; // namespace ergänzen
+
+            // Instanz via Reflection / CreateInstance über den Klassennamen erstellen, statt new
+            var möbel = (Möbel)Assembly.GetExecutingAssembly().CreateInstance(className, true);
 
             return möbel;
         }

@@ -1,5 +1,3 @@
-using System.Diagnostics;
-
 namespace Jarai.CSharp.Pattern.FactoryMethod
 {
     public class Tisch : Möbel
@@ -24,7 +22,7 @@ namespace Jarai.CSharp.Pattern.FactoryMethod
         public override void Montieren()
         {
             Console.WriteLine("Die Tischplatte wird festgeschraubt.");
-            IsAssembled = true;
+            IstMontiert = true;
         }
     }
 }

@@ -3,7 +3,7 @@
 
 Der Computer denkt sich ein zufällige Zahl zwischen 1 und 100 aus, die der Spieler erraten muss.
 
-Hierzu muss der Spieler jeweils einen Tipp eingeben und der Computer antwortet, ob der Tipp zu klein, zu groß oder richtig war. Bei einem falschen Tipp 
+Hierzu muss der Spieler jeweils einen Tipp eingeben und der Computer antwortet, ob der Tipp zu klein, zu groß oder richtig war. 
 
 Beim richtigen Tipp zeigt der Computer die Anzahl der benötigten Versuche an und fragt, ob das Spiel noch einmal von vorne beginnen soll.
 

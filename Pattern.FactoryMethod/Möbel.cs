@@ -2,14 +2,17 @@ using Jarai.CSharp.Pattern.FactoryMethod.Exceptions;
 
 namespace Jarai.CSharp.Pattern.FactoryMethod
 {
-    public abstract class Möbel // Sobald eine Klasse mindestens eine abstracte Methode enthält,
-        // wird die Klasse zur abstracten Basisclasse (ABC)
-        // Von abstracten Klassen kann keine Instanz erstellt werden 
+    /// <summary>
+    ///     Abstracte Basisklasse für alle Möbel Arten
+    ///     Sobald eine Klasse mindestens eine abstracte Methode enthält,
+    ///     wird muss die Klasse selbst abstract sein.
+    ///     Von abstracten Klassen können keine Instanzen erstellt werden!
+    /// </summary>
+    public abstract class Möbel
     {
-        protected bool IsAssembled = false;
+        protected bool IstMontiert = false;
 
         protected string Name;
-
 
         protected Möbel(string name, double preis)
         {
@@ -25,7 +28,7 @@ namespace Jarai.CSharp.Pattern.FactoryMethod
 
         protected void ThrowExceptionIfNotAssembled()
         {
-            if (!IsAssembled)
+            if (!IstMontiert)
                 throw new InvalidUserOperationException("Möbel muss vor benutzung montiert werden.");
             // Best Practice: Fehlermeldungen positiv formulieren (d.h. das Wort "nicht" vermeiden),
         }

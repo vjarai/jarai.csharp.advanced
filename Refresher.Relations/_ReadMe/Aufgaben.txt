@@ -1,14 +1,15 @@
 ﻿Übung: Relationen
 ==================
 
-1. Erstellen Sie drei Klassen: Motor, Pkw, Kfz
+1. Erstellen Sie die Klassen: Motor, Pkw, Kfz, Lkw
 
-2. Welche Beziehungen existieren zwischen diesen drei Klassen?
+2. Welche Beziehungen existieren zwischen den Klassen?
 
 3. Erstellen Sie in Visual Studio ein Klassendiagramm (mit dem Klassen Designer).
 
-4. Erstellen Sie in Main() eine neue Pkw Instanz und rufen Sie dessen wichtigste Methoden auf.
-   Noch besser: Erstellen Sie ein TEST Projekt und testen Sie die wichtigsten Funktionen der Pkw Klasse.
+4. Erstellen Sie in Main() Pkw und Lkw Instanzen und rufen Sie deren wichtigste Methoden auf.
+   
+5. Besser: Erstellen Sie ein TEST Projekt und testen Sie die wichtigsten Funktionen von Pkw, Motor und Lkw.
    Kommentieren Sie die drei "AAA" Bereiche (Arrange, Act, Assert) der Tests.
 
 6. Woran erkennt man die Beziehung Aggregation / Komposition?

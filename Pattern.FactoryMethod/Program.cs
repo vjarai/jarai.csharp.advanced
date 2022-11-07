@@ -1,5 +1,3 @@
-using System;
-using System.Diagnostics;
 using Jarai.CSharp.Pattern.FactoryMethod.Exceptions;
 
 namespace Jarai.CSharp.Pattern.FactoryMethod
