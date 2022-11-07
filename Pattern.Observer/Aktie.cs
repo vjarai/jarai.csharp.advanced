@@ -6,7 +6,7 @@ namespace Jarai.CSharp.Pattern.Observer
     {
         private decimal _aktuellerKurs;
 
-        protected decimal _letzterKurs;
+        private decimal _letzterKurs;
 
         public Aktie(string wkn, string name, decimal aktuellerKurs)
         {
@@ -34,7 +34,7 @@ namespace Jarai.CSharp.Pattern.Observer
 
         public string Wkn { get; }
 
-        public virtual event EventHandler<KursChangedEventArgs> KursChanged;
+        public event EventHandler<KursChangedEventArgs> KursChanged;
 
         protected virtual void OnKursChanged()
         {

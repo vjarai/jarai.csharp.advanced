@@ -16,5 +16,29 @@ namespace Jarai.CSharp.Advanced.Refresher.Relations.Tests
             // Assert
             Assert.Equal(100, pkw.TachoStand);
         }
+
+        [Fact]
+        public void Fahren_mindert_den_Tankinhalt()
+        {
+            // Arrange
+            var pkw = new Pkw("VW", new Motor(100));
+
+            // Act
+            var tankinhaltVorher = pkw.Tankinhalt;
+            pkw.Fahren(100);
+
+            // Assert
+            Assert.True(tankinhaltVorher > pkw.Tankinhalt);
+        }
+
+        [Fact]
+        public void Fahren_throws_TankleerException()
+        {
+            // Arrange
+            var pkw = new Pkw("VW", new Motor(100));
+
+            // Assert
+            Assert.Throws<TankleerException>(() => pkw.Fahren(1000));
+        }
     }
 }
