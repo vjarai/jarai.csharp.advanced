@@ -11,7 +11,7 @@
         {
             Console.WriteLine("LongProcess 1 Started");
 
-            await Task.Delay(4000); // hold execution for 4 seconds
+            await Task.Delay(5000); // hold execution for 4 seconds
 
             Console.WriteLine("LongProcess 1 Completed");
 
@@ -21,8 +21,8 @@
         private static async Task<int> LongProcess2()
         {
             Console.WriteLine("LongProcess 2 Started");
-
-            await Task.Delay(4000); // hold execution for 4 seconds
+            //Thread.Sleep(5000);
+            await Task.Delay(1000); // hold execution 
 
             Console.WriteLine("LongProcess 2 Completed");
 
