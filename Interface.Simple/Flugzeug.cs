@@ -2,7 +2,7 @@
 
 namespace Jarai.CSharp.Interface.Simple
 {
-    public class Flugzeug : IFliegbar
+    public class Flugzeug : IFlugzeug
     {
         public void Fliegen()
         {

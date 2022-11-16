@@ -4,13 +4,13 @@ namespace Jarai.CSharp.Interface.Simple
 {
     internal class Person
     {
-        public void Fahren(IFahrbar fahrzeug)
+        public void Verreisen(ISchiff schiff)
         {
             Console.WriteLine("Die Person fährt...");
-            fahrzeug.Fahren();
+            schiff.Schwimmen();
         }
 
-        public void Fliegen(IFliegbar flieger)
+        public void Fliegen(IFlugzeug flieger)
         {
             Console.WriteLine("Die Person fliegt...");
             flieger.Fliegen();

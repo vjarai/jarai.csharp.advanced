@@ -4,16 +4,16 @@ namespace Jarai.CSharp.Interface.Simple
     {
         private static void Main(string[] args)
         {
-            var auto = new Auto();
+            var auto = new Schiff();
             var flugzeug = new Flugzeug();
-            var flugAuto = new FlugAuto();
+            var flugAuto = new FlugBoot();
 
             var person = new Person();
 
-            person.Fahren(auto);
+            person.Verreisen(auto);
             person.Fliegen(flugzeug);
 
-            person.Fahren(flugAuto);
+            person.Verreisen(flugAuto);
             person.Fliegen(flugAuto);
         }
     }

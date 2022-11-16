@@ -1,6 +1,6 @@
 ﻿namespace Jarai.CSharp.Interface.Simple
 {
-    public interface IFliegbar
+    public interface IFlugzeug
     {
         void Fliegen();
     }

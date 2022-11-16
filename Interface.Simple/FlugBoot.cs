@@ -4,16 +4,16 @@
     /// In C# gibt es (zum Glück) keine Mehrfachvererbung,
     /// aber es können mehrere Interfaces implementiert werden
     /// </summary>
-    public class FlugAuto : IFliegbar, IFahrbar
+    public class FlugBoot : IFlugzeug, ISchiff
     {
         private readonly Flugzeug _internesFlugzeug = new Flugzeug();
-        private readonly Auto _internesAuto = new Auto();
+        private readonly Schiff _internesSchiff = new Schiff();
 
 
-        public void Fahren()
+        public void Schwimmen()
         {
             // Workaraound: Statt Vererbung wird (intern) Aggregation benutzt
-            _internesAuto.Fahren(); // FlugAuto BENUTZT Auto zum fahren => Delegieren
+            _internesSchiff.Schwimmen(); // FlugBoot BENUTZT Schiff zum fahren => Delegieren
         }
 
         public void Fliegen()
