@@ -2,6 +2,7 @@
 
 namespace Optional.DllImport
 {
+    // https://learn.microsoft.com/en-us/dotnet/framework/interop/consuming-unmanaged-dll-functions
     public sealed class MessageBoxFassade
     {
     
@@ -9,9 +10,9 @@ namespace Optional.DllImport
         private static extern int MessageBox(IntPtr hWnd, string text, string caption, uint type);
 
    
-        public static void ShowMessageBox(string caption, string text)
+        public static void ShowMessageBox(string text, string title)
         {
-            MessageBox(IntPtr.Zero, caption, text, 0);
+            MessageBox(IntPtr.Zero, text, title, 0);
         }
 
     }

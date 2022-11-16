@@ -1,34 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Comment CommentText=" private static void Main(string[] args)&#xD;&#xA;        {&#xD;&#xA;&#xD;&#xA;            var tesla = new AktieWithEvent(&quot;TESLA&quot;, &quot;TESLA&quot;, 100);&#xD;&#xA;         &#xD;&#xA;            // Börse handelt mit diesen Aktien&#xD;&#xA;            var börse = new Börse(&quot;NYSE&quot;, new Aktie[] { tesla });&#xD;&#xA;&#xD;&#xA;            var anleger1 = new Beobachter(&quot;Aktienkäufer&quot;);&#xD;&#xA;            var anleger2 = new Beobachter(&quot;Aktienverkäufer&quot;);&#xD;&#xA;&#xD;&#xA;            // Anleger abonnieren Kursänderungen&#xD;&#xA;            tesla.KursChanged += anleger1.PrüfeKauf; &#xD;&#xA;            tesla.KursChanged += anleger2.PrüfeKauf; &#xD;&#xA;&#xD;&#xA;            // Kurse ändern sich =&gt; Abonnenten werden benachrichtigt&#xD;&#xA;            börse.AktualisiereKurse();&#xD;&#xA;&#xD;&#xA;            Console.ReadLine();&#xD;&#xA;        }">
-    <Position X="8.056" Y="3.66" Height="4.292" Width="6.86" />
-  </Comment>
-  <Class Name="Jarai.CSharp.Pattern.Observer.KursChangedEventArg">
-    <Position X="12" Y="0.5" Width="3.25" />
+  <Class Name="Jarai.CSharp.Pattern.Observer.KursChangedEventArgs">
+    <Position X="3.5" Y="2.75" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgA=</HashCode>
-      <FileName>KursChangedEventArg.cs</FileName>
+      <FileName>KursChangedEventArgs.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Jarai.CSharp.Pattern.Observer.Beobachter">
-    <Position X="7.5" Y="0.5" Width="4" />
+    <Position X="4.5" Y="0.5" Width="4" />
     <TypeIdentifier>
       <HashCode>AAAAIAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Beobachter.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Jarai.CSharp.Pattern.Observer.Börse">
-    <Position X="0.5" Y="0.5" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAACAAAABAAAAAACAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Börse.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Aktien" />
-    </ShowAsCollectionAssociation>
-  </Class>
   <Class Name="Jarai.CSharp.Pattern.Observer.Aktie">
-    <Position X="4.25" Y="0.5" Width="2.5" />
+    <Position X="0.5" Y="0.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AABAAAAQAAAAAAAAAAAAAAQAAAAQAAAAIAEAAAAAACA=</HashCode>
       <FileName>Aktie.cs</FileName>
