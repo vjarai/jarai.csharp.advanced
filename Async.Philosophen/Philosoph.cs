@@ -99,9 +99,10 @@
                 else
                 {
                     Console.WriteLine($"*** {Name} timeout beim warten auf {RechteGabel.Name} ***");
-                    LinkeGabel.Put();
-                    Monitor.Exit(LinkeGabel);
                 }
+
+                LinkeGabel.Put();
+                Monitor.Exit(LinkeGabel);
             }
         }
     }

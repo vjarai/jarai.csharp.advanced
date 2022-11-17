@@ -24,7 +24,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Jarai.CSharp.Interface.Simple.FlugBoot">
-    <Position X="3" Y="3.75" Width="1.75" />
+    <Position X="3.25" Y="3.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAiAAAAAAAAAAABAAEAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FlugBoot.cs</FileName>
