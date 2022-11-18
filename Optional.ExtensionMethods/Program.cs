@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var meinAuto = new Auto { KfzKennzeichen = "MTK XY 123" };
+
+            meinAuto.Waschen();
+            meinAuto.Versichern();
         }
     }
 }

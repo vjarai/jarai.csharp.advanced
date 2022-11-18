@@ -13,6 +13,7 @@ namespace Optional.Rs232
                 serialPort.StopBits = StopBits.One;
 
                 serialPort.Open();
+
                 serialPort.DataReceived += (sender, eventargs) =>
                 {
                    string receivedData = serialPort.ReadExisting();
@@ -21,6 +22,7 @@ namespace Optional.Rs232
 
                 serialPort.Write("Hallo Welt");
                 Thread.Sleep(1000);
+
                 serialPort.Close();
             }
         }
