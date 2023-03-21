@@ -117,9 +117,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern4.State.Tests", "Pat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optional.DllImport", "Optional.DllImport\Optional.DllImport.csproj", "{4591C77B-99FA-41A6-89D4-DCB1565E022C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optional.ExtensionMethods", "Optional.ExtensionMethods\Optional.ExtensionMethods.csproj", "{5FE54B3E-7CC0-4E19-B93B-C7D72B411878}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optional.ExtensionMethods", "Optional.ExtensionMethods\Optional.ExtensionMethods.csproj", "{5FE54B3E-7CC0-4E19-B93B-C7D72B411878}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optional.Rs232", "Optional.SerialPort\Optional.Rs232.csproj", "{A27636C6-AA11-4896-8083-A1A68B7A5352}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optional.Rs232", "Optional.SerialPort\Optional.Rs232.csproj", "{A27636C6-AA11-4896-8083-A1A68B7A5352}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

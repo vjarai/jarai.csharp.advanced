@@ -10,11 +10,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="_ReadMe\Aufgaben.txt" />
+    <None Remove="_ReadMe\Aufgaben.md" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="_ReadMe\Aufgaben.txt" />
+    <Content Include="_ReadMe\Aufgaben.md" />
   </ItemGroup>
 
 </Project>

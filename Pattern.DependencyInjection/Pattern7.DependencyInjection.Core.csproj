@@ -8,11 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="_ReadMe\Aufgabe.txt" />
+    <None Remove="_ReadMe\Aufgabe.md" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="_ReadMe\Aufgabe.txt" />
+    <Content Include="_ReadMe\Aufgabe.md" />
   </ItemGroup>
 
   <ItemGroup>

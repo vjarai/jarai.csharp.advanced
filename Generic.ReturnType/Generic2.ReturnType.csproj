@@ -9,8 +9,4 @@
     <AssemblyName>Jarai.CSharp.Generic.ReturnType</AssemblyName>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="_ReadMe\Aufgaben.txt" />
-  </ItemGroup>
-
 </Project>
