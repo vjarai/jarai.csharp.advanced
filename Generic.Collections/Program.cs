@@ -7,7 +7,9 @@ internal class Program
         // Listen können zur Laufzeit erweitert werden
         var myList = new List<double> { 10, 50, 30, 20 };
         myList.Add(999);
-        foreach (var item in myList) Console.WriteLine(item);
+
+        foreach (var item in myList) 
+            Console.WriteLine(item);
 
         // Queues geben Elemente in gleicher Reihenfolge wieder aus (FIFO)
         var myQueue = new Queue<int>();

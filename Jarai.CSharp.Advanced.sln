@@ -121,6 +121,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optional.ExtensionMethods",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optional.Rs232", "Optional.SerialPort\Optional.Rs232.csproj", "{A27636C6-AA11-4896-8083-A1A68B7A5352}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optional.ExcelAutomation", "Optional.ExcelAutomation\Optional.ExcelAutomation.csproj", "{A8D3D293-CAE9-4608-86CA-E4D71303DD0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -323,6 +325,10 @@ Global
 		{A27636C6-AA11-4896-8083-A1A68B7A5352}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A27636C6-AA11-4896-8083-A1A68B7A5352}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A27636C6-AA11-4896-8083-A1A68B7A5352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8D3D293-CAE9-4608-86CA-E4D71303DD0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8D3D293-CAE9-4608-86CA-E4D71303DD0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8D3D293-CAE9-4608-86CA-E4D71303DD0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8D3D293-CAE9-4608-86CA-E4D71303DD0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -379,6 +385,7 @@ Global
 		{4591C77B-99FA-41A6-89D4-DCB1565E022C} = {B3694068-A3B4-4486-95DE-DAFBE8C4A8F5}
 		{5FE54B3E-7CC0-4E19-B93B-C7D72B411878} = {B3694068-A3B4-4486-95DE-DAFBE8C4A8F5}
 		{A27636C6-AA11-4896-8083-A1A68B7A5352} = {B3694068-A3B4-4486-95DE-DAFBE8C4A8F5}
+		{A8D3D293-CAE9-4608-86CA-E4D71303DD0F} = {B3694068-A3B4-4486-95DE-DAFBE8C4A8F5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73EF6AE5-AE88-4482-B21E-DA5F869E622D}
