@@ -7,4 +7,6 @@
 // https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10
 // https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11
 
+// https://linkdotnetblogstorage.azureedge.net/blog/20230205_CSharpMindMap/MindMap.svg
+
 Console.WriteLine("Hello, World!");
