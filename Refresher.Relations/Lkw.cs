@@ -10,7 +10,7 @@
 
         public override string ToString()
         {
-            return string.Format($"Lkw, beladen mit '{Ladung}'.\n") + base.ToString();
+            return $"Lkw, beladen mit '{Ladung}'.\n" + base.ToString();
         }
 
         public void Enladen()

@@ -28,7 +28,7 @@
 
         public override string ToString()
         {
-            return string.Format($"Motorleistung: {Leistung}\nMotor ist {(IstAngelassen ? "an" : "aus")}");
+            return $"Motorleistung: {Leistung}\nMotor ist {(IstAngelassen ? "an" : "aus")}";
         }
     }
 }

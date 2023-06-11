@@ -15,7 +15,7 @@
 
         public override string ToString()
         {
-            return string.Format( $"Marke: {Marke}\nTachostand: {TachoStand}\n"  + _motor);
+            return  $"Marke: {Marke}\nTachostand: {TachoStand}\n"  + _motor;
         }
 
         public virtual void Fahren(double strecke)
