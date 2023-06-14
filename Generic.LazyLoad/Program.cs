@@ -17,7 +17,10 @@ namespace Jarai.CSharp.Generic.LazyLoad
 
         private static void Main(string[] args)
         {
-            var x = new Lazy<int>(SlowCalculation);
+            // Schlecht: verzögert Start obwohl y nirgends verwendet wird
+            // var y = SlowCalculation();
+
+            var x = new Lazy<int>(SlowCalculation); // Wert wird verzögert ("lazy") berechnet
 
             var eingabe = Console.ReadLine();
 

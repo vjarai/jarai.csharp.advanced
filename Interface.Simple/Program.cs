@@ -1,20 +1,19 @@
-namespace Jarai.CSharp.Interface.Simple
+namespace Jarai.CSharp.Interface.Simple;
+
+internal class Program
 {
-    internal class Program
+    private static void Main(string[] args)
     {
-        private static void Main(string[] args)
-        {
-            var auto = new Schiff();
-            var flugzeug = new Flugzeug();
-            var flugAuto = new FlugBoot();
+        var auto = new Wand();
+        var flugzeug = new Ski();
+        var flugAuto = new Auto();
 
-            var person = new Person();
+        var person = new Maler();
 
-            person.Verreisen(auto);
-            person.Fliegen(flugzeug);
+        person.Lackieren(auto);
+        person.Fahren(flugzeug);
 
-            person.Verreisen(flugAuto);
-            person.Fliegen(flugAuto);
-        }
+        person.Lackieren(flugAuto);
+        person.Fahren(flugAuto);
     }
 }

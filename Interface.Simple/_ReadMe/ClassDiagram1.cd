@@ -1,52 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Jarai.CSharp.Interface.Simple.Person">
+  <Class Name="Jarai.CSharp.Interface.Simple.Maler">
     <Position X="3" Y="0.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAEAAAAAAA=</HashCode>
-      <FileName>Person.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAABAAA=</HashCode>
+      <FileName>Maler.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Jarai.CSharp.Interface.Simple.Schiff">
-    <Position X="6.25" Y="2.5" Width="1.75" />
+  <Class Name="Jarai.CSharp.Interface.Simple.Wand">
+    <Position X="8.75" Y="3.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Schiff.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Wand.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Jarai.CSharp.Interface.Simple.Flugzeug">
-    <Position X="0.5" Y="2.5" Width="1.5" />
+  <Class Name="Jarai.CSharp.Interface.Simple.Ski">
+    <Position X="1" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Flugzeug.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Ski.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Jarai.CSharp.Interface.Simple.FlugBoot">
-    <Position X="3.25" Y="3.5" Width="1.75" />
+  <Class Name="Jarai.CSharp.Interface.Simple.Auto">
+    <Position X="5.25" Y="3.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAiAAAAAAAAAAABAAEAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>FlugBoot.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQABAAAAAA=</HashCode>
+      <FileName>Auto.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_internesFlugzeug" />
-      <Field Name="_internesSchiff" />
-    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="Jarai.CSharp.Interface.Simple.IFlugzeug">
+  <Interface Name="Jarai.CSharp.Interface.Simple.IFahrbar">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IFlugzeug.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>IFahrbar.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Jarai.CSharp.Interface.Simple.ISchiff">
+  <Interface Name="Jarai.CSharp.Interface.Simple.ILackierbar">
     <Position X="6.25" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ISchiff.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>ILackierbar.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Tahoma" Size="8.25" />

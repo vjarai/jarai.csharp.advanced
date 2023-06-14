@@ -5,7 +5,7 @@ namespace Jarai.CSharp.Pattern.State.Tests
     public class TelefonTests
     {
         [Fact()]
-        public void Kann_abheben_wählen_sprechen_sprechen_auflegen()
+        public void Kann_abheben_wählen_sprechen_sprechen_auflegen() // Happy Path
         {
             // Arrange
             var telefon = new Telefon();
