@@ -121,7 +121,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optional.ExtensionMethods",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optional.Rs232", "Optional.SerialPort\Optional.Rs232.csproj", "{A27636C6-AA11-4896-8083-A1A68B7A5352}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optional.ExcelAutomation", "Optional.ExcelAutomation\Optional.ExcelAutomation.csproj", "{A8D3D293-CAE9-4608-86CA-E4D71303DD0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optional.ExcelAutomation", "Optional.ExcelAutomation\Optional.ExcelAutomation.csproj", "{A8D3D293-CAE9-4608-86CA-E4D71303DD0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
