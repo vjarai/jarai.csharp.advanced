@@ -83,7 +83,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface.Wpf", "UserIn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async.Parallel_For_PLINQ", "Async.ParallelFor\Async.Parallel_For_PLINQ.csproj", "{13884B84-40B1-4827-A4D7-BEA9D7E1FA7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outlook.Automation", "Outlook.Automation\Outlook.Automation.csproj", "{73706361-C9BD-4F3A-A693-3CA2E863492D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optional.Automation.Outlook", "Outlook.Automation\Optional.Automation.Outlook.csproj", "{73706361-C9BD-4F3A-A693-3CA2E863492D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegate.Simple", "Delegate.Simple\Delegate.Simple.csproj", "{EB97B4A6-E209-4E4E-B7A6-A44777BE5697}"
 EndProject
@@ -121,7 +121,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optional.ExtensionMethods",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optional.Rs232", "Optional.SerialPort\Optional.Rs232.csproj", "{A27636C6-AA11-4896-8083-A1A68B7A5352}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optional.ExcelAutomation", "Optional.ExcelAutomation\Optional.ExcelAutomation.csproj", "{A8D3D293-CAE9-4608-86CA-E4D71303DD0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optional.Automation.Excel", "Optional.ExcelAutomation\Optional.Automation.Excel.csproj", "{A8D3D293-CAE9-4608-86CA-E4D71303DD0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
