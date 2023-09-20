@@ -15,13 +15,13 @@
 
         private static async Task Main(string[] args)
         {
-            var result = LongProcess();
+            var longProcessTask = LongProcess();
 
             ShortProcess();
 
-            var val = await result; // wait untile get the return value
+            var val = await longProcessTask; // wait untile get the return value
 
-            Console.WriteLine("Result: {0}", val);
+            Console.WriteLine($"Result: {val}");
 
             Console.ReadKey();
         }

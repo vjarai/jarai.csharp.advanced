@@ -6,12 +6,18 @@ namespace Jarai.CSharp.Generic.Func
     {
         private static void Main(string[] args)
         {
-            var taxCalculator = new TaxCalculator(v => v * (decimal)0.19, WriteLog);
+            var taxCalculator = new TaxCalculator(TaxCalculationFunction, WriteLogAction);
+            var tax = taxCalculator.CalculateTax(100);
 
-            Console.WriteLine(taxCalculator.CalculateTax(100));
+            Console.WriteLine(tax);
         }
 
-        private static void WriteLog(string msg)
+        private static decimal TaxCalculationFunction(decimal value)
+        {
+            return value * (decimal)0.19;
+        }
+
+        private static void WriteLogAction(string msg)
         {
             Console.WriteLine(msg);
         }

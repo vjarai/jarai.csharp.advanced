@@ -7,10 +7,12 @@ namespace Jarai.CSharp.Interface.Disposable
     {
         private static void Main(string[] args)
         {
-            using (new BusyIndicator())
+
+            using (new BusyIndicator()) // Sanduhr
             {
                 Console.WriteLine("Berechne Ergebnis...");
                 Thread.Sleep(3000);
+
 
                 // Beim verlassen dieses Using Blocks wird immer und 
                 // automatisch BusyIndicator.Dispose() aufgerufen,
