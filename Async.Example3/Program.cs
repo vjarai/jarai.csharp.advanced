@@ -6,7 +6,7 @@
         {
             Console.WriteLine("LongProcess Started");
 
-            await Task.Delay(4000); // hold execution for 4 seconds
+            await Task.Delay(4000); 
 
             Console.WriteLine("LongProcess Completed");
 
@@ -19,9 +19,9 @@
 
             ShortProcess();
 
-            var val = await longProcessTask; // wait untile get the return value
+            int ergebnis = await longProcessTask; 
 
-            Console.WriteLine($"Result: {val}");
+            Console.WriteLine($"Result: {ergebnis}");
 
             Console.ReadKey();
         }
