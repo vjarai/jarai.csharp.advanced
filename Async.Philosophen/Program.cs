@@ -24,7 +24,7 @@
             {
                 yield return new Philosoph("Philosoph" + (i + 1), gabeln[i], gabeln[i == gabeln.Length - 1 ? 0 : i + 1])
                 {
-                    MaxAlter = 85
+                    MaxAlter = 20
                 };
             }
         }

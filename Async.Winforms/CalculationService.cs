@@ -15,6 +15,8 @@ namespace Jarai.CSharp.Async.Winforms
                 result += i;
                 Thread.Sleep(3); // Simulate long running operation
 
+                // Kooperatives Abbrechen
+               
                 cancellationToken.ThrowIfCancellationRequested(); // Abort, if canceled from UI
             }
 
