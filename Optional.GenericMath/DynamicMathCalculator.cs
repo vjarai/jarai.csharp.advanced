@@ -1,4 +1,4 @@
-﻿namespace Optional.GenericMath;
+﻿namespace Jarai.CSharp.GenericMath;
 
 /// <summary>
 /// Keine Compilezeitprüfung, ob T "numerisch" ist
