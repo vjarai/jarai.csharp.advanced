@@ -2,7 +2,7 @@
 
 internal class ValidationResult
 {
-    private List<string> _errors = new List<string>();
+    private List<string?> _errors = new List<string?>();
 
     public override string ToString()
     {
@@ -14,7 +14,7 @@ internal class ValidationResult
         return _errors.Any();
     }
 
-    public void AddError(string errorMessage)
+    public void AddError(string? errorMessage)
     {
         _errors.Add(errorMessage);
     }

@@ -8,6 +8,6 @@ namespace Optional.ExtensionMethods
 {
     internal class Auto
     {
-        public string KfzKennzeichen { get; set; }
+        public string? KfzKennzeichen { get; set; }
     }
 }
