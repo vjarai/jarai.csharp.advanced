@@ -2,6 +2,8 @@
 
 // https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/
 
+// https://devblogs.microsoft.com/dotnet/configureawait-faq/
+
 using System.ComponentModel;
 
 namespace Jarai.CSharp.Async.Winforms
