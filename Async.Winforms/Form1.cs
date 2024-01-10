@@ -6,7 +6,7 @@ namespace Jarai.CSharp.Async.Winforms
     {
         private readonly CalculationService _calculationService = new();
 
-        private CancellationTokenSource _cancellationTokenSource = new();
+        private CancellationTokenSource _cancellationTokenSource;
 
         public Form1()
         {
@@ -33,7 +33,7 @@ namespace Jarai.CSharp.Async.Winforms
 
         private async void button2_Click(object sender, EventArgs e)
         {
-            
+
             using (new BusyIndicator(this))
             {
                 label1.Text = "Calculating...";
