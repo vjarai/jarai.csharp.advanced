@@ -11,7 +11,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Jarai.CSharp.Async.Winforms.CalculationService">
-    <Position X="7.5" Y="2" Width="4.25" />
+    <Position X="7" Y="2.5" Width="4.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAEAAAAAAAAAAAAAA=</HashCode>
       <FileName>CalculationService.cs</FileName>

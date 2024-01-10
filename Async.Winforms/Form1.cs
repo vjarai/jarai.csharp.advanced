@@ -1,4 +1,6 @@
-﻿namespace Jarai.CSharp.Async.Winforms
+﻿using System.Reflection;
+
+namespace Jarai.CSharp.Async.Winforms
 {
     public partial class Form1 : Form
     {
@@ -9,6 +11,11 @@
         public Form1()
         {
             InitializeComponent();
+
+            _calculationService.ProgressChanged += (sender, args) =>
+            {
+                progressBar1.Value = args.ProgressPercentage;
+            };
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -26,6 +33,7 @@
 
         private async void button2_Click(object sender, EventArgs e)
         {
+            
             using (new BusyIndicator(this))
             {
                 label1.Text = "Calculating...";
@@ -40,6 +48,7 @@
                 catch (Exception ex)
                 {
                     label1.Text = ex.Message;
+                    progressBar1.Value = 0;
                 }
             }
         }
