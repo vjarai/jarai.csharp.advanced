@@ -29,15 +29,21 @@ namespace Jarai.CSharp.Async.Winforms
 
         public async Task<CalculationResult> CalculateAsync(IEnumerable<int> input, CancellationToken cancellationToken)
         {
+            var result = 0;
             var progress = 0;
 
-            for (int i = 0; i < 100; i++)
+            foreach (var i in input)
             {
-                ProgressChanged?.Invoke(this, new ProgressChangedEventArgs(progress++, null));
-                await Task.Delay(50, cancellationToken); // Simulate long running operation
+                result += i;
+                progress++;
+
+                //if (progress % 5 == 0)
+                    ProgressChanged?.Invoke(this, new ProgressChangedEventArgs( progress, null));
+                
+                await Task.Delay(3, cancellationToken); // Simulate long running operation
             }
 
-            return new CalculationResult(input.Sum());
+            return new CalculationResult(result);
         }
     }
 }

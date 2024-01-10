@@ -25,7 +25,7 @@ namespace Jarai.CSharp.Async.Winforms
                 label1.Text = "Calculating...";
                 _cancellationTokenSource = new CancellationTokenSource();
 
-                var result = _calculationService.Calculate(Enumerable.Range(1, 1000), _cancellationTokenSource.Token);
+                var result = _calculationService.Calculate(Enumerable.Range(1, 100), _cancellationTokenSource.Token);
 
                 label1.Text = result.Value.ToString();
             }
@@ -42,12 +42,16 @@ namespace Jarai.CSharp.Async.Winforms
                 try
                 {
                     var result =
-                        await _calculationService.CalculateAsync(Enumerable.Range(1, 1000), _cancellationTokenSource.Token);
+                        await _calculationService.CalculateAsync(Enumerable.Range(1, 100),
+                            _cancellationTokenSource.Token);
                     label1.Text = result.Value.ToString();
                 }
                 catch (Exception ex)
                 {
                     label1.Text = ex.Message;
+                }
+                finally
+                {
                     progressBar1.Value = 0;
                 }
             }
