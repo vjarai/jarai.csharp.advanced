@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             Console.WriteLine("Ausflug mit (P)kw oder (L)kw?");
             var input = Console.ReadLine();

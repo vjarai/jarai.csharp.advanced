@@ -23,14 +23,14 @@ namespace Jarai.CSharp.Async.Barrier
             _barrier.SignalAndWait();
         }
 
-        private static void Main(string[] args)
+        private static void Main()
         {
             var tasks = new Task[TaskCount];
 
             for (var i = 0; i < tasks.Length; ++i)
             {
                 var j = i;
-                tasks[j] = Task.Run(() => { GetDataAndStoreData(j); });
+                tasks[j] = Task.Run(() =>  GetDataAndStoreData(j));
             }
 
             Task.WaitAll(tasks);
