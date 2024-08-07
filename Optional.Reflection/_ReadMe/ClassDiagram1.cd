@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Jarai.CSharp.Reflection.UmlEditor">
-    <Position X="6.75" Y="3.5" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>UmlEditor.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Jarai.CSharp.Reflection.DummyClass">
+  <Class Name="Jarai.CSharp.Optional.Reflection.DummyClass">
     <Position X="7.25" Y="5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAACAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>DummyClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.CSharp.Optional.Reflection.UmlEditor">
+    <Position X="3.75" Y="1.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAIAEAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>UmlEditor.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Tahoma" Size="8.25" />
