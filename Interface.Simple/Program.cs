@@ -4,16 +4,16 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        var auto = new Wand();
-        var flugzeug = new Ski();
-        var flugAuto = new Auto();
+        var wand = new Wand();
+        var ski = new Ski();
+        var auto = new Auto();
 
-        var person = new Maler();
+        var maler = new Maler();
 
-        person.Lackieren(auto);
-        person.Fahren(flugzeug);
+        maler.Lackieren(wand);
+        maler.Fahren(ski);
 
-        person.Lackieren(flugAuto);
-        person.Fahren(flugAuto);
+        maler.Lackieren(auto);
+        maler.Fahren(auto);
     }
 }

@@ -4,33 +4,35 @@
     {
         private static void Main()
         {
-            Console.WriteLine("Ausflug mit (P)kw oder (L)kw?");
+            Console.WriteLine("Ausflug mit (P)kw oder (C)abrio?");
             var input = Console.ReadLine();
 
             if (string.IsNullOrEmpty(input)) return;
 
-            Kfz meinFahrzeug;
+            var meinPkw = new Pkw("VW Golf", new Motor(100));
+            var meinCabrio = new Cabrio("BMW Z3", new Motor(100));
+
+            Pkw aktuellesFahrzeug;
 
             if (input.ToUpper() == "P")
-                meinFahrzeug = new Pkw("VW", new Motor(100));
+                aktuellesFahrzeug = meinPkw;
             else
-                meinFahrzeug = new Lkw("Deutz");
+                aktuellesFahrzeug = meinCabrio;
 
             // Spätes binden (Late Binding)
-            // Zur *LAUFZEIT* wird entschieden ob Lkw.Anzeigen() oder Pkw.Anzeigen() aufgerufen wird
-            Console.WriteLine( meinFahrzeug.ToString());
+            // Zur *LAUFZEIT* wird entschieden ob Lkw.Anzeigen() oder Cabrio.Anzeigen() aufgerufen wird
+            Console.WriteLine( aktuellesFahrzeug.ToString());
 
             // Spätes binden (Late Binding)
-            // Zur *LAUFZEIT* wird entschieden ob Lkw.Fahren() oder Pkw.Fahren() aufgerufen wird
-            meinFahrzeug.Fahren(100);
+            // Zur *LAUFZEIT* wird entschieden ob Lkw.Fahren() oder Cabrio.Fahren() aufgerufen wird
+            aktuellesFahrzeug.Fahren(100);
 
             // Vorsicht: Eine solche Typabfrage ist häufig ein Hinweis auf einen Designfehler!
-            if (meinFahrzeug is Lkw)
-            {
-                var bus = meinFahrzeug as Lkw;
-                bus.Beladen();
-                Console.WriteLine(meinFahrzeug.ToString());
-            }
+            //if (aktuellesFahrzeug is Cabrio)
+            //{
+            //    var cabrio = aktuellesFahrzeug as Cabrio;
+            //    cabrio.VerdeckÖffnen();
+            //}
 
             Console.ReadLine();
         }

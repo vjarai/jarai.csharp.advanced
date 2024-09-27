@@ -1,22 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Jarai.CSharp.Advanced.Refresher.Relations.Lkw">
-    <Position X="2.75" Y="4" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>QAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAQAAQAAAAABAA=</HashCode>
-      <FileName>Lkw.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Jarai.CSharp.Advanced.Refresher.Relations.Kfz">
-    <Position X="1.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAggAAAAEAAAAAQAAAAAAAAAAAAQAAAAAAAA=</HashCode>
-      <FileName>KFZ.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_motor" />
-    </ShowAsAssociation>
-  </Class>
   <Class Name="Jarai.CSharp.Advanced.Refresher.Relations.Motor">
     <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
@@ -24,12 +7,22 @@
       <FileName>Motor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Jarai.CSharp.Advanced.Refresher.Relations.Pkw">
-    <Position X="0.5" Y="4" Width="1.5" />
+  <Class Name="Jarai.CSharp.Advanced.Refresher.Relations.Cabrio">
+    <Position X="1.75" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAIAAAAAAABAAAQAAAAAAAA=</HashCode>
+      <FileName>Cabrio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.CSharp.Advanced.Refresher.Relations.Pkw">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAggAAAAEAAAAAQAAAAAAAAAAAAQAAAAAAAA=</HashCode>
       <FileName>Pkw.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_motor" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

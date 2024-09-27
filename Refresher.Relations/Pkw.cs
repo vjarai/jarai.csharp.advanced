@@ -1,32 +1,40 @@
 ﻿namespace Jarai.CSharp.Advanced.Refresher.Relations
 {
-    public class Pkw : Kfz
+    public class Pkw
     {
+        public string Marke { get; }
 
-        public Pkw(string marke, Motor motor) : base(marke, motor)
-        {
-        }
-
+        private readonly Motor _motor;
+        public double TachoStand { get; private set; }
         public double Tankinhalt { get; set; } = 20;
+
+        public Pkw(string marke, Motor motor)
+        {
+            Marke = marke;
+            _motor = motor;
+        }
 
         public override string ToString()
         {
-            return "Pkw Daten:" + base.ToString();
+            return  $"Marke: {Marke}\nTachostand: {TachoStand}\n"  + _motor;
+        }
+
+        public virtual void Fahren(double strecke)
+        {
+            _motor.Start();
+            TachoStand += strecke;
+            Tankinhalt -= strecke / 10;
+            _motor.Stop();
+
+            if (Tankinhalt <= 0)
+                throw new TankleerException("Tank ist Leer, ADAC rufen.");
+
+            Console.WriteLine("Ziel erreicht.");
         }
 
         public void Tanken(double liter)
         {
             Tankinhalt += liter;
-        }
-       
-        public override void Fahren(double strecke)
-        {
-            Console.WriteLine("Wir fahren mit dem Pkw.");
-            base.Fahren(strecke);
-            Tankinhalt -= strecke / 10;
-
-            if (Tankinhalt <= 0)
-                throw new TankleerException("Tank ist Leer, ADAC rufen.");
         }
     }
 }
