@@ -10,21 +10,21 @@ namespace Jarai.CSharp.Patterns.DependencyInjection.Core
             // Create the IoC Container
             var serviceCollection = new ServiceCollection();
 
-            // Register services
+            // Register service implementations with the IoC Container
 #if DEBUG
             serviceCollection.AddTransient<ILogger, ConsoleLogger>();
 #else
             services.AddTransient<ILogger, NullLogger>();
 #endif
             serviceCollection.AddSingleton<RootApplication>();
-            
-            // Create the service provider
+
+            // Create a service provider to instantiate objects and resolve their dependencies
             using var serviceProvider = serviceCollection.BuildServiceProvider();
 
-            // Resolve and use the composition root object with injected dependencies
+            // Resolve the composition root object (including all injected dependencies)
             var applicationRoot = serviceProvider.GetRequiredService<RootApplication>();
 
-            // Use the root object
+            // Use the composition root object
             applicationRoot.DoWork();
         }
 
