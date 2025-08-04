@@ -1,24 +1,26 @@
 using System;
 
-namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.SampleGeneration
+namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
 {
     /// <summary>
-    ///     This represents a preformatted text sample on the help page. There's a display template named TextSample associated
-    ///     with this class.
+    /// This represents a preformatted text sample on the help page. There's a display template named TextSample associated with this class.
     /// </summary>
     public class TextSample
     {
         public TextSample(string text)
         {
-            if (text == null) throw new ArgumentNullException("text");
+            if (text == null)
+            {
+                throw new ArgumentNullException("text");
+            }
             Text = text;
         }
 
-        public string Text { get; }
+        public string Text { get; private set; }
 
         public override bool Equals(object obj)
         {
-            var other = obj as TextSample;
+            TextSample other = obj as TextSample;
             return other != null && Text == other.Text;
         }
 

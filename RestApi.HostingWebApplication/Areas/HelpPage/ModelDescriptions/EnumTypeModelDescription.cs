@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
@@ -9,6 +10,6 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
             Values = new Collection<EnumValueDescription>();
         }
 
-        public Collection<EnumValueDescription> Values { get; }
+        public Collection<EnumValueDescription> Values { get; private set; }
     }
 }

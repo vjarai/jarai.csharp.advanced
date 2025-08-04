@@ -1,40 +1,39 @@
-﻿namespace Jarai.CSharp.Advanced.Refresher.Relations
+﻿namespace Jarai.CSharp.Advanced.Refresher.Relations;
+
+internal class Program
 {
-    internal class Program
+    private static void Main()
     {
-        private static void Main()
-        {
-            Console.WriteLine("Ausflug mit (P)kw oder (C)abrio?");
-            var input = Console.ReadLine();
+        Console.WriteLine("Ausflug mit (P)kw oder (C)abrio?");
+        var input = Console.ReadLine();
 
-            if (string.IsNullOrEmpty(input)) return;
+        if (string.IsNullOrEmpty(input)) return;
 
-            var meinPkw = new Pkw("VW Golf", new Motor(100));
-            var meinCabrio = new Cabrio("BMW Z3", new Motor(100));
+        var meinPkw = new Car("VW Golf", new Engine(100));
+        var meinCabrio = new Cabriolet("BMW Z3", new Engine(100));
 
-            Pkw aktuellesFahrzeug;
+        Car aktuellesFahrzeug;
 
-            if (input.ToUpper() == "P")
-                aktuellesFahrzeug = meinPkw;
-            else
-                aktuellesFahrzeug = meinCabrio;
+        if (input.ToUpper() == "P")
+            aktuellesFahrzeug = meinPkw;
+        else
+            aktuellesFahrzeug = meinCabrio;
 
-            // Spätes binden (Late Binding)
-            // Zur *LAUFZEIT* wird entschieden ob Lkw.Anzeigen() oder Cabrio.Anzeigen() aufgerufen wird
-            Console.WriteLine( aktuellesFahrzeug.ToString());
+        // Spätes binden (Late Binding)
+        // Zur *LAUFZEIT* wird entschieden ob Lkw.Anzeigen() oder Cabrio.Anzeigen() aufgerufen wird
+        Console.WriteLine(aktuellesFahrzeug.ToString());
 
-            // Spätes binden (Late Binding)
-            // Zur *LAUFZEIT* wird entschieden ob Lkw.Fahren() oder Cabrio.Fahren() aufgerufen wird
-            aktuellesFahrzeug.Fahren(100);
+        // Spätes binden (Late Binding)
+        // Zur *LAUFZEIT* wird entschieden ob Lkw.Fahren() oder Cabrio.Fahren() aufgerufen wird
+        aktuellesFahrzeug.Drive(100);
 
-            // Vorsicht: Eine solche Typabfrage ist häufig ein Hinweis auf einen Designfehler!
-            //if (aktuellesFahrzeug is Cabrio)
-            //{
-            //    var cabrio = aktuellesFahrzeug as Cabrio;
-            //    cabrio.VerdeckÖffnen();
-            //}
+        // Vorsicht: Eine solche Typabfrage ist häufig ein Hinweis auf einen Designfehler!
+        //if (aktuellesFahrzeug is Cabrio)
+        //{
+        //    var cabrio = aktuellesFahrzeug as Cabrio;
+        //    cabrio.VerdeckÖffnen();
+        //}
 
-            Console.ReadLine();
-        }
+        Console.ReadLine();
     }
 }

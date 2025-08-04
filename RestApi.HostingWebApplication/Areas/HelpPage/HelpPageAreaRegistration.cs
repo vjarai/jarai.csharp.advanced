@@ -1,6 +1,5 @@
 using System.Web.Http;
 using System.Web.Mvc;
-using Jarai.RestApi.HostingWebApplication.Areas.HelpPage.App_Start;
 
 namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
 {
@@ -8,7 +7,10 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage
     {
         public override string AreaName
         {
-            get { return "HelpPage"; }
+            get
+            {
+                return "HelpPage";
+            }
         }
 
         public override void RegisterArea(AreaRegistrationContext context)

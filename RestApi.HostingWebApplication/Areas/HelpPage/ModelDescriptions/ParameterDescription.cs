@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
@@ -9,7 +10,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions
             Annotations = new Collection<ParameterAnnotation>();
         }
 
-        public Collection<ParameterAnnotation> Annotations { get; }
+        public Collection<ParameterAnnotation> Annotations { get; private set; }
 
         public string Documentation { get; set; }
 

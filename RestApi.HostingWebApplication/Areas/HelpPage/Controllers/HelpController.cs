@@ -1,11 +1,13 @@
+using System;
 using System.Web.Http;
 using System.Web.Mvc;
 using Jarai.RestApi.HostingWebApplication.Areas.HelpPage.ModelDescriptions;
+using Jarai.RestApi.HostingWebApplication.Areas.HelpPage.Models;
 
 namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.Controllers
 {
     /// <summary>
-    ///     The controller that will handle requests for the help page.
+    /// The controller that will handle requests for the help page.
     /// </summary>
     public class HelpController : Controller
     {
@@ -21,18 +23,7 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.Controllers
             Configuration = config;
         }
 
-        public HttpConfiguration Configuration { get; }
-
-        public ActionResult Api(string apiId)
-        {
-            if (!string.IsNullOrEmpty(apiId))
-            {
-                var apiModel = Configuration.GetHelpPageApiModel(apiId);
-                if (apiModel != null) return View(apiModel);
-            }
-
-            return View(ErrorViewName);
-        }
+        public HttpConfiguration Configuration { get; private set; }
 
         public ActionResult Index()
         {
@@ -40,13 +31,30 @@ namespace Jarai.RestApi.HostingWebApplication.Areas.HelpPage.Controllers
             return View(Configuration.Services.GetApiExplorer().ApiDescriptions);
         }
 
+        public ActionResult Api(string apiId)
+        {
+            if (!String.IsNullOrEmpty(apiId))
+            {
+                HelpPageApiModel apiModel = Configuration.GetHelpPageApiModel(apiId);
+                if (apiModel != null)
+                {
+                    return View(apiModel);
+                }
+            }
+
+            return View(ErrorViewName);
+        }
+
         public ActionResult ResourceModel(string modelName)
         {
-            if (!string.IsNullOrEmpty(modelName))
+            if (!String.IsNullOrEmpty(modelName))
             {
-                var modelDescriptionGenerator = Configuration.GetModelDescriptionGenerator();
+                ModelDescriptionGenerator modelDescriptionGenerator = Configuration.GetModelDescriptionGenerator();
                 ModelDescription modelDescription;
-                if (modelDescriptionGenerator.GeneratedModels.TryGetValue(modelName, out modelDescription)) return View(modelDescription);
+                if (modelDescriptionGenerator.GeneratedModels.TryGetValue(modelName, out modelDescription))
+                {
+                    return View(modelDescription);
+                }
             }
 
             return View(ErrorViewName);
