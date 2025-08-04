@@ -1,27 +1,32 @@
-﻿using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.DependencyInjection;
 
 namespace Jarai.CSharp.Patterns.DependencyInjection.Core
 {
-    // Quelle:
-    // https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection
-
 
     internal class Program
     {
-        private static IHostBuilder CreateHostBuilder(string[] args)
+        static void Main(string[] args)
         {
-            return Host.CreateDefaultBuilder(args)
-                .ConfigureServices((_, services) =>
-                    services.AddHostedService<Worker>()
-                        .AddScoped<ILogger, ConsoleLogger>());
-            //.AddScoped<ILogger, NullLogger>());
+            // Create the IoC Container
+            var serviceCollection = new ServiceCollection();
+
+            // Register services
+#if DEBUG
+            serviceCollection.AddTransient<ILogger, ConsoleLogger>();
+#else
+            services.AddTransient<ILogger, NullLogger>();
+#endif
+            serviceCollection.AddSingleton<RootApplication>();
+            
+            // Create the service provider
+            using var serviceProvider = serviceCollection.BuildServiceProvider();
+
+            // Resolve and use the composition root object with injected dependencies
+            var applicationRoot = serviceProvider.GetRequiredService<RootApplication>();
+
+            // Use the root object
+            applicationRoot.DoWork();
         }
 
-        private static Task Main(string[] args)
-        {
-            return CreateHostBuilder(args).Build().RunAsync();
-        }
     }
 }

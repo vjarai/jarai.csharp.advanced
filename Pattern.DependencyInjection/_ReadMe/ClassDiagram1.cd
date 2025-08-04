@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Pattern6.DependencyInjection.Core.ConsoleLogger">
+  <Class Name="Jarai.CSharp.Patterns.DependencyInjection.Core.ConsoleLogger">
     <Position X="3.5" Y="2.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
@@ -8,7 +8,7 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Pattern6.DependencyInjection.Core.NullLogger">
+  <Class Name="Jarai.CSharp.Patterns.DependencyInjection.Core.NullLogger">
     <Position X="6.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
@@ -16,17 +16,17 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Pattern6.DependencyInjection.Core.Worker">
+  <Class Name="Jarai.CSharp.Patterns.DependencyInjection.Core.RootApplication">
     <Position X="1" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAEA=</HashCode>
-      <FileName>Worker.cs</FileName>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RootApplication.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="_logger" />
     </ShowAsAssociation>
   </Class>
-  <Interface Name="Pattern6.DependencyInjection.Core.ILogger">
+  <Interface Name="Jarai.CSharp.Patterns.DependencyInjection.Core.ILogger">
     <Position X="4.5" Y="0.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
