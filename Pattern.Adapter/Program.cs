@@ -1,21 +1,20 @@
 ﻿using System;
 
-namespace Jarai.CSharp.Pattern.Adapter
+namespace Jarai.Patterns.Structural.Adapter
 {
     internal class Program
     {
         private static void Main(string[] args)
         {
-            var brief = new Letter("Sehr geehrter Herr XY, ...");
+            var applePhone = new ApplePhone();
 
-            var drucker = new Printer();
-            brief.SendTo(drucker);
+            var lightningLadegerät = new LightningLadegerät();
+            applePhone.Aufladen(lightningLadegerät);
 
-            var pdfFilename = @"c:\temp\testpdf.txt";
-            var pdfCreator = new PdfCreator(pdfFilename);
 
-            var pdfDruckerAdapter = new PdfCreatorToPrinterAdapter(pdfCreator);
-            brief.SendTo(pdfDruckerAdapter);
+            var usbLadegerät = new UsbLadegerät();
+            var adapter = new UsbToLightningAdapter(usbLadegerät);
+            applePhone.Aufladen(adapter);
 
             Console.Read();
         }

@@ -55,7 +55,7 @@
             {
                 LinkeGabel.Grab(this);
 
-                Thread.Sleep(_random.Next(200));
+                Thread.Sleep(_random.Next(400));
 
                 lock (RechteGabel)
                 {

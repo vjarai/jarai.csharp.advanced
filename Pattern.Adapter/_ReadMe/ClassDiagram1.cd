@@ -1,41 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Comment CommentText="Adapter IST EIN Printer">
-    <Position X="5.75" Y="1.979" Height="0.437" Width="2.443" />
-  </Comment>
-  <Comment CommentText="Adapter HAT EINEN PdfCreator">
-    <Position X="6.681" Y="4.785" Height="0.431" Width="2.388" />
-  </Comment>
-  <Class Name="Jarai.CSharp.Pattern.Adapter.Letter">
-    <Position X="0.5" Y="0.5" Width="2.25" />
+  <Class Name="Jarai.Patterns.Structural.Adapter.ApplePhone">
+    <Position X="0.5" Y="0.75" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
-      <FileName>Letter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>ApplePhone.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Jarai.CSharp.Pattern.Adapter.Printer">
-    <Position X="4.5" Y="0.5" Width="2" />
+  <Class Name="Jarai.Patterns.Structural.Adapter.LightningLadegerät">
+    <Position X="4.75" Y="0.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
-      <FileName>Printer.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LightningLadegerät.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Jarai.CSharp.Pattern.Adapter.PdfCreator">
-    <Position X="9.25" Y="3" Width="2.5" />
+  <Class Name="Jarai.Patterns.Structural.Adapter.UsbLadegerät">
+    <Position X="4.75" Y="2.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>PdfCreator.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UsbLadegerät.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="Jarai.CSharp.Pattern.Adapter.PdfCreatorToPrinterAdapter">
-    <Position X="4" Y="3" Width="3" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
-      <FileName>PdfCreatorToPrinterAdapter.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_pdfCreator" />
-    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
