@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jarai.Patterns.Structural.Adapter
+namespace Jarai.CSharp.Pattern.Adapter
 {
     public class UsbLadegerät
     {

@@ -1,20 +1,20 @@
 ﻿using System;
 
-namespace Jarai.Patterns.Structural.Adapter
+namespace Jarai.CSharp.Pattern.Adapter
 {
     internal class Program
     {
         private static void Main(string[] args)
         {
-            var applePhone = new ApplePhone();
+            var iphone = new ApplePhone();
 
             var lightningLadegerät = new LightningLadegerät();
-            applePhone.Aufladen(lightningLadegerät);
+            iphone.Aufladen(lightningLadegerät);
 
 
             var usbLadegerät = new UsbLadegerät();
             var adapter = new UsbToLightningAdapter(usbLadegerät);
-            applePhone.Aufladen(adapter);
+            iphone.Aufladen(adapter);
 
             Console.Read();
         }
