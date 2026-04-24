@@ -6,7 +6,7 @@ namespace Jarai.CSharp.Pattern.Adapter
     {
         private static void Main(string[] args)
         {
-            var iphone = new ApplePhone();
+            var iphone = new IPhone();
 
             var lightningLadegerät = new LightningLadegerät();
             iphone.Aufladen(lightningLadegerät);

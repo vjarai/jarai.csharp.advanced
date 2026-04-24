@@ -2,7 +2,7 @@
 
 namespace Jarai.CSharp.Pattern.Adapter
 {
-    public class ApplePhone
+    public class IPhone
     {
 
         public void Aufladen(LightningLadegerät lightningLadegerät)

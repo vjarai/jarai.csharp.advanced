@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Jarai.CSharp.Pattern.Adapter.ApplePhone">
+  <Class Name="Jarai.CSharp.Pattern.Adapter.IPhone">
     <Position X="0.5" Y="0.75" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>ApplePhone.cs</FileName>
+      <FileName>IPhone.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Jarai.CSharp.Pattern.Adapter.LightningLadegerät">
